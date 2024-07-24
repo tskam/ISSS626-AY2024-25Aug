@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: "ISSS626 Geospatial Analytics and Applications"
+  navbar:
+    background: "#e0ae24"
+    left:
+    - text: "Syllabus"
+      href: syllabus.qmd
+    - text: "Lesson Plan"
+      href: lesson.qmd
+    - text: "Take-home Exercise"
+      menu:
+      - text: "Take-home Exercise 1"
+        href: Take-home_Ex01.html
+      - text: "Take-home Exercise 2"
+        href: Take-home_Ex02.html
+    right:
+    - text: "All About R"
+      menu: 
+        - text: "R Resouces"
+          href: R.html
+        - text: "Quarto"
+          href: Quarto.html
+        - text: "git and github"
+          href: git.html
+    - text: "Home"
+      href: index.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+editor: visual
+
