@@ -4,9 +4,15 @@ editor: visual
 ---
 
 | Week | Date       | Topic                                                                                | Student Assignment   |
-|-----------------|-----------------|-----------------------|-----------------|
-| 1    | 18/11/2023 | [Geospatial Data Science and Visualisation](outline/lesson1_outline.html)            |                      |
-| 2    | 25/11/2023 | [Global and Local Measures of Spatial Autocorrelation](outline/Lesson2_outline.html) | Take-home Exercise 1 |
-| 3    | 2/12/2023  | [Spatial Interaction Models](outline/Lesson3_outline.html)                           | Take-home Exercise 2 |
-| 4    | 9/12/2023  | [Geographically Weighted Regression](outline/Lesson4_outline.html)                   |                      |
-| 5    | 16/12/2022 | [Spatial Econometric Interaction Models](outline/Lesson5_outline.html)             |                      |
+|-----------------|-----------------|---------------------|-----------------|
+| 1    | 26/8/2024  | [Geospatial Data Science and Visualisation](outline/lesson1_outline.html)            |                      |
+| 2    | 2/9/2024   | [Global and Local Measures of Spatial Autocorrelation](outline/Lesson2_outline.html) | Take-home Exercise 1 |
+| 3    | 9/9/2024   | [Spatial Interaction Models](outline/Lesson3_outline.html)                           | Take-home Exercise 2 |
+| 4    | 16/9/2024  | [Geographically Weighted Regression](outline/Lesson4_outline.html)                   |                      |
+| 5    | 23/9/2024  | [Spatial Econometric Interaction Models](outline/Lesson5_outline.html)               |                      |
+| 6    | 30/9/2024  |                                                                                      |                      |
+|      | 7/10/2024  |                                                                                      |                      |
+| 7    | 14/10/2024 |                                                                                      |                      |
+| 8    | 21/10/2024 |                                                                                      |                      |
+| 9    | 28/10/2024 |                                                                                      |                      |
+| 10   | 4/11/2024  |                                                                                      |                      |
