@@ -4,15 +4,15 @@ editor: visual
 ---
 
 | Week | Date       | Topic                                                                                | Student Assignment   |
-|-----------------|-----------------|---------------------|-----------------|
-| 1    | 26/8/2024  | [Geospatial Data Science and Visualisation](outline/lesson1_outline.html)            |                      |
-| 2    | 2/9/2024   | [Global and Local Measures of Spatial Autocorrelation](outline/Lesson2_outline.html) | Take-home Exercise 1 |
-| 3    | 9/9/2024   | [Spatial Interaction Models](outline/Lesson3_outline.html)                           | Take-home Exercise 2 |
-| 4    | 16/9/2024  | [Geographically Weighted Regression](outline/Lesson4_outline.html)                   |                      |
-| 5    | 23/9/2024  | [Spatial Econometric Interaction Models](outline/Lesson5_outline.html)               |                      |
-| 6    | 30/9/2024  |                                                                                      |                      |
+|------------------|------------------|--------------------|------------------|
+| 1    | 26/8/2024  | [Introduction to Geospatial Analytics](outline/lesson1_outline.html)            |                      |
+| 2    | 2/9/2024   | [Spatial Point Patterns Analysis (SPAA)](outline/Lesson2_outline.html) | Take-home Exercise 1 |
+| 3    | 9/9/2024   | [Advanced Spatial Point Patterns Analysis](outline/Lesson3_outline.html)                           | Take-home Exercise 2 |
+| 4    | 16/9/2024  | [Concepts of Spatial Proximity and Geographically Statistyics](outline/Lesson4_outline.html)                   |                      |
+| 5    | 23/9/2024  | [Global and Local Measures of Spatial Association](outline/Lesson5_outline.html)               |                      |
+| 6    | 30/9/2024  | [Geographically Weighted Multivariate Analysis]()                                                                                     |                      |
 |      | 7/10/2024  |                                                                                      |                      |
-| 7    | 14/10/2024 |                                                                                      |                      |
-| 8    | 21/10/2024 |                                                                                      |                      |
-| 9    | 28/10/2024 |                                                                                      |                      |
-| 10   | 4/11/2024  |                                                                                      |                      |
+| 7    | 14/10/2024 | [Geographically Weighted Explanatory Models]()                                                                                     |                      |
+| 8    | 21/10/2024 | [Geographically Weighted Predictive Models]()                                                                                     |                      |
+| 9    | 28/10/2024 | [Spatial Interaction Models]()                                                                                     |                      |
+| 10   | 4/11/2024  | [Modelling Geographic of Accessibility]()                                                                                     |                      |
