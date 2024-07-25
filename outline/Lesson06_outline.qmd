@@ -1,80 +1,49 @@
 ---
-title: "Lesson 6: Emerging Hot Spot Analysis"
+title: "Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis"
 date: "February 21, 2023"
 date-modified: "last-modified"
-output:
-  html:
-    toc: true
-    toc_depth: 3
-execute: 
-  freeze: auto
+format: html
+toc: true
 ---
 
-Emerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revealing and describing how hot spot and cold spot areas evolve over time. The analysis consist of four main steps:
-
--   Building a space-time cube,
--   Calculating Getis-Ord local Gi* statistic for each bin by using an FDR correction,
--   Evaluating these hot and cold spot trends by using Mann-Kendall trend test,
--   Categorising each study area location by referring to the resultant trend z-score and p-value for each location with data, and with the hot spot z-score and p-value for each bin.
-
-In this lesson, you will learn the basic concepts of time-space cube and EHSA.  You will also gain hands-on experience of how to build a time-spce cube and to perform EHSA by using sfdep package.
+## Overview
 
 ## Content
 
--   What is Spatial Autocorrelation
-    -   Measures of Global Spatial Autocorrelation
-    -   Measures of Global High/Low Clustering
--   Introducing Localised Geospatial Analysis
-    -   Local Indicators of Spatial Association (LISA)
--   Cluster and Outlier Analysis
-    -   Local Moran and Local Geary
-    -   Moran scatterplot
-    -   LISA Cluster Map
--   Hot Spot and Cold Spot Areas Analysis
-    -   Getis and Ord's G-statistics
--   Case Studies
+-   Basic concepts of geographic segmentation
+-   Conventional cluster analysis techniques
+-   Approaches for clustering geographically referenced data
+    -   Hierarchical clustering with spatial constraints
+    -   Minimum spanning trees
+    -   ClustGeo method
 
-## Lesson Slides and Hands-on Notes
+## Lesson slides
 
--   [Lesson 5](../lesson/Lesson05/Lesson05-GLSA.html) slides.
+-   [Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis](..\lesson\Lesson07\Lesson07-SCCA.html) slides.
 
--   [Hands-on Exercise 5: Global Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap09.html).
+## Hands-on Exercise
 
--   [Hands-on Exercise 5: Local Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap10.html)
+-   [12 Geographical Segmentation with Spatially Constrained Clustering Techniques](https://r4gdsa.netlify.app/chap12.html)
 
-## Self-reading Before Meet-up
+### Self-reading Before Meet-up
 
 To read before class:
 
--   Moran, P. A. P. (1950). ["Notes on Continuous Stochastic Phenomena"](https://www-jstor-org.libproxy.smu.edu.sg/stable/2332142?seq=1#metadata_info_tab_contents). Biometrika. 37 (1): 17--23.
+-   Assuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. "Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees". *International Journal of Geographical Information Science* 20: 797-811. (Available in SMU digital library)
 
--   Geary, R.C. (1954) ["The Contiguity Ratio and Statistical Mapping"](https://www-jstor-org.libproxy.smu.edu.sg/stable/2986645?sid=primo&origin=crossref&seq=1#metadata_info_tab_contents). *The Incorporated Statistician*, Vol. 5, No. 3, pp. 115-127.
+-   Chavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. "ClustGeo: an R package for hierarchical clustering with spatial constraints" *Computational Statistics*, 33: 1799-1822. (Available in SMU digital library)
 
--   Getis, A., & Ord, K. (1992). ["The Analysis of Spatial Association by Use of Distance Statistics"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1992.tb00261.x). *Geographical Analysis*, 24, 189--206.
+### References
 
--   Anselin, L. (1995). ["Local indicators of spatial association -- LISA"](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00338.x). *Geographical Analysis*, 27(4): 93-115.
+-   Rovan, J. and Sambt, J. (2003) ["Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach"](http://mrvar.fdv.uni-lj.si/pub/mz/mz19/rovan.pdf), *Developments in Applied Statistics*, pp. 265-278.\
+-   Demeter, T. and Bratucu, G. (2013) ["Statistical Analysis Of The EU Countries from A Touristic Point of View"](https://webbut.unitbv.ro/index.php/Series_V/article/view/5438), *Bulletin of the Transilvania University of Braşov*, 6(55): 121-130.
+-   Brown, N.S. & Watson, P. (2012) ["What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho"](https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf), Western Economics Forum. Pp.22-37.
+-   Jaya, I.G.M., Ruchjana, B.N., Andriyana, Y. & Agata, R (2019) ["Clustering with spatial constraints: The case of diarrhea in Bandung city, Indonesia"](https://iopscience.iop.org/article/10.1088/1742-6596/1397/1/012068)
+-   de Souza, D. C. & Taconeli, C. A. (2022) "Spatial and non-spatial clustering algorithm in the analysis of Brazilian educational data", *Communications in Statistics: Case Studies, Data Analysis, and Applications*. Vol. 8, No. 4, 588-606. (Available in SMU digital library)
 
--   Getis, A. and Ord, J.K. (1992) ["The analysis of spatial association by use of distance statistics"](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1992.tb00261.x). *Geographical Analysis*, 24(3): 189-206.
+### All About R
 
--   Ord, J.K. and Getis, A. (2010) ["Local spatial autocorrelation statistics: Distributional issues and an application"](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00912.x). *Geographical Analysis*, 27(4): 286-306.
-
-These six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers.
-
-## References
-
--   D. A. Griffith (2009) "Spatial autocorrelation".
--   Getis, A., 2010 "B.3 Spatial Autocorrelation" in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.
--   Anselin, L. (1996) "The Moran scatterplot as an ESDA tool to assess local instability in spatial association"
--   Griffith, Daniel (2009) "Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows". Journal of Geographical Systems, Vol.11(2), pp.117-140.
--   Celebioglu, F., and Dall'erba, S. (2010) "Spatial disparities across the regions of Turkey: An exploratory spatial data analysis". The Annals of Regional Science, 45:379--400.
--   Mack, Z.W.V. and Kam T.S. (2018) ["Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict"](https://ink.library.smu.edu.sg/sis_research/4331/) *Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL'18)*. Seattle, Washington, USA, 10 pages.
--   TAN, Yong Ying and KAM, Tin Seong (2019). ["Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach"](https://ink.library.smu.edu.sg/sis_research/4376/), *Information in Contemporary Society: 14th International Conference*, iConference 2019, Washington, DC, USA, March 31--April 3, 2019, Proceedings. Pp 785-796.
--   Singh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) "Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis". PLoS ONE 6(11), 1:19.
-
-```{r}
-#| eval: false
-#| echo: false
-
-renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson07/Lesson07-GLSA.html",
-                   to = "../../_site/lesson/Lesson07/Lesson07-GLSA.pdf")
-```
+-   [Hierarchical Cluster Analysis](http://uc-r.github.io/hc_clustering).
+-   [skater](https://www.rdocumentation.org/packages/spdep/versions/0.8-1/topics/skater): A function from spdep package that implements a SKATER procedure for spatial clustering analysis.
+-   [ClustGeo: Hierarchical Clustering with Spatial Constraints](https://cran.r-project.org/web/packages/ClustGeo/index.html)
+    -   [Introduction to Clustgeo](https://cran.r-project.org/web/packages/ClustGeo/vignettes/intro_ClustGeo.html)

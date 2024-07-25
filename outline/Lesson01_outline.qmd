@@ -1,6 +1,6 @@
 ---
 title: "Lesson 1: Introduction to Geospatial Analytics"
-date: "13 Nov, 2022"
+date: "July 21, 2024"
 date-modified: "last-modified"
 format: html
 toc: true
@@ -43,7 +43,6 @@ This lesson consists of three parts. First, it provides an overview of geospatia
 
 -   Hands-on Exercise 1: [Geospatial Data Wrangling with R](https://r4gdsa.netlify.app/chap01.html)
 
-
 -   Hands-on Exercise 1: [Choropleth Mapping with R](https://r4gdsa.netlify.app/chap02.html)
 
 ## All About R
@@ -74,7 +73,7 @@ This lesson consists of three parts. First, it provides an overview of geospatia
     -   [tmap: get started!](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html),
     -   [tmap: version changes](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-changes.html), and
     -   [Chapter 8 Making maps with R](https://geocompr.robinlovelace.net/adv-map.html) of Geocomputation with R.
-    
+
 ## References
 
 ### Geospatial Analytics

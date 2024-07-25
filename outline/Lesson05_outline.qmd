@@ -30,7 +30,7 @@ These spatial statistics are well suited for:
     -   LISA Cluster Map
 -   Hot Spot and Cold Spot Areas Analysis
     -   Getis and Ord's G-statistics
--   Case Studies
+-   Emerging Hot Spot Analysis (EHSA)
 
 ## Lesson Slides and Hands-on Notes
 
@@ -39,6 +39,9 @@ These spatial statistics are well suited for:
 -   [Hands-on Exercise 5: Global Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap09.html).
 
 -   [Hands-on Exercise 5: Local Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap10.html)
+
+
+
 
 ## Self-reading Before Meet-up
 
