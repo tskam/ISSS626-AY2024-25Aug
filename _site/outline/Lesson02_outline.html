@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-07-21">
 
-<title>ISSS626 Geospatial Analytics and Applications - Weekly Lesson Plan</title>
+<title>ISSS626 Geospatial Analytics and Applications - Lesson 2: Spatial Point Patterns Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">ISSS626 Geospatial Analytics and Applications</span>
     </a>
   </div>
@@ -89,11 +90,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./lesson.html" aria-current="page"> 
+    <a class="nav-link" href="../lesson.html"> 
 <span class="menu-text">Lesson Plan</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -102,11 +103,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex01.html">
+    <a class="dropdown-item" href="../Take-home_Ex01.html">
  <span class="dropdown-text">Take-home Exercise 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex02.html">
+    <a class="dropdown-item" href="../Take-home_Ex02.html">
  <span class="dropdown-text">Take-home Exercise 2</span></a>
   </li>  
     </ul>
@@ -119,21 +120,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-all-about-r">    
         <li>
-    <a class="dropdown-item" href="./R.html">
+    <a class="dropdown-item" href="../R.html">
  <span class="dropdown-text">R Resouces</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Quarto.html">
+    <a class="dropdown-item" href="../Quarto.html">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./git.html">
+    <a class="dropdown-item" href="../git.html">
  <span class="dropdown-text">git and github</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -148,14 +149,31 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
+  <li><a href="#lesson-slides" id="toc-lesson-slides" class="nav-link" data-scroll-target="#lesson-slides">Lesson Slides</a></li>
+  <li><a href="#hands-on-exercise" id="toc-hands-on-exercise" class="nav-link" data-scroll-target="#hands-on-exercise">Hands-on Exercise</a>
+  <ul class="collapse">
+  <li><a href="#self-reading-before-meet-up" id="toc-self-reading-before-meet-up" class="nav-link" data-scroll-target="#self-reading-before-meet-up">Self-reading Before Meet-up</a></li>
+  <li><a href="#enrichment-resources" id="toc-enrichment-resources" class="nav-link" data-scroll-target="#enrichment-resources">Enrichment Resources</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a>
+  <ul class="collapse">
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a></li>
+  </ul></li>
+  <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Weekly Lesson Plan</h1>
+<h1 class="title">Lesson 2: Spatial Point Patterns Analysis</h1>
 </div>
 
 
@@ -163,7 +181,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 21, 2024</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">July 25, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -172,86 +202,106 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Week</th>
-<th>Date</th>
-<th>Topic</th>
-<th>Student Assignment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>26/8/2024</td>
-<td><a href="outline/Lesson01_outline.html">Introduction to Geospatial Analytics</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>2/9/2024</td>
-<td><a href="outline/Lesson02_outline.html">Spatial Point Patterns Analysis (SPAA)</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>9/9/2024</td>
-<td><a href="outline/Lesson03_outline.html">Advanced Spatial Point Patterns Analysis</a></td>
-<td>Take-home Exercise 1 due.</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>16/9/2024</td>
-<td><a href="outline/Lesson04_outline.html">Spatial Weights and Applications</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>23/9/2024</td>
-<td><a href="outline/Lesson05_outline.html">Global and Local Measures of Spatial Association</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>30/9/2024</td>
-<td><a href="">Geographically Weighted Multivariate Analysis</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>7/10/2024</td>
-<td></td>
-<td>Take-home Exercise 2 due.</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>14/10/2024</td>
-<td><a href="">Geographically Weighted Explanatory Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>21/10/2024</td>
-<td><a href="">Geographically Weighted Predictive Models</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td>28/10/2024</td>
-<td><a href="">Spatial Interaction Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10</td>
-<td>4/11/2024</td>
-<td><a href="">Modelling Geographic of Accessibility</a></td>
-<td>Take-home Exercise 3 due.</td>
-</tr>
-</tbody>
-</table>
+<p>Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution, of a set of points on a surface. It can refer to the actual spatial or temporal location of these points or also include data from point sources. It is one of the most fundamental concepts in geography and spatial analysis. This lesson aims to share with you the basic concepts and methods of Spatial Point Pattern Analysis. You will also gain hands experience on using <a href="https://cran.r-project.org/web/packages/spatstat/index.html">spatstat</a>, an R package specially designed for Spatial Point Pattern Analysis.</p>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<ul>
+<li>Introducing Spatial Point Patterns
+<ul>
+<li>The basic concepts of spatial point patterns</li>
+<li>Spatial Point Patterns in real world</li>
+</ul></li>
+<li>1st Order Spatial Point Patterns Analysis
+<ul>
+<li>Kernel Density Estimation (KDE)</li>
+</ul></li>
+<li>Network Constrained Kernel Density Estimation (NCKDE)
+<ul>
+<li>Basic concepts of network constrained spatial point patterns</li>
+<li>Network Constrained KDE methods</li>
+<li>The Three versions of Network Constrained KDE</li>
+</ul></li>
+<li>Temporal Network Kernel Density Estimation (TNKED)
+<ul>
+<li>Tempotal dimension</li>
+<li>Spatial dimension</li>
+<li>Spatio-temporal point patterns</li>
+<li>The Temporal Network Kernel Density Estimation method</li>
+</ul></li>
+</ul>
+</section>
+<section id="lesson-slides" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-slides">Lesson Slides</h2>
+<ul>
+<li><a href="..\lesson\Lesson03\Lesson03-SPPA.html">Lesson 3</a> slides.</li>
+</ul>
+</section>
+<section id="hands-on-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="hands-on-exercise">Hands-on Exercise</h2>
+<ul>
+<li><p><a href="https://r4gdsa.netlify.app/chap04.html">Chapter 4: 1st Order Spatial Point Patterns Analysis Methods</a></p></li>
+<li><p><a href="https://r4gdsa.netlify.app/chap07.html">Chapter 7: Network Constrained Spatial Point Patterns Analysis</a></p></li>
+</ul>
+<section id="self-reading-before-meet-up" class="level3">
+<h3 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h3>
+<ul>
+<li><a href="https://link-springer-com.libproxy.smu.edu.sg/chapter/10.1007/978-1-4614-7618-4_7">Chapter 7 Spatial Point Pattern Analysis</a> of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) <strong>Applied Spatial Data Analysis with R</strong> (2nd Edition), Springer.</li>
+<li>Yuan, Y., Qiang, Y., Bin Asad, K., and Chow, T. E. (2020). <a href="https://gistbok.ucgis.org/bok-topics/point-pattern-analysis">Point Pattern Analysis</a>. The Geographic Information Science &amp; Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.13.</li>
+<li>Yin, P. (2020). <a href="https://gistbok.ucgis.org/bok-topics/kernels-and-density-estimation">Kernels and Density Estimation</a>. The Geographic Information Science &amp; Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.12</li>
+</ul>
+</section>
+<section id="enrichment-resources" class="level3">
+<h3 class="anchored" data-anchor-id="enrichment-resources">Enrichment Resources</h3>
+<p>Prof.&nbsp;Luc Anselin on point pattern analysis (YouTube):</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=BN94XXT6Io4">Point Pattern Analysis Concepts</a></li>
+<li><a href="https://www.youtube.com/watch?v=FdcTgcOdAUg">Point Pattern Analysis: Clustered, Regular and Dispersed Patterns</a></li>
+<li><a href="• Point Pattern Analysis: Nearest Neighbor Statistics">Point Pattern Analysis: Nearest Neighbor Statistics</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ww95WKxUoZk">Point Pattern Analysis: Quadrat Counts</a></li>
+<li><a href="https://www.youtube.com/watch?v=uNpbf7Y6WM8">Point Pattern Analysis: F and J Functions</a></li>
+<li><a href="https://www.youtube.com/watch?v=oT_jMTkkld8">Point Pattern Analysis: K, L and Kd Functions</a></li>
+</ul>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li>O’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley &amp; Sons Inc., New Jersey, Canada. Chapter 5-6.</li>
+<li>Baddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.</li>
+<li>Chapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4 • Ripley’s K-function.</li>
+<li>ATSUYUKI OKABE, TOSHIAKI SATOH &amp; KOKICHI SUGIHARA (2009) “A kernel density estimation method for networks, its computational method and a GIS-based tool”, <em>International Journal of Geographical Information Science</em>, Vol. 23, No.&nbsp;1, January 2009, pp.&nbsp;7–32.</li>
+<li>Ikuho Yamada &amp; Jean-Claude Thill (2007) “Local Indicators of Network-Constrained Clusters in Spatial Point Patterns”, <em>Geographical Analysis</em>, Vol. 39, pp 268–292.</li>
+<li>Jérémy Gelb &amp; Philippe Apparicio (2023) <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/gean.12368">“Temporal Network Kernel Density Estimation”</a>, Geographical Analysis. (Online open access version)</li>
+</ul>
+<section id="applications" class="level3">
+<h3 class="anchored" data-anchor-id="applications">Applications</h3>
+<ul>
+<li>Naveen Donthu and Roland T. Rust (1989) “Estimating Geographic Customer Densities Using Kernel Density Estimation”, Marketing Science, Vol. 8, No.&nbsp;2, pp.&nbsp;191-203.</li>
+<li>Joseph Wartman and Nicholas E. Malasavage (2010). “<a href="http://www.intechopen.com/books/methods-and-techniques-in-urban-engineering/spatial-analysis-for-identifying-concentrations-of-urban-damage">Spatial Analysis for Identifying Concentrations of Urban Damage</a>” in Methods and Techniques in Urban Engineering, Armando Carlos de Pina Filho and Aloisio Carlos dePina (Ed.), ISBN: 978-953-307-096-4, InTech.</li>
+<li>Giuseppe Borruso and Andrea Porceddu (2009) “A Tale of Two Cities: Density Analysis of CBD on Two Midsize Urban Areas in Northeastern Italy” in Murgante, Beniamino; Borruso, Giuseppe &amp; Lapucci, Alessandra (2009) Studies in Computational Intelligence, Geocomputation and Urban Planning, pp.37-56.</li>
+<li>Kang, Youngok ; Cho, Nahye ; Son, Serin; Chen, Peng (2018) “Spatiotemporal characteristics of elderly population’s traffic accidents in Seoul using space-time cube and space-time kernel density estimation”, PloS one, 2018, Vol.13 (5).</li>
+</ul>
+</section>
+</section>
+<section id="all-about-r" class="level2">
+<h2 class="anchored" data-anchor-id="all-about-r">All About R</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/spatstat/index.html">spatstat</a> at R Cran
+<ul>
+<li><a href="https://spatstat.org/resources.html">spatstat</a> resource.</li>
+</ul></li>
+<li><a href="https://jeremygelb.github.io/spNetwork/index.html">spNetwork</a>: An R package to perform spatial analysis on networks.
+<ul>
+<li><a href="https://jeremygelb.github.io/spNetwork/articles/NetworkBuilding.html">Building graphs</a></li>
+<li><a href="https://jeremygelb.github.io/spNetwork/articles/SpatialWeightMatrices.html">Spatial Weight Matrices</a></li>
+<li><a href="https://jeremygelb.github.io/spNetwork/articles/web_vignettes/NKDEdetailed.html">Details about NKDE</a></li>
+<li><a href="https://jeremygelb.github.io/spNetwork/articles/NKDE.html">Network Kernel Density Estimate</a></li>
+<li><a href="https://jeremygelb.github.io/spNetwork/articles/TNKDE.html">Temporal Network Kernel Density Estimate</a></li>
+</ul></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

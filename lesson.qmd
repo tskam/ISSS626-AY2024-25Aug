@@ -5,11 +5,11 @@ editor: visual
 
 | Week | Date       | Topic                                                                                        | Student Assignment        |
 |------------------|------------------|-------------------|------------------|
-| 1    | 26/8/2024  | [Introduction to Geospatial Analytics](outline/lesson1_outline.html)                         |                           |
-| 2    | 2/9/2024   | [Spatial Point Patterns Analysis (SPAA)](outline/Lesson2_outline.html)                       |                           |
-| 3    | 9/9/2024   | [Advanced Spatial Point Patterns Analysis](outline/Lesson3_outline.html)                     | Take-home Exercise 1 due. |
-| 4    | 16/9/2024  | [Concepts of Spatial Proximity and Geographically Statistyics](outline/Lesson4_outline.html) |                           |
-| 5    | 23/9/2024  | [Global and Local Measures of Spatial Association](outline/Lesson5_outline.html)             |                           |
+| 1    | 26/8/2024  | [Introduction to Geospatial Analytics](outline/Lesson01_outline.html)                         |                           |
+| 2    | 2/9/2024   | [Spatial Point Patterns Analysis (SPAA)](outline/Lesson02_outline.html)                       |                           |
+| 3    | 9/9/2024   | [Advanced Spatial Point Patterns Analysis](outline/Lesson03_outline.html)                     | Take-home Exercise 1 due. |
+| 4    | 16/9/2024  | [Spatial Weights and Applications](outline/Lesson04_outline.html) |                           |
+| 5    | 23/9/2024  | [Global and Local Measures of Spatial Association](outline/Lesson05_outline.html)             |                           |
 | 6    | 30/9/2024  | [Geographically Weighted Multivariate Analysis]()                                            |                           |
 |      | 7/10/2024  |                                                                                              | Take-home Exercise 2 due. |
 | 7    | 14/10/2024 | [Geographically Weighted Explanatory Models]()                                               |                           |

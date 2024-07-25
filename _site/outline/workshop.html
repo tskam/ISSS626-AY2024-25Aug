@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-07-25">
+<meta name="description" content="In this workshop, you will learn the basic principles and methods of R Shiny.">
 
-<title>ISSS626 Geospatial Analytics and Applications - Weekly Lesson Plan</title>
+<title>ISSS626 Geospatial Analytics and Applications - Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">ISSS626 Geospatial Analytics and Applications</span>
     </a>
   </div>
@@ -89,11 +91,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./lesson.html" aria-current="page"> 
+    <a class="nav-link" href="../lesson.html"> 
 <span class="menu-text">Lesson Plan</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -102,11 +104,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex01.html">
+    <a class="dropdown-item" href="../Take-home_Ex01.html">
  <span class="dropdown-text">Take-home Exercise 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex02.html">
+    <a class="dropdown-item" href="../Take-home_Ex02.html">
  <span class="dropdown-text">Take-home Exercise 2</span></a>
   </li>  
     </ul>
@@ -119,21 +121,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-all-about-r">    
         <li>
-    <a class="dropdown-item" href="./R.html">
+    <a class="dropdown-item" href="../R.html">
  <span class="dropdown-text">R Resouces</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Quarto.html">
+    <a class="dropdown-item" href="../Quarto.html">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./git.html">
+    <a class="dropdown-item" href="../git.html">
  <span class="dropdown-text">git and github</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -148,21 +150,47 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
+  <li><a href="#workshop-slides-and-hands-on-notes" id="toc-workshop-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#workshop-slides-and-hands-on-notes">Workshop Slides and Hands-on Notes</a></li>
+  <li><a href="#must-do" id="toc-must-do" class="nav-link" data-scroll-target="#must-do">Must Do!</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a>
+  <ul class="collapse">
+  <li><a href="#core-readings" id="toc-core-readings" class="nav-link" data-scroll-target="#core-readings">Core Readings</a></li>
+  <li><a href="#additional-references" id="toc-additional-references" class="nav-link" data-scroll-target="#additional-references">Additional references</a></li>
+  <li><a href="#deploying-shiny-application-on-shinyapps.io" id="toc-deploying-shiny-application-on-shinyapps.io" class="nav-link" data-scroll-target="#deploying-shiny-application-on-shinyapps.io">Deploying Shiny Application on shinyapps.io</a></li>
+  </ul></li>
+  <li><a href="#gallery" id="toc-gallery" class="nav-link" data-scroll-target="#gallery">Gallery</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Weekly Lesson Plan</h1>
+<h1 class="title">Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny</h1>
 </div>
 
+<div>
+  <div class="description">
+    <p>In this workshop, you will learn the basic principles and methods of R Shiny.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 25, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -172,86 +200,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Week</th>
-<th>Date</th>
-<th>Topic</th>
-<th>Student Assignment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>26/8/2024</td>
-<td><a href="outline/Lesson01_outline.html">Introduction to Geospatial Analytics</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>2/9/2024</td>
-<td><a href="outline/Lesson02_outline.html">Spatial Point Patterns Analysis (SPAA)</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>9/9/2024</td>
-<td><a href="outline/Lesson03_outline.html">Advanced Spatial Point Patterns Analysis</a></td>
-<td>Take-home Exercise 1 due.</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>16/9/2024</td>
-<td><a href="outline/Lesson04_outline.html">Spatial Weights and Applications</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>23/9/2024</td>
-<td><a href="outline/Lesson05_outline.html">Global and Local Measures of Spatial Association</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>30/9/2024</td>
-<td><a href="">Geographically Weighted Multivariate Analysis</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>7/10/2024</td>
-<td></td>
-<td>Take-home Exercise 2 due.</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>14/10/2024</td>
-<td><a href="">Geographically Weighted Explanatory Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>21/10/2024</td>
-<td><a href="">Geographically Weighted Predictive Models</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td>28/10/2024</td>
-<td><a href="">Spatial Interaction Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10</td>
-<td>4/11/2024</td>
-<td><a href="">Modelling Geographic of Accessibility</a></td>
-<td>Take-home Exercise 3 due.</td>
-</tr>
-</tbody>
-</table>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<ul>
+<li>Motivation of developing web-enabled applications
+<ul>
+<li>Basic principles of web applications</li>
+</ul></li>
+<li>Introducing R Shiny
+<ul>
+<li>Getting to know Shiny</li>
+<li>Architecture of Shiny</li>
+<li>Building block of Shiny app</li>
+</ul></li>
+<li>Advanced R Shiny
+<ul>
+<li>Reactive feature of Shiny</li>
+<li>Build interactive Shiny application by using plotly R</li>
+<li>Build static, interactive and reactive geovisualisation application by using tmap</li>
+</ul></li>
+<li>Managing R Shiny Project
+<ul>
+<li>The basic development cycle of creating apps</li>
+<li>Debug errors in the codes</li>
+<li>Build complex Shiny application using module</li>
+<li>Improve the productivity of Shiny applications development</li>
+</ul></li>
+<li>Deploying Shiny Application
+<ul>
+<li>Deploy to the cloud: <a href="https://www.shinyapps.io/?_ga=2.232377500.246763293.1636253702-1670780590.1620114500">shinyapps.io</a></li>
+<li>Deploy on-premises (open source): <a href="https://www.rstudio.com/products/shiny/shiny-server/?_ga=2.164831420.246763293.1636253702-1670780590.1620114500">Shiny Server</a></li>
+<li>Deploy on-premises (commercial): <a href="https://www.rstudio.com/products/connect/?_ga=2.232328220.246763293.1636253702-1670780590.1620114500">RStudio Connect</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="workshop-slides-and-hands-on-notes" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-slides-and-hands-on-notes">Workshop Slides and Hands-on Notes</h2>
+<ul>
+<li><p>Introducing R Shiny slides in <a href="../workshop/Shiny1/Shiny1.html">html</a> and <a href="../workshop/Shiny1/Shiny1.pdf">pdf</a> formats</p></li>
+<li><p>Advanced R Shiny I slides in <a href="../workshop/Shiny2/Shiny2.html">html</a> and <a href="../workshop/Shiny2/Shiny2.pdf">pdf</a> formats</p></li>
+<li><p>Managing R Shiny Project slides in <a href="../workshop/Shiny3/Shiny3.html">html</a> and <a href="../workshop/Shiny3/Shiny3.pdf">pdf</a> formats</p></li>
+</ul>
+</section>
+<section id="must-do" class="level2">
+<h2 class="anchored" data-anchor-id="must-do">Must Do!</h2>
+<ul>
+<li>View the three parts series of Shiny Tutorial at this <a href="https://shiny.rstudio.com/tutorial/">link</a>.</li>
+</ul>
+</section>
+<section id="readings" class="level2">
+<h2 class="anchored" data-anchor-id="readings">Readings</h2>
+<section id="core-readings" class="level3">
+<h3 class="anchored" data-anchor-id="core-readings">Core Readings</h3>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/shiny/shiny.pdf">Shiny reference guide</a> at CRAN.</li>
+<li>Hadley Wickham (2021) <strong>Mastering Shiny</strong>, O’Reilly Media. This is a highly recommended book. You can find the online version with this <a href="https://mastering-shiny.org/index.html">link</a>.</li>
+<li>Paula Moraga (2020) <strong>Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny</strong>, Chapman &amp; Hall/CRC. Chapter <a href="https://www.paulamoraga.com/book-geospatial/sec-shiny.html">13</a>, <a href="https://www.paulamoraga.com/book-geospatial/sec-dashboardswithshiny.html">14</a> and <a href="https://www.paulamoraga.com/book-geospatial/sec-shinyexample.html">15</a>.</li>
+</ul>
+</section>
+<section id="additional-references" class="level3">
+<h3 class="anchored" data-anchor-id="additional-references">Additional references</h3>
+<ul>
+<li>Colin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020), <strong>Engineering Production-Grade Shiny Apps</strong>, Chapman &amp; Hall. You can find the online version with this <a href="https://engineering-shiny.org/">link</a>.</li>
+<li><a href="https://unleash-shiny.rinterface.com/index.html">Outstanding User Interfaces with Shiny</a>.</li>
+<li><a href="https://bookdown.org/hadrien/how_to_build_a_shiny_app_from_scratch/">How to Build a Shiny Application from Scratch</a>.</li>
+</ul>
+</section>
+<section id="deploying-shiny-application-on-shinyapps.io" class="level3">
+<h3 class="anchored" data-anchor-id="deploying-shiny-application-on-shinyapps.io">Deploying Shiny Application on shinyapps.io</h3>
+<ul>
+<li><a href="https://shiny.rstudio.com/articles/shinyapps.html">Getting started with shinyapps.io</a></li>
+<li><a href="https://docs.rstudio.com/shinyapps.io/index.html">shinyapps.io user guide</a></li>
+</ul>
+</section>
+</section>
+<section id="gallery" class="level2">
+<h2 class="anchored" data-anchor-id="gallery">Gallery</h2>
+<ul>
+<li><a href="https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/">Winners of the 1st Shiny Contest</a></li>
+<li><a href="https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/">Winners of the 2nd Annual Shiny Contest</a></li>
+<li><a href="https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/">Winners of the 3rd annual Shiny Contest</a></li>
+<li><a href="https://shiny.rstudio.com/gallery/">Shiny Gallery</a></li>
+<li><a href="http://freerangestats.info/blog/2018/05/13/nz-govt-shinyapps">Fifteen New Zealand government Shiny web apps</a></li>
+<li><a href="https://shinyapps-recent.appspot.com/recent.html">ShinyApps Gallery</a></li>
+<li><a href="http://shinyapps.dreamrs.fr/">dreamRs shiny gallery</a></li>
+<li><a href="https://r.tquant.eu/">Tools for Teaching Quantitative Thinking</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

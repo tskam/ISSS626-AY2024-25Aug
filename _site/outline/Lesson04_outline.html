@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-07-21">
 
-<title>ISSS626 Geospatial Analytics and Applications - Weekly Lesson Plan</title>
+<title>ISSS626 Geospatial Analytics and Applications - Lesson 4: Spatial Weights and Applications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">ISSS626 Geospatial Analytics and Applications</span>
     </a>
   </div>
@@ -89,11 +90,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./lesson.html" aria-current="page"> 
+    <a class="nav-link" href="../lesson.html"> 
 <span class="menu-text">Lesson Plan</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -102,11 +103,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex01.html">
+    <a class="dropdown-item" href="../Take-home_Ex01.html">
  <span class="dropdown-text">Take-home Exercise 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex02.html">
+    <a class="dropdown-item" href="../Take-home_Ex02.html">
  <span class="dropdown-text">Take-home Exercise 2</span></a>
   </li>  
     </ul>
@@ -119,21 +120,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-all-about-r">    
         <li>
-    <a class="dropdown-item" href="./R.html">
+    <a class="dropdown-item" href="../R.html">
  <span class="dropdown-text">R Resouces</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Quarto.html">
+    <a class="dropdown-item" href="../Quarto.html">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./git.html">
+    <a class="dropdown-item" href="../git.html">
  <span class="dropdown-text">git and github</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -148,14 +149,26 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
+  <li><a href="#lesson-slides-and-hands-on-notes" id="toc-lesson-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</a>
+  <ul class="collapse">
+  <li><a href="#self-reading-before-meet-up" id="toc-self-reading-before-meet-up" class="nav-link" data-scroll-target="#self-reading-before-meet-up">Self-reading Before Meet-up</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Weekly Lesson Plan</h1>
+<h1 class="title">Lesson 4: Spatial Weights and Applications</h1>
 </div>
 
 
@@ -163,7 +176,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 21, 2024</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">July 25, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -172,86 +197,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Week</th>
-<th>Date</th>
-<th>Topic</th>
-<th>Student Assignment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>26/8/2024</td>
-<td><a href="outline/Lesson01_outline.html">Introduction to Geospatial Analytics</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>2/9/2024</td>
-<td><a href="outline/Lesson02_outline.html">Spatial Point Patterns Analysis (SPAA)</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>9/9/2024</td>
-<td><a href="outline/Lesson03_outline.html">Advanced Spatial Point Patterns Analysis</a></td>
-<td>Take-home Exercise 1 due.</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>16/9/2024</td>
-<td><a href="outline/Lesson04_outline.html">Spatial Weights and Applications</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>23/9/2024</td>
-<td><a href="outline/Lesson05_outline.html">Global and Local Measures of Spatial Association</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>30/9/2024</td>
-<td><a href="">Geographically Weighted Multivariate Analysis</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>7/10/2024</td>
-<td></td>
-<td>Take-home Exercise 2 due.</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>14/10/2024</td>
-<td><a href="">Geographically Weighted Explanatory Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>21/10/2024</td>
-<td><a href="">Geographically Weighted Predictive Models</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td>28/10/2024</td>
-<td><a href="">Spatial Interaction Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10</td>
-<td>4/11/2024</td>
-<td><a href="">Modelling Geographic of Accessibility</a></td>
-<td>Take-home Exercise 3 due.</td>
-</tr>
-</tbody>
-</table>
+<p>Computing spatial weight is an essential step toward measuring the strength of the spatial relationships between objects. In this lesson, the basic concept of spatial weight will be introduced. This is followed by a discussion of methods to compute spatial weights.</p>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<ul>
+<li>Tobler’s First law of Geography</li>
+<li>Principles of Spatial Autocorrelation</li>
+<li>Concepts of Spatial Proximity and Spatial Weights
+<ul>
+<li>Contiguity-Based Spatial Weights: Rook’s &amp; Queen’s</li>
+<li>Distance-Band Spatial Weights: fixed and adaptive</li>
+</ul></li>
+<li>Applications of Spatial Weights
+<ul>
+<li>Global measures of spatial autocorrelation</li>
+<li>Correlogram</li>
+</ul></li>
+</ul>
+</section>
+<section id="lesson-slides-and-hands-on-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</h2>
+<ul>
+<li><a href="../lesson/Lesson04/Lesson04-Spatial_Weights.html">Lesson 4</a> slides.</li>
+<li><a href="https://r4gdsa.netlify.app/chap08.html">Hands-on Exercise 4</a></li>
+</ul>
+<section id="self-reading-before-meet-up" class="level3">
+<h3 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h3>
+<p>To read before class:</p>
+<ul>
+<li>Chapter 2. <a href="https://www.insee.fr/en/statistiques/fichier/3635545/imet131-f-chapitre-2.pdf">Codifying the neighbourhood structure</a> of <a href="https://www.insee.fr/en/information/3635545">Handbook of Spatial Analysis: Theory and Application with R</a>.</li>
+</ul>
+<p>Alternatively</p>
+<ul>
+<li>Chapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition). This book is available in smu digital library. Until section 9.3.1.</li>
+</ul>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li><p>François Bavaud (2010) <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1998.tb00394.x">“Models for Spatial Weights: A Systematic Look”</a> <em>Geographical Analysis</em>, Vol. 30, No.2, pp 153-171.</p></li>
+<li><p>Tony H. Grubesic and Andrea L. Rosso (2014) <a href="https://www-jstor-org.libproxy.smu.edu.sg/stable/26326897?sid=primo&amp;seq=1#metadata_info_tab_contents">“The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”</a>, <em>Cityscape</em>, Vol. 16, No.&nbsp;2, pp.&nbsp;205-214.</p></li>
+</ul>
+</section>
+<section id="all-about-r" class="level2">
+<h2 class="anchored" data-anchor-id="all-about-r">All About R</h2>
+<ul>
+<li><a href="https://r-spatial.github.io/spdep/articles/CO69.html">spdep</a> package
+<ul>
+<li><a href="https://r-spatial.github.io/spdep/reference/dnearneigh.html">dnearneigh()</a></li>
+<li><a href="https://r-spatial.github.io/spdep/reference/knearneigh.html">knearneigh()</a></li>
+</ul></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

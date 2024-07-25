@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-02-21">
 
-<title>ISSS626 Geospatial Analytics and Applications - Weekly Lesson Plan</title>
+<title>ISSS626 Geospatial Analytics and Applications - Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">ISSS626 Geospatial Analytics and Applications</span>
     </a>
   </div>
@@ -89,11 +90,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./lesson.html" aria-current="page"> 
+    <a class="nav-link" href="../lesson.html"> 
 <span class="menu-text">Lesson Plan</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -102,11 +103,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex01.html">
+    <a class="dropdown-item" href="../Take-home_Ex01.html">
  <span class="dropdown-text">Take-home Exercise 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex02.html">
+    <a class="dropdown-item" href="../Take-home_Ex02.html">
  <span class="dropdown-text">Take-home Exercise 2</span></a>
   </li>  
     </ul>
@@ -119,21 +120,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-all-about-r">    
         <li>
-    <a class="dropdown-item" href="./R.html">
+    <a class="dropdown-item" href="../R.html">
  <span class="dropdown-text">R Resouces</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Quarto.html">
+    <a class="dropdown-item" href="../Quarto.html">
  <span class="dropdown-text">Quarto</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./git.html">
+    <a class="dropdown-item" href="../git.html">
  <span class="dropdown-text">git and github</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -148,14 +149,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a></li>
+  <li><a href="#lesson-slides" id="toc-lesson-slides" class="nav-link" data-scroll-target="#lesson-slides">Lesson slides</a></li>
+  <li><a href="#hands-on-exercise" id="toc-hands-on-exercise" class="nav-link" data-scroll-target="#hands-on-exercise">Hands-on Exercise</a>
+  <ul class="collapse">
+  <li><a href="#self-reading-before-meet-up" id="toc-self-reading-before-meet-up" class="nav-link" data-scroll-target="#self-reading-before-meet-up">Self-reading Before Meet-up</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Weekly Lesson Plan</h1>
+<h1 class="title">Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis</h1>
 </div>
 
 
@@ -163,7 +178,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 21, 2023</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">March 4, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -172,86 +199,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Week</th>
-<th>Date</th>
-<th>Topic</th>
-<th>Student Assignment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>26/8/2024</td>
-<td><a href="outline/Lesson01_outline.html">Introduction to Geospatial Analytics</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>2/9/2024</td>
-<td><a href="outline/Lesson02_outline.html">Spatial Point Patterns Analysis (SPAA)</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>9/9/2024</td>
-<td><a href="outline/Lesson03_outline.html">Advanced Spatial Point Patterns Analysis</a></td>
-<td>Take-home Exercise 1 due.</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>16/9/2024</td>
-<td><a href="outline/Lesson04_outline.html">Spatial Weights and Applications</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>23/9/2024</td>
-<td><a href="outline/Lesson05_outline.html">Global and Local Measures of Spatial Association</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>30/9/2024</td>
-<td><a href="">Geographically Weighted Multivariate Analysis</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>7/10/2024</td>
-<td></td>
-<td>Take-home Exercise 2 due.</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>14/10/2024</td>
-<td><a href="">Geographically Weighted Explanatory Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>21/10/2024</td>
-<td><a href="">Geographically Weighted Predictive Models</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td>28/10/2024</td>
-<td><a href="">Spatial Interaction Models</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10</td>
-<td>4/11/2024</td>
-<td><a href="">Modelling Geographic of Accessibility</a></td>
-<td>Take-home Exercise 3 due.</td>
-</tr>
-</tbody>
-</table>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+</section>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<ul>
+<li>Basic concepts of geographic segmentation</li>
+<li>Conventional cluster analysis techniques</li>
+<li>Approaches for clustering geographically referenced data
+<ul>
+<li>Hierarchical clustering with spatial constraints</li>
+<li>Minimum spanning trees</li>
+<li>ClustGeo method</li>
+</ul></li>
+</ul>
+</section>
+<section id="lesson-slides" class="level2">
+<h2 class="anchored" data-anchor-id="lesson-slides">Lesson slides</h2>
+<ul>
+<li><a href="..\lesson\Lesson07\Lesson07-SCCA.html">Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis</a> slides.</li>
+</ul>
+</section>
+<section id="hands-on-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="hands-on-exercise">Hands-on Exercise</h2>
+<ul>
+<li><a href="https://r4gdsa.netlify.app/chap12.html">12 Geographical Segmentation with Spatially Constrained Clustering Techniques</a></li>
+</ul>
+<section id="self-reading-before-meet-up" class="level3">
+<h3 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h3>
+<p>To read before class:</p>
+<ul>
+<li><p>Assuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees”. <em>International Journal of Geographical Information Science</em> 20: 797-811. (Available in SMU digital library)</p></li>
+<li><p>Chavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” <em>Computational Statistics</em>, 33: 1799-1822. (Available in SMU digital library)</p></li>
+</ul>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<ul>
+<li>Rovan, J. and Sambt, J. (2003) <a href="http://mrvar.fdv.uni-lj.si/pub/mz/mz19/rovan.pdf">“Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”</a>, <em>Developments in Applied Statistics</em>, pp.&nbsp;265-278.<br>
+</li>
+<li>Demeter, T. and Bratucu, G. (2013) <a href="https://webbut.unitbv.ro/index.php/Series_V/article/view/5438">“Statistical Analysis Of The EU Countries from A Touristic Point of View”</a>, <em>Bulletin of the Transilvania University of Braşov</em>, 6(55): 121-130.</li>
+<li>Brown, N.S. &amp; Watson, P. (2012) <a href="https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf">“What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”</a>, Western Economics Forum. Pp.22-37.</li>
+<li>Jaya, I.G.M., Ruchjana, B.N., Andriyana, Y. &amp; Agata, R (2019) <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1397/1/012068">“Clustering with spatial constraints: The case of diarrhea in Bandung city, Indonesia”</a></li>
+<li>de Souza, D. C. &amp; Taconeli, C. A. (2022) “Spatial and non-spatial clustering algorithm in the analysis of Brazilian educational data”, <em>Communications in Statistics: Case Studies, Data Analysis, and Applications</em>. Vol. 8, No.&nbsp;4, 588-606. (Available in SMU digital library)</li>
+</ul>
+</section>
+<section id="all-about-r" class="level3">
+<h3 class="anchored" data-anchor-id="all-about-r">All About R</h3>
+<ul>
+<li><a href="http://uc-r.github.io/hc_clustering">Hierarchical Cluster Analysis</a>.</li>
+<li><a href="https://www.rdocumentation.org/packages/spdep/versions/0.8-1/topics/skater">skater</a>: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.</li>
+<li><a href="https://cran.r-project.org/web/packages/ClustGeo/index.html">ClustGeo: Hierarchical Clustering with Spatial Constraints</a>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/ClustGeo/vignettes/intro_ClustGeo.html">Introduction to Clustgeo</a></li>
+</ul></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
