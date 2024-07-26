@@ -17,15 +17,13 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
     -   Spatial Point Patterns in real world
 -   1st Order Spatial Point Patterns Analysis
     -   Kernel Density Estimation (KDE)
--   Network Constrained Kernel Density Estimation (NCKDE)
-    -   Basic concepts of network constrained spatial point patterns
-    -   Network Constrained KDE methods
-    -   The Three versions of Network Constrained KDE
--   Temporal Network Kernel Density Estimation (TNKED)
-    -   Tempotal dimension
-    -   Spatial dimension
-    -   Spatio-temporal point patterns
-    -   The Temporal Network Kernel Density Estimation method
+-   2nd Order Spatial Point Patterns Analysis
+    -   Nearest Neighbour Index
+    -   G-function
+    -   F-function
+    -   K-function
+    -   L-function
+
 
 ## Lesson Slides
 
@@ -35,7 +33,7 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
 
 -   [Chapter 4: 1st Order Spatial Point Patterns Analysis Methods](https://r4gdsa.netlify.app/chap04.html)
 
--   [Chapter 7: Network Constrained Spatial Point Patterns Analysis](https://r4gdsa.netlify.app/chap07.html)
+-   [Chapter 5: 2nd Order Spatial Point Patterns Analysis Methods](https://r4gdsa.netlify.app/chap05.html)
 
 ### Self-reading Before Meet-up
 
@@ -59,9 +57,6 @@ Prof. Luc Anselin on point pattern analysis (YouTube):
 -   O'Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.
 -   Baddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.
 -   Chapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4 • Ripley's K-function.
--   ATSUYUKI OKABE, TOSHIAKI SATOH & KOKICHI SUGIHARA (2009) "A kernel density estimation method for networks, its computational method and a GIS-based tool", *International Journal of Geographical Information Science*, Vol. 23, No. 1, January 2009, pp. 7–32.
--   Ikuho Yamada & Jean-Claude Thill (2007) "Local Indicators of Network-Constrained Clusters in Spatial Point Patterns", *Geographical Analysis*, Vol. 39, pp 268–292.
--   Jérémy Gelb & Philippe Apparicio (2023) ["Temporal Network Kernel Density Estimation"](https://onlinelibrary.wiley.com/doi/full/10.1111/gean.12368), Geographical Analysis. (Online open access version)
 
 ### Applications
 
@@ -74,9 +69,4 @@ Prof. Luc Anselin on point pattern analysis (YouTube):
 
 -   [spatstat](https://cran.r-project.org/web/packages/spatstat/index.html) at R Cran
     -   [spatstat](https://spatstat.org/resources.html) resource.
--   [spNetwork](https://jeremygelb.github.io/spNetwork/index.html): An R package to perform spatial analysis on networks.
-    -   [Building graphs](https://jeremygelb.github.io/spNetwork/articles/NetworkBuilding.html)
-    -   [Spatial Weight Matrices](https://jeremygelb.github.io/spNetwork/articles/SpatialWeightMatrices.html)
-    -   [Details about NKDE](https://jeremygelb.github.io/spNetwork/articles/web_vignettes/NKDEdetailed.html)
-    -   [Network Kernel Density Estimate](https://jeremygelb.github.io/spNetwork/articles/NKDE.html)
-    -   [Temporal Network Kernel Density Estimate](https://jeremygelb.github.io/spNetwork/articles/TNKDE.html)
+
