@@ -375,7 +375,7 @@
     "href": "outline/Lesson04_outline.html#content",
     "title": "Lesson 4: Spatial Weights and Applications",
     "section": "Content",
-    "text": "Content\n\nTobler’s First law of Geography\nPrinciples of Spatial Autocorrelation\nConcepts of Spatial Proximity and Spatial Weights\n\nContiguity-Based Spatial Weights: Rook’s & Queen’s\nDistance-Band Spatial Weights: fixed and adaptive\n\nApplications of Spatial Weights\n\nGlobal measures of spatial autocorrelation\nCorrelogram"
+    "text": "Content\n\nTobler’s First law of Geography\nPrinciples of Spatial Autocorrelation\nConcepts of Spatial Proximity and Spatial Weights\n\nContiguity-Based Spatial Weights: Rook’s & Queen’s\nDistance-Band Spatial Weights: fixed and adaptive\n\nApplications of Spatial Weights\n\nSpatially lagged variables\nGeographically Weighted Summary Statistics\nSpatially lagged rates"
   },
   {
     "objectID": "outline/Lesson04_outline.html#lesson-slides-and-hands-on-notes",

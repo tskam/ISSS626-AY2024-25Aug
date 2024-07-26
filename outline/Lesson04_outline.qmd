@@ -20,8 +20,9 @@ Computing spatial weight is an essential step toward measuring the strength of t
     -   Contiguity-Based Spatial Weights: Rook's & Queen's
     -   Distance-Band Spatial Weights: fixed and adaptive
 -   Applications of Spatial Weights
-    -   Global measures of spatial autocorrelation
-    -   Correlogram
+    -   Spatially lagged variables
+    -   Geographically Weighted Summary Statistics
+    -   Spatially lagged rates
 
 ## Lesson Slides and Hands-on Notes
 
