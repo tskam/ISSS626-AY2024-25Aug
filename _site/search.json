@@ -102,7 +102,7 @@
     "href": "git.html#blog-post",
     "title": "Git and Github",
     "section": "Blog post",
-    "text": "Blog post\n\nGetting starting with git and GitHub using RStudio\ngit\nTransform a folder as git project synchronized on Github or Gitlab\nRecovering from common Git predicaments\ngit in RStudio\nSolving git(GitHub) token issue"
+    "text": "Blog post\n\ngit in RStudio\nSolving git(GitHub) token issue\nGetting starting with git and GitHub using RStudio\ngit\nTransform a folder as git project synchronized on Github or Gitlab\nRecovering from common Git predicaments"
   },
   {
     "objectID": "Quarto.html",

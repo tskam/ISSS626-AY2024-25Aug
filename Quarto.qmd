@@ -2,7 +2,7 @@
 title: "All About Quarto"
 description: |
   This page provides links to useful recourses of Quarto.
-date: "13 Nov, 2023"
+date: "July 21, 2024"
 date-modified: "last-modified"
 format: html
 editor: visual
