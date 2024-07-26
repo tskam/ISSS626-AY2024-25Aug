@@ -8,18 +8,19 @@ execute:
   freeze: true
 ---
 
-In this lesson, you will learn the basic concepts of Network Constrained KDE and Temporal Network Kernel Density Estimate. Using real-world use cases, you will also gain hands-on experience on using [spNetwork](https://jeremygelb.github.io/spNetwork/index.html) to analyse spatial point patterns and temporal spatial along networks
+In this lesson, you will learn two advanced spatial point patterns analysis methods, they are: spatiotemporal KDE and the Network Constrained KDE. Using real-world use cases, you will also gain hands-on experience on using [spNetwork](https://jeremygelb.github.io/spNetwork/index.html) to analyse spatial point patterns and temporal spatial point event along networks.
 
 ## Content
 
+-   Spatiotemporal Kernel Density Estimation
 -   Network Constrained Kernel Density Estimation (NCKDE)
     -   Basic concepts of network constrained spatial point patterns
     -   Network Constrained KDE methods
     -   The Three versions of Network Constrained KDE
 -   Temporal Network Kernel Density Estimation (TNKED)
-    -   Tempotal dimension
+    -   Temporal dimension
     -   Spatial dimension
-    -   Spatio-temporal poit patterns
+    -   Spatiotemporal point patterns
     -   The Temporal Network Kernel Density Estimation method
 
 ### Lesson Slides and Hands-on Notes

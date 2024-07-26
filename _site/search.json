@@ -480,14 +480,14 @@
     "href": "outline/Lesson03_outline.html",
     "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "",
-    "text": "In this lesson, you will learn the basic concepts of Network Constrained KDE and Temporal Network Kernel Density Estimate. Using real-world use cases, you will also gain hands-on experience on using spNetwork to analyse spatial point patterns and temporal spatial along networks"
+    "text": "In this lesson, you will learn two advanced spatial point patterns analysis methods, they are: spatiotemporal KDE and the Network Constrained KDE. Using real-world use cases, you will also gain hands-on experience on using spNetwork to analyse spatial point patterns and temporal spatial point event along networks."
   },
   {
     "objectID": "outline/Lesson03_outline.html#content",
     "href": "outline/Lesson03_outline.html#content",
     "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "Content",
-    "text": "Content\n\nNetwork Constrained Kernel Density Estimation (NCKDE)\n\nBasic concepts of network constrained spatial point patterns\nNetwork Constrained KDE methods\nThe Three versions of Network Constrained KDE\n\nTemporal Network Kernel Density Estimation (TNKED)\n\nTempotal dimension\nSpatial dimension\nSpatio-temporal poit patterns\nThe Temporal Network Kernel Density Estimation method\n\n\n\nLesson Slides and Hands-on Notes\n\nLesson 4 slides\nHands-on Exercise 4: Network Constrained Spatial Point Patterns Analysis."
+    "text": "Content\n\nSpatiotemporal Kernel Density Estimation\nNetwork Constrained Kernel Density Estimation (NCKDE)\n\nBasic concepts of network constrained spatial point patterns\nNetwork Constrained KDE methods\nThe Three versions of Network Constrained KDE\n\nTemporal Network Kernel Density Estimation (TNKED)\n\nTemporal dimension\nSpatial dimension\nSpatiotemporal point patterns\nThe Temporal Network Kernel Density Estimation method\n\n\n\nLesson Slides and Hands-on Notes\n\nLesson 4 slides\nHands-on Exercise 4: Network Constrained Spatial Point Patterns Analysis."
   },
   {
     "objectID": "outline/Lesson03_outline.html#lesson-slides",
