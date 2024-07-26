@@ -1,9 +1,13 @@
 ---
-title: "Lesson 8: Geographically Weighted Regression"
-date: "January 29, 2023"  
+title: "Lesson 7: Geographically Weighted Regression"
+date: "July 21, 2024"
 date-modified: "last-modified"
-format: html
-editor: visual
+output:
+  html:
+    toc: true
+    toc_depth: 3
+execute: 
+  freeze: true
 ---
 
 In this lesson, you will learn the basic concepts and methods of geographically weighted regression.

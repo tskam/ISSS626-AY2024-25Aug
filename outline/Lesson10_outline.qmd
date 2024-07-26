@@ -1,9 +1,13 @@
 ---
 title: "Lesson 10: Modelling Geographic of Accessibility"
-date: "December 29, 2022"
-date-modified:  "last-modified"
-format: html
-editor: visual
+date: "July 21, 2024"
+date-modified: "last-modified"
+output:
+  html:
+    toc: true
+    toc_depth: 3
+execute: 
+  freeze: true
 ---
 
 ## Content

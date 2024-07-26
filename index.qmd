@@ -1,5 +1,7 @@
 ---
 title: "ISSS626 AY2024-25 October Term"
+execute: 
+  freeze: true
 ---
 
 # Welcome to the ISSS626 Geospatial Analytics and Applications

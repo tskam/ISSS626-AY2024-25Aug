@@ -1,9 +1,13 @@
 ---
-title: "Lesson 9: Geographically Weighted Predictive Modelling"
-date: "December 29, 2022"
-date-modified:  "last-modified"
-format: html
-editor: visual
+title: "Lesson 8: Geographically Weighted Predictive Modelling"
+date: "July 21, 2024"
+date-modified: "last-modified"
+output:
+  html:
+    toc: true
+    toc_depth: 3
+execute: 
+  freeze: true
 ---
 
 ## Content

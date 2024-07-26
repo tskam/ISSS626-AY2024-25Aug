@@ -4,6 +4,8 @@ date: "July 21, 2024"
 date-modified: "last-modified"
 format: html
 editor: visual
+execute: 
+  freeze: true
 ---
 
 In this lesson, you will learn the basic concepts of Network Constrained KDE and Temporal Network Kernel Density Estimate. Using real-world use cases, you will also gain hands-on experience on using [spNetwork](https://jeremygelb.github.io/spNetwork/index.html) to analyse spatial point patterns and temporal spatial along networks

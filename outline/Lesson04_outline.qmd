@@ -6,6 +6,8 @@ output:
   html:
     toc: true
     toc_depth: 3
+execute: 
+  freeze: true
 ---
 
 Computing spatial weight is an essential step toward measuring the strength of the spatial relationships between objects. In this lesson, the basic concept of spatial weight will be introduced. This is followed by a discussion of methods to compute spatial weights.

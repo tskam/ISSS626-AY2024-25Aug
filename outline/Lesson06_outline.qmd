@@ -1,9 +1,13 @@
 ---
-title: "Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis"
-date: "February 21, 2023"
+title: "Lesson 6: Geographic Segmentation with Spatially Constrained Cluster Analysis"
+date: "July 21, 2024"
 date-modified: "last-modified"
-format: html
-toc: true
+output:
+  html:
+    toc: true
+    toc_depth: 3
+execute: 
+  freeze: true
 ---
 
 ## Overview

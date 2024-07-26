@@ -1,11 +1,13 @@
 ---
 title: "Lesson 5: Global and Local Measures of Spatial Autocorrelation"
-date: "February 21, 2023"
+date: "July 21, 2024"
 date-modified: "last-modified"
 output:
   html:
     toc: true
     toc_depth: 3
+execute: 
+  freeze: true
 ---
 
 In this lesson, you will learn a collection of geospatial statistical methods specially designed for measuring global and local spatial association.
@@ -39,9 +41,6 @@ These spatial statistics are well suited for:
 -   [Hands-on Exercise 5: Global Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap09.html).
 
 -   [Hands-on Exercise 5: Local Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap10.html)
-
-
-
 
 ## Self-reading Before Meet-up
 

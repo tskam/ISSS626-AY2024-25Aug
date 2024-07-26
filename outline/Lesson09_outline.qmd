@@ -1,9 +1,13 @@
 ---
 title: "Lesson 9: Spatial Interaction Models"
-date: "January 29, 2023"  
+date: "July 21, 2024"
 date-modified: "last-modified"
-format: html
-editor: visual
+output:
+  html:
+    toc: true
+    toc_depth: 3
+execute: 
+  freeze: true
 ---
 
 In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models.
