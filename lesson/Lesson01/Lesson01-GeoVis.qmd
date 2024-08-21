@@ -1,5 +1,5 @@
 ---
-title: 'Lesson 2: <br/>GeoVisualisation and Analytical Mapping<br/>tmap Methods'
+title: 'Lesson 1: <br/>GeoVisualisation and Analytical Mapping<br/>tmap Methods'
 subtitle: ""
 author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
 institute: "School of Computing and Information Systems,<br/>Singapore Management University"
@@ -11,7 +11,9 @@ format:
     show-notes: false
     slide-number: true
     show-slide-number: all
-date-format: "DD MMM YYYY"    
+date-format: "DD MMM YYYY"
+execute: 
+  freeze: true
 editor: visual
 ---
 
@@ -645,9 +647,9 @@ tm_shape(mpszpop2020)+
 Beside map style, **tmap** also also provides arguments to draw other map furniture such as compass, scale bar and grid lines. In the choropleth below, [`tm_compass()`](https://r-tmap.github.io/tmap/reference/tm_compass.html), [`tm_scale_bar()`](https://r-tmap.github.io/tmap/reference/tm_scale_bar.html) and [`tm_grid()`](https://r-tmap.github.io/tmap/reference/tm_grid.html) are used to add compass, scale bar and grid lines onto the choropleth map.
 :::
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ### The code
+
 ```{r}
 #| echo: true
 #| eval: false
@@ -696,7 +698,6 @@ tm_shape(mpszpop2020)+
              position = c("left", "bottom"))
 ```
 :::
-
 
 ------------------------------------------------------------------------
 
