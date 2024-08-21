@@ -1,5 +1,5 @@
 ---
-title: 'Lesson 1: Geospatial Data Science with R: sf approach and methods'
+title: 'Lesson 1: Fundemantal of Geospatial Data and sf Methods'
 subtitle: ""
 author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
 institute: "School of Computing and Information Systems,<br/>Singapore Management University"
@@ -13,6 +13,8 @@ format:
     show-slide-number: all
 date-format: "DD MMM YYYY"    
 editor: visual
+execute: 
+  freeze: true
 ---
 
 ## Content
