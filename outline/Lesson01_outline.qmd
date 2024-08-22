@@ -19,22 +19,23 @@ This lesson consists of three parts. First, it provides an overview of geospatia
     -   Motivation of Geospatial Analytics
     -   A Tour Through the Geospatial Analytics Zoo
     -   Geospatial Analytics and Social Consciousness
--   Geospatial Data Science
+-   Fundamentals of Geospatial Data and sf Methods
     -   An overview of Geospatial Data Models
     -   Map Projection and Georeferencing
     -   Geocoding
     -   Classes of Spatial Data in R: Simple features class
--   Geospatial Visualisation
+    -   sf methods
+-   Fundamentals of Geospatial Data Visualisation and tmap Methods
     -   Classification of maps
     -   Principles of map design
     -   Thematic mapping techniques
-    -   Introducing tmap
+    -   tmap methods
 
 ## Lesson Slides
 
 -   [Lesson 1: Introduction to Geospatial Analytics](..\lesson\Lesson01\Lesson01-Introduction_to_GAA.html) slides.
--   [Lesson 1: Geospatial Data Science with R](..\lesson\Lesson01\Lesson01-GDS.html) slides.
--   [Lesson 1: GeoVisualisation and Thematic Mapping Mapping](..\lesson\Lesson01\Lesson01-GeoVis.html) slides.
+-   [Lesson 1: Fundamentals of Geospatial Data and sf Methods](..\lesson\Lesson01\Lesson01-GDS.html) slides.
+-   [Lesson 1: Fundamental of Geospatial Data Visualisationand tmap Methods Mapping](..\lesson\Lesson01\Lesson01-GeoVis.html) slides.
 
 ## Self-reading Before Lesson
 
