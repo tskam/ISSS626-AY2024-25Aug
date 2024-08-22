@@ -34,7 +34,7 @@ This lesson consists of three parts. First, it provides an overview of geospatia
 ## Lesson Slides
 
 -   [Lesson 1: Introduction to Geospatial Analytics](..\lesson\Lesson01\Lesson01-Introduction_to_GAA.html) slides.
--   [Lesson 1: Fundamentals of Geospatial Data and sf Methods](..\lesson\Lesson01\Lesson01-GDS.html) slides.
+-   [Lesson 1: Fundamentals of Geospatial Data and sf Methods](..\lesson\Lesson01\Lesson01-Geospatial_data.html) slides.
 -   [Lesson 1: Fundamental of Geospatial Data Visualisationand tmap Methods Mapping](..\lesson\Lesson01\Lesson01-GeoVis.html) slides.
 
 ## Self-reading Before Lesson

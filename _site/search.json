@@ -968,77 +968,77 @@
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#content",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#content",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "Content",
     "text": "Content\n\nAn overview of Geospatial Data Models\n\nVector and raster data model\nCoordinate systems and map projection\n\nHandling Geospatial Data in R: An Overview\nSimple features approach\n\nsf package\n\n\n\nThis lesson consists of two parts. First, I will talk about Geospatial Data Models. For students who have taken SMT201 GIS for Urban Planning, this is not new at all. However, for students who did not read SMT201, this will be new. Anyway, the focus of this section will be on R. Hence, even for students who have taken SMT201 before, this will be a good revision.\nIn part two of this lesson, I will introduce sp package. It is a relatively new R package specially developed to handle geospatial data R using tidyverse principle."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#geospatial-data-models",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#geospatial-data-models",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "Geospatial Data Models",
     "text": "Geospatial Data Models\nWhy should we worry about?\n\n\nIt is important for us to note that what ever data capture in a database is a model of the real world. When we say model, this means that it is a simplify version of the real world and not the real world themselves."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#basic-spatial-data-models",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#basic-spatial-data-models",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "Basic Spatial Data Models",
     "text": "Basic Spatial Data Models\n\nVector - implementation of discrete object conceptual model\n\nPoint, line and polygon representations.\nWidely used in cartography, and network analysis.\n\nRaster – implementation of field conceptual model\n\nArray of cells used to represent objects.\nUseful as background maps and for spatial analysis.\n\n\n\nIn general, there are two types of geospatial data models, namely vector and raster data models.\nVector data model tends to be used to store geospatial data that are discrete in nature. For example bus stop, building footprint, planning area.\nRaster data model, one the other hands, are used to store continuous fenomena such as air polution, elevation and precipitation."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#coordinate-systems-and-map-projections",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#coordinate-systems-and-map-projections",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "Coordinate Systems and Map Projections",
     "text": "Coordinate Systems and Map Projections\nWhat is a coordinate system?\n\n\nA coordinate system is an important property of an geospatial data. It provides a location reference to the geospatial data.\n\nThere are two common types of coordinate systems used in mapping, namely: geographic coordinate systems and projected coordinate system.\n\n\n\n\n\n\n\nFurther Reading\n\n\n\nRefer to this article and Chapter 9 Coordinate Systems to learn more about map projection.\n\n\n\n\n\n\n\n\n\n\nA coordinate system is a reference system used to represent the locations of geographic features, imagery, and observations such as GPS locations within a common geographic framework.\nEach coordinate system is defined by:\n\nIts measurement framework which is either geographic (in which spherical coordinates are measured from the earth’s center) or planimetric (in which the earth’s coordinates are projected onto a two-dimensional planar surface).\nUnit of measurement (typically feet or meters for projected coordinate systems or decimal degrees for latitude–longitude).\nThe definition of the map projection for projected coordinate systems.\nOther measurement system properties such as a spheroid of reference, a datum, and projection parameters like one or more standard parallels, a central meridian, and possible shifts in the x- and y-directions."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#standard-for-geospatial-data-handling-and-analysis",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#standard-for-geospatial-data-handling-and-analysis",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "Standard for Geospatial Data Handling and Analysis",
     "text": "Standard for Geospatial Data Handling and Analysis\n\n\n\n\n\n\n\nFurther Reading\n\n\nFor more information, visit this link.\n\n\n\n\nThe OGC OpenGIS Implementation Standard for Geographic Information / ISO 19125 defines:\n\nGeometric objects which can be of type point, line, polygon, multi-point, etc, and are associated to a given Coordinate Reference System;\nMethods on geometric objects return properties like dimension, boundary, area, centroid, etc;\nMethods for testing spatial relations between geometric objects equals, disjoint, intersects, touches, crosses, within, contains, overlaps and relate, which returns TRUE or FALSE;\nMethods that support spatial analysis distance, which returns a distance, and buffer, convex hull, intersection, union, difference, and symmetric difference, which returns new geometric objects.\n\nSource: www.opengeospatial.org/standards/sfa"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#an-introduction-to-simple-features",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#an-introduction-to-simple-features",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "An introduction to simple features",
     "text": "An introduction to simple features\n\nfeature: abstraction of real world phenomena (type or instance); has a geometry and other attributes (properties)\nsimple feature: feature with all geometric attributes described piecewise by straight line or planar interpolation between sets of points (no curves)\nIt is a hierarchical data model that simplifies geographic data by condensing a complex range of geographic forms into a single geometry class."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#geospatial-data-object-framework",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#geospatial-data-object-framework",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "Geospatial Data Object Framework",
     "text": "Geospatial Data Object Framework\n\nTo begin with, all contributed packages for handling spatial data in R had different representations of the data. This made it difficult to exchange data both within R between packages, and between R and external le formats and applications.\nThe first general package to provide classes and methods for spatial data types that was developed for R is called sp. It was first released on CRAN in 2005.\nIn late October 2016, sf was first released on CRAN to provide standardised support for vector data in R."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#r-packages-that-support-spatial-classes",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#r-packages-that-support-spatial-classes",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "R packages that support spatial classes",
     "text": "R packages that support spatial classes\nIn general, three R packages will be used to handle vector-based geospatial data in spatial classes, they are:\n\nsp provides classes and methods for dealing with spatial data in R.\nrgdal allows R to understand the structure of a geospatial data file by providing functions to read and convert geospatial data into easy-to-work-with R dataframes.\nrgeos implements the methods of the OGC standard."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#introducing-sf-package",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#introducing-sf-package",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "Introducing sf Package",
     "text": "Introducing sf Package\n\nsf package provides a syntax and data-structures which are coherent with the tidyverse.\nA quick introduction can be found here.\nFor more detail, visit this link."
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#sf-functions",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#sf-functions",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "sf functions",
     "text": "sf functions\n\nGeospatial data handling\nGeometric confirmation\nGeometric operations\nGeometry creation\nGeometry operations\nGeometric measurement"
   },
   {
     "objectID": "lesson/Lesson01/Lesson01-Geospatial_Data.html#references",
     "href": "lesson/Lesson01/Lesson01-Geospatial_Data.html#references",
-    "title": "Lesson 1: Fundemantal of Geospatial Data and sf Methods",
+    "title": "Lesson 1: Fundamental of Geospatial Data and sf Methods",
     "section": "References",
     "text": "References\nAll About sf package\n\n\nReference manual\nTidy spatial data analysis\n\nVignettes:\n\nSimple Features for R\nReading, Writing and Converting Simple Features\nManipulating Simple Feature Geometries\nManipulating Simple Features\nPlotting Simple Features\nMiscellaneous\nSpherical geometry in sf using s2geometry\n\nOthers:\n\nR spatial follows GDAL and PROJ development"
   },
