@@ -11,8 +11,8 @@
   <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems(Practice)">
-  <meta name="dcterms.date" content="2024-08-21">
-  <title>ISSS626 Geospatial Analytics and Applications - Lesson 1: GeoVisualisation and Analytical Mappingtmap Methods</title>
+  <meta name="dcterms.date" content="2024-08-22">
+  <title>ISSS626 Geospatial Analytics and Applications - Lesson 1: Fundamental of Geospatial Data Visualisation and tmap Methods</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -392,7 +392,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lesson 1: <br>GeoVisualisation and Analytical Mapping<br>tmap Methods</h1>
+  <h1 class="title">Lesson 1: <br>Fundamental of Geospatial Data Visualisation and tmap Methods</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -405,30 +405,21 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
     </div>
 </div>
 
-  <p class="date">21 Aug 2024</p>
+  <p class="date">22 Aug 2024</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
-<div style="font-size: 0.9em">
 <ul>
-<li>Choropleth Mapping with in R
+<li>Introducing maps</li>
+<li>Typology of maps
 <ul>
-<li>Type of choropleth map</li>
-<li>Choosing number of classes</li>
-<li>Data classification methods</li>
-<li>Selecting colour scheme</li>
+<li>Reference maps</li>
+<li>Thematic maps</li>
 </ul></li>
-<li>tmap Methods
-<ul>
-<li>tmap framewok</li>
-<li>tmap elements</li>
-<li>tmap layers</li>
-<li>tmap layout</li>
-<li>tmap style</li>
-<li>tmap facet</li>
-</ul></li>
+<li>Proportional Symbol Map</li>
+<li>Choropleth Mapping</li>
+<li>Introduction to tmap Methods</li>
 </ul>
-</div>
 <aside class="notes">
 <p>This lesson consists of two parts. First, I will share with you the concepts and design principles of choropleth maps. Next, I will introduce you to tmap, an R package specially designed for thematic mapping based on Layered Grammar of Graphics</p>
 <style type="text/css">
@@ -442,6 +433,266 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="what-is-a-map" class="slide level2">
+<h2>What is a Map?</h2>
+<p>A model of real world depict by a collection of cartographic symbols or/and visual abstraction.</p>
+
+<img data-src="img/image6-1.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="what-is-a-map-1">What is a Map?</h3>
+<p>An interface between geographical data and map users.</p>
+
+<img data-src="img/image6-1b.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="a-map-and-geographical-data">A Map and Geographical Data</h3>
+
+<img data-src="img/image6-1c.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="types-of-geographical-data">Types of geographical data</h3>
+
+<img data-src="img/image6-1d.jpg" class="r-stretch"></section>
+<section id="typology-of-maps" class="slide level2">
+<h2>Typology of Maps</h2>
+
+<img data-src="img/image6-6.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="reference-maps">Reference maps</h3>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ul>
+<li>Reference maps emphasize the location of spatial phenomena, such buildings, roads, vegetations, rivers, etc. Some of popular reference maps are <strong>topographical map</strong> and internet map such as Google map.</li>
+</ul>
+</div><div class="column" style="width:65%;">
+<p><img data-src="img/image6-7.jpg"></p>
+</div>
+</div>
+<aside class="notes">
+<p>Topographic maps are detailed, accurate graphic representations of features that appear on the Earth’s surface. These features include: cultural: roads, buildings, urban development, railways, airports, names of places and geographic features, administrative boundaries, state and international borders, reserves hydrography: lakes, rivers, streams, swamps, coastal flats relief: mountains, valleys, slopes, depressions vegetation: wooded and cleared areas, vineyards and orchards.</p>
+<p>A map legend (or key) lists the features shown on that map, and their corresponding symbols. Topographic maps usually show a geographic graticule and a coordinate grid, so you can determine relative and absolute positions of mapped features.<br>
+It is important to note that a map is merely a two or three dimensional representation of the physical environment at a given time. Therefore, a map will never be entirely up to date. Changes to the landscape and cultural features regularly occur (such as roads, vegetation, and buildings), resulting in maps becoming dated, although the rate of obsolescence varies depending upon location. Traditionally present in paper printed format.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<h3 id="thematic-map">Thematic Map</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Thematic maps emphasize the spatial pattern of geographic attributes or statistics about places and relationships between places such as Life in Los Angeles.</li>
+</ul>
+<div style="font-size: 0.65em">
+<p>Source: <a href="https://mapdesign.icaci.org/2014/12/mapcarte-353365-life-in-los-angeles-by-eugene-turner-1977/">Life in Los Angeles</a></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/image6-8.jpg"></p>
+</div>
+</div>
+</section>
+<section id="thematic-mapping-principles-and-methods" class="slide level2">
+<h2>Thematic Mapping: Principles and Methods</h2>
+<ul>
+<li>Displaying
+<ul>
+<li>Qualitative data</li>
+<li>Quantitative data</li>
+</ul></li>
+<li>Choosing -Appropriate classification method for displaying data
+<ul>
+<li>Appropriate number of classes</li>
+</ul></li>
+<li>Techniques in data analysis
+<ul>
+<li>Using the classification histogram</li>
+<li>Normalizing data</li>
+</ul></li>
+</ul>
+</section>
+<section id="qualitative-thematic-maps" class="slide level2">
+<h2>Qualitative Thematic Maps</h2>
+<h3 id="visual-variables-and-cartographic-symbols">Visual Variables and Cartographic Symbols</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Qualitative visual variables are used for nominal scale data.</li>
+<li>The goal of qualitative visual variables is to show how entities differ from each other.</li>
+<li>The visual variables that do a good job of showing ordinal differences are: colour value, colour saturation, size and texture/grain.<br>
+</li>
+<li>Figure on the right for examples of these four ordinal visual variables used each in point, linear and areal symbols.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/image6-9.jpg"></p>
+</div>
+</div>
+</section>
+<section id="qualitative-thematic-map" class="slide level2">
+<h2>Qualitative Thematic Map</h2>
+<h3 id="point-symbol-map">Point symbol map</h3>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Different point symbols are used to represent school types.</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="img/image6-10.jpg"></p>
+</div>
+</div>
+</section>
+<section id="qualitative-thematic-map-1" class="slide level2">
+<h2>Qualitative Thematic Map</h2>
+<h3 id="line-symbol-map">Line symbol map</h3>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>A road map is an example of a thematic map. It shows the road network of an area. In this map, lines with different colour intensity and tickness are used to differentiate hierarchy of roads.</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="img/image6-11.jpg" width="467"></p>
+</div>
+</div>
+</section>
+<section id="qualitative-thematic-map-2" class="slide level2">
+<h2>Qualitative Thematic Map</h2>
+<h3 id="area-map">Area map</h3>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>Land use map below is a good example of a discrete thematic map. In this map, different colours are use to represent different land use types.</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="img/image6-12.jpg"></p>
+</div>
+</div>
+</section>
+<section id="quantitative-thematic-map" class="slide level2">
+<h2>Quantitative Thematic Map</h2>
+<h3 id="visual-variables-and-cartographic-symbols-1">Visual Variables and Cartographic Symbols</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Quantitative visual variables are used to display ordinal, interval or ratio scale data.<br>
+</li>
+<li>The goal of the quantitative visual variable is to show relative magnitude or order between entities.</li>
+<li>The visual variables that do a good job of showing ordinal differences are: colour value, colour saturation, size and texture/grain.<br>
+</li>
+<li>Figure on the right shows of these four ordinal visual variables used each in point, linear and areal symbols.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/image6-13.jpg"></p>
+</div>
+</div>
+</section>
+<section id="proportional-symbol-map" class="slide level2">
+<h2>Proportional Symbol Map</h2>
+<ul>
+<li>The proportional symbol technique uses symbols of different sizes to represent data associated with different areas or locations within the map.</li>
+</ul>
+
+<img data-src="img/image6-14.jpg" class="r-stretch"><aside class="notes">
+<p>The proportional symbol technique uses symbols of different sizes to represent data associated with different areas or locations within the map. For example, the proportional maps above use circle with different sizes to represent millions of people. There are two types of point features that are typically depicted with proportional symbols: features for which the data represents a geographic position directly (e.g., gallons of oil from individual oil wells), and features that are geographic areas to which data are aggregated and the data magnitudes are assigned to a representative point within the area (e.g., the geographic centroid of a state as in the examples above). In either case, the area of the symbol is scaled to represent the data magnitude, sometimes with a bit of exaggeration to adjust for a general tendency of human vision to underestimate differences in area. A variant on this direct data-to-symbol scaling groups values into categories first, then scales the symbol to represent the mean for the category, assigning a symbol to each place to represent the category range that the mean for the place falls within</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<h3 id="how-to-size-circles-incorrectly-and-correctly">How to size circles incorrectly and correctly?</h3>
+<p>Figure below explains how attribute values are map on circles. One strategy to overcome this problem is to use square instead of circle.</p>
+
+<img data-src="img/image6-16a.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="how-to-make-proportional-symbol-maps-clearer">How to make proportional symbol maps clearer?</h3>
+<p>When designing a proportional symbol map, one of the important consideration is to avoid the circles blocking each other. One possible strategy to overcome this problem is to applying opacity (also known as transparency).</p>
+
+<img data-src="img/image6-16b.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="proportional-symbol-map-pie-chart-map">Proportional Symbol Map: Pie Chart Map</h3>
+<p>One important characteristic of proportional symbols is that they can easily be designed to represent more than one data value per location. Among the most common example is a <strong>pie chart map</strong> in which a circle is scaled proportionally to some total, and the size of wedges within the circle is scaled to depict a proportion of a total for two or more sub-categories.</p>
+
+<img data-src="img/image6-15.jpg" class="r-stretch"><aside class="notes">
+<p>One important characteristic of proportional symbols is that they can easily be designed to represent more than one data value per location. Among the most common example is a “pie chart map” in which a circle is scaled proportionally to some total, and the size of wedges within the circle is scaled to depict a proportion of a total for two or more sub-categories. The map above uses circle size to depict total sales in each city, and the pie slices then depict proportion of the three shipping modes, namely: delivery truck, express air and regular air.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section class="slide level2">
+
+<h3 id="proportional-symbol-map-bar-chart-map">Proportional Symbol Map: Bar Chart Map</h3>
+<p><strong>Proportional side-by-side bar map</strong> places side-by-side bar chart on a map based on the location of the observations.</p>
+
+<img data-src="img/image6-16.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="proportional-symbol-map---junk-map">Proportional Symbol Map - Junk Map</h3>
+<p>When preparing a proportional symbol map, it is important to ensure that the geographical level used is the same.</p>
+
+<img data-src="img/image6-16c.jpg" class="r-stretch"><div style="font-size: 0.65em">
+<p>Source: <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">COVID-19 Dashboard</a></p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="altertive-of-proportional-symbol-map-bricks-map">Altertive of Proportional Symbol Map: Bricks Map</h3>
+<p>Bricks Map aims to provide better ways to encode quantitative information graphically—ways that can be easily, efficiently, and accurately decoded.</p>
+
+<img data-src="img/image6-17.jpg" class="r-stretch"><div style="font-size: 0.65em">
+<p>Source: <a href="http://www.perceptualedge.com/articles/visual_business_intelligence/building_insight_with_bricks.pdf">Building insight with bricks</a>.</p>
+</div>
+</section>
+<section class="slide level2">
+
+<h3 id="bricks-map-versus-proportional-symbol-map">Bricks Map versus Proportional Symbol Map</h3>
+<p>By plotting a proportional symbol map and a bricks map side-by-side as shown below, it is clear that bubbles of graduated sizes proportional to the value ranges that they represent can be difficult to distinguish than the bricks.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/image6-17a.jpg"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/image6-17.jpg"></p>
+</div>
+</div>
+</section>
+<section id="dot-density-map" class="slide level2">
+<h2>Dot Density Map</h2>
+<p>A dot-density map is a type of thematic map that uses dots or other symbols on the map to show the values of one or more numeric data fields. Each dot on a dot-density map represents some amount of data.</p>
+
+<img data-src="img/image6-18.jpg" class="r-stretch"><div style="font-size: 0.5em">
+<p>One dot represent 100 households.</p>
+</div>
+<div style="font-size: 0.65em">
+<p>Reference: <a href="https://en.wikipedia.org/wiki/Dot_distribution_map">Dot distribution map</a> at wiki and <a href="https://www.axismaps.com/guide/dot-density">Dot Density Maps</a></p>
+</div>
 </section>
 <section id="choropleth-map" class="slide level2">
 <h2>Choropleth Map</h2>
