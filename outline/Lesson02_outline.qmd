@@ -26,7 +26,7 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
 
 ## Lesson Slides
 
--   [Lesson 3](..\lesson\Lesson03\Lesson03-SPPA.html) slides.
+-   [Lesson 2](..\lesson\Lesson02\Lesson02-SPPA.html) slides.
 
 ## Hands-on Exercise
 
