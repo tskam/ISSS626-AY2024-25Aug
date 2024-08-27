@@ -1,0 +1,11 @@
+---
+title: "In-class Exrecise 1"
+author: "Dr. Kam Tin Seong"
+date: "Aug 20 2024"
+date-modified: "last-modified"
+execute: 
+  eval: true
+  echo: true
+  message: false
+  freeze: true
+---

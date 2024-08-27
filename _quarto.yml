@@ -10,6 +10,10 @@ website:
       href: syllabus.qmd
     - text: "Lesson Plan"
       href: lesson.qmd
+    - text: "In-class Exercise"
+      menu:
+      - text: "In-class Exercise 1"
+        href: "In-class_Ex/In-class_Ex01/In-class_Ex01.html"
     - text: "Take-home Exercise"
       menu:
       - text: "Take-home Exercise 1"

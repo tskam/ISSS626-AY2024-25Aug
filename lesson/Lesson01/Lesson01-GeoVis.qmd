@@ -11,7 +11,7 @@ format:
     show-notes: false
     slide-number: true
     show-slide-number: all
-date-format: "DD MMM YYYY"
+date-format: "DD/MM/YYYY"
 execute: 
   freeze: true
 editor: visual
@@ -24,7 +24,7 @@ editor: visual
     -   Reference maps
     -   Thematic maps
 -   Proportional Symbol Map
--   Choropleth Mapping 
+-   Choropleth Mapping
 -   Introduction to tmap Methods
 
 ::: notes
