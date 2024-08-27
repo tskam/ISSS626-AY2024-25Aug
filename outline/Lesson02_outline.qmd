@@ -24,7 +24,6 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
     -   K-function
     -   L-function
 
-
 ## Lesson Slides
 
 -   [Lesson 3](..\lesson\Lesson03\Lesson03-SPPA.html) slides.
@@ -35,11 +34,11 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
 
 -   [Chapter 5: 2nd Order Spatial Point Patterns Analysis Methods](https://r4gdsa.netlify.app/chap05.html)
 
-### Self-reading Before Meet-up
+## Core Readings
 
+-   Yuan, Y., Qiang, Y., Bin Asad, K., and Chow, T. E. (2020). [Point Pattern Analysis](https://gistbok-ltb.ucgis.org/page/20/concept/5485). The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.13.
+-   Yin, P. (2020). [Kernels and Density Estimation](https://gistbok-ltb.ucgis.org/page/20/concept/5486). The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.12
 -   [Chapter 7 Spatial Point Pattern Analysis](https://link-springer-com.libproxy.smu.edu.sg/chapter/10.1007/978-1-4614-7618-4_7) of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) **Applied Spatial Data Analysis with R** (2nd Edition), Springer.
--   Yuan, Y., Qiang, Y., Bin Asad, K., and Chow, T. E. (2020). [Point Pattern Analysis](https://gistbok.ucgis.org/bok-topics/point-pattern-analysis). The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.13.
--   Yin, P. (2020). [Kernels and Density Estimation](https://gistbok.ucgis.org/bok-topics/kernels-and-density-estimation). The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.12
 
 ### Enrichment Resources
 
@@ -68,4 +67,3 @@ Prof. Luc Anselin on point pattern analysis (YouTube):
 
 -   [spatstat](https://cran.r-project.org/web/packages/spatstat/index.html) at R Cran
     -   [spatstat](https://spatstat.org/resources.html) resource.
-

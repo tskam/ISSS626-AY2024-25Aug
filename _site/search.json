@@ -459,7 +459,7 @@
     "href": "outline/Lesson02_outline.html#hands-on-exercise",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Hands-on Exercise",
-    "text": "Hands-on Exercise\n\nChapter 4: 1st Order Spatial Point Patterns Analysis Methods\nChapter 5: 2nd Order Spatial Point Patterns Analysis Methods\n\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nYuan, Y., Qiang, Y., Bin Asad, K., and Chow, T. E. (2020). Point Pattern Analysis. The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.13.\nYin, P. (2020). Kernels and Density Estimation. The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.12\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
+    "text": "Hands-on Exercise\n\nChapter 4: 1st Order Spatial Point Patterns Analysis Methods\nChapter 5: 2nd Order Spatial Point Patterns Analysis Methods"
   },
   {
     "objectID": "outline/Lesson02_outline.html#all-about-r",
@@ -1629,5 +1629,12 @@
     "title": "ISSS626 Geospatial Analytics and Applications",
     "section": "",
     "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n        0 0     false"
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#core-readings",
+    "href": "outline/Lesson02_outline.html#core-readings",
+    "title": "Lesson 2: Spatial Point Patterns Analysis",
+    "section": "Core Readings",
+    "text": "Core Readings\n\nYuan, Y., Qiang, Y., Bin Asad, K., and Chow, T. E. (2020). Point Pattern Analysis. The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.13.\nYin, P. (2020). Kernels and Density Estimation. The Geographic Information Science & Technology Body of Knowledge (1st Quarter 2020 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2020.1.12\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
   }
 ]
