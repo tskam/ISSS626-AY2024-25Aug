@@ -1255,9 +1255,9 @@
   {
     "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#content",
     "href": "lesson/Lesson03/Lesson03-SPPA-2.html#content",
-    "title": "Lesson 3: Spatial Point Patterns Analysis",
-    "section": "",
-    "text": "Introducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nKernel Density Estimation (KDE)\nNetwork Constrained Kernel Density Estimation (NKDE)\nTemporal Network Kernel Density Estimation (TNKDE)\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "Content",
+    "text": "Content\n\n\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nKernel Density Estimation (KDE)\nNetwork Constrained Kernel Density Estimation (NKDE)\nTemporal Network Kernel Density Estimation (TNKDE)\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#what-is-spatial-point-patterns",
@@ -1304,16 +1304,16 @@
   {
     "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#network-constrained-kernel-density-estimation-nkde",
     "href": "lesson/Lesson03/Lesson03-SPPA-2.html#network-constrained-kernel-density-estimation-nkde",
-    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "Network Constrained Kernel Density Estimation (NKDE)",
-    "text": "Network Constrained Kernel Density Estimation (NKDE)\nMany real world point event are not randomly distributed. Their distribution, on the other hand, are constrained by network such as roads, rivers, and fault lines just to name a few of them.\n\n\n\nNetwork Constrained Kernel Density Estimation (NKDE) method\nTo calculate a Network Kernel Density Estimate (NKDE), it is possible to:\n\nuse lixels instead of pixels. A lixel is a linear equivalent of a pixel on a network. The lines of the network are split into lixels according to a chosen resolution. The centres of the lixels are sampling points for which the density will be estimated.\ncalculate network distances between objects instead of Euclidean distances.\nadjust the kernel function to deal with the anisotropic space\n\n\n\n\nNKDE Method\n\nTo perform a NKDE, the events must be snapped on the network. The snapped events are shown here in green.\n\n\n\n\n\n\n\n\n\n\n\nNKDE Method\n\n\nThe mass of each event can be seen as a third dimension and is evaluated by a selected kernel function (K) within a specified bandwidth. The kernel function must satisfy the following conditions:\n\nThe total mass of an event is 1, and is spread according to the function K within the bandwidth.\n\nIn the figure below, we can see that the “influence” of each point is limited within the bandwidth and decreases when we move away from the event.\n\n\n\n\n\n\nNKDE Method\n\n\nWith this method, one can evaluate the density of the studied phenomenon at each location on the network. In the figure below, 3 sampling points (s1, s2 and s3) are added in blue.\n\n\nWhere S1, S2, and S3 are calculated by using the formulas below:\n\nand the general formular will be defined as:\n\n\n\n\n\nwith 𝒅𝑠𝑖 the density estimated at the sample point 𝑠𝒊, 𝒃𝑤 the bandwidth and 𝑒𝑗 an event.\n\n\n\n\n\nNKDE Method\n\n\nThe proposed kernel functions in the spNetwork package are:"
+    "text": "Network Constrained Kernel Density Estimation (NKDE)\nMany real world point event are not randomly distributed. Their distribution, on the other hand, are constrained by network such as roads, rivers, and fault lines just to name a few of them."
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#temporal-network-kernel-density-estimate",
     "href": "lesson/Lesson03/Lesson03-SPPA-2.html#temporal-network-kernel-density-estimate",
-    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "Temporal Network Kernel Density Estimate",
-    "text": "Temporal Network Kernel Density Estimate\n\n\nEvents recorded on a network often have a temporal dimension. In that context, one could estimate the density of events in both time and network spaces.\nThe spatio-temporal kernel is calculated as the product of the network kernel density and the time kernel density.\n\nFor a sample point at location l and time t, the Temporal Network Kernel Density Estimate (TNKDE) is calculated as follows:\n\n\n\n\n\n\nQuadrat Analysis – Step 1\n\n\n\nDivide the study area into subregion of equal size,\n\noften squares, but don’t have to be.\n\n\n\n\n\n\n\n\nQuadrat Analysis – Step 2\n\n\n\nCount the frequency of events in each region.\n\n\n\n\n\n\n\nQuadrat Analysis – Step 3\n\n\n\nCalculate the intensity of events in each region.\n\n\n\n\n\n\n\nQuadrat Analysis – Step 4\n\nCalculate the quadrat statistics and perform CSR test.\n\n\n\n\n\nQuadrat Analysis – Variance-Mean Ratio (VMR)\n\nFor an uniform distribution, the variance is zero, - therefore, we expect a variance-mean ratio close to 0.\nFor a random distribution, the variance and mean are the same,\n\ntherefore, we expect a variance-mean ratio close to 1.\n\nFor a cluster distribution, the variance is relatively large,\n\ntherefore, we expect a variance-mean ratio greater than 1.]\n\n\n\n\n\nComplete Spatial Randomness (CSR)\n\n\n\nCSR/IRP satisfy two conditions: - Any event has equal probability of being in any location, a 1st order effect.\n\nThe location of one event is independent of the location of another event, a 2nd order effect.\n\n\nReference: Chapter 12 Hypothesis testing of Intro to GIS and Spatial Analysis\n\n\n\n\n\n\n\nQuadrat Analysis: The interpretation\n\n\n\n\n\n\n\n\nWeaknesses of quadrat analysis\n\n\n\nIt is sensitive to the quadrat size.\n\nIf the quadrat size is too small, they may contain only a couple of points, and\nIf the quadrat size is too large, they may contain too many points.\n\nIt is a measure of dispersion rather than a measure of pattern.\nIt results in a single measure for the entire distribution, so variation within the region are not recognised."
+    "text": "Temporal Network Kernel Density Estimate\n\n\nEvents recorded on a network often have a temporal dimension. In that context, one could estimate the density of events in both time and network spaces.\nThe spatio-temporal kernel is calculated as the product of the network kernel density and the time kernel density.\n\nFor a sample point at location l and time t, the Temporal Network Kernel Density Estimate (TNKDE) is calculated as follows:"
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#distance-based-nearest-neighbour-index",
@@ -1360,7 +1360,7 @@
   {
     "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#references",
     "href": "lesson/Lesson03/Lesson03-SPPA-2.html#references",
-    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "References",
     "text": "References\n\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4\nGIS&T Body of Knowledge AM-07-Point Pattern Analysis\nGIS&T Body of Knowledge AM-08-Kernels and Density Estimation\nAnalyzing Patterns in Business Point Data, Directions Magazine March 17, 2005.\nOkabe, Atsuyuki, and Kokichi Sugihara. 2012. “Spatial Analysis Along Networks: Statistical and Computational Methods”. John Wiley & Sons.\nSugihara, Kokichi, Toshiaki Satoh, and Atsuyuki Okabe. 2010. “Simple and Unbiased Kernel Function for Network Analysis.” In 2010 10th International Symposium on Communications and Information Technologies, 827–32. IEEE.\nXie, Zhixiao, and Jun Yan. 2008. “Kernel Density Estimation of Traffic Accidents in a Network Space.” Computers, Environment and Urban Systems 32 (5): 396–406. Contents"
   },
@@ -1741,5 +1741,47 @@
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "References",
     "text": "References\n\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4\nGIS&T Body of Knowledge AM-07-Point Pattern Analysis\nGIS&T Body of Knowledge AM-08-Kernels and Density Estimation\nAnalyzing Patterns in Business Point Data, Directions Magazine March 17, 2005.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-SPPA-2.html#what-is-spatio-temporal-point-patterns",
+    "href": "lesson/Lesson03/Lesson03-SPPA-2.html#what-is-spatio-temporal-point-patterns",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "What is Spatio-temporal Point Patterns",
+    "text": "What is Spatio-temporal Point Patterns\n\nPoints as Events\nMapped pattern\n\nNot a sample\nSelection bias\n\nEvents are mapped, but non-events are not"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#content",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#content",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "Content",
+    "text": "Content\n\n\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nKernel Density Estimation (KDE)\nNetwork Constrained Kernel Density Estimation (NKDE)\nTemporal Network Kernel Density Estimation (TNKDE)\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#what-is-spatio-temporal-point-patterns",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#what-is-spatio-temporal-point-patterns",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "What is Spatio-temporal Point Patterns",
+    "text": "What is Spatio-temporal Point Patterns\n\nPoints as Events\nMapped pattern\n\nNot a sample\nSelection bias\n\nEvents are mapped, but non-events are not"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#network-constrained-kernel-density-estimation-nkde",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#network-constrained-kernel-density-estimation-nkde",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "Network Constrained Kernel Density Estimation (NKDE)",
+    "text": "Network Constrained Kernel Density Estimation (NKDE)\nMany real world point event are not randomly distributed. Their distribution, on the other hand, are constrained by network such as roads, rivers, and fault lines just to name a few of them."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#temporal-network-kernel-density-estimate",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#temporal-network-kernel-density-estimate",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "Temporal Network Kernel Density Estimate",
+    "text": "Temporal Network Kernel Density Estimate\n\n\nEvents recorded on a network often have a temporal dimension. In that context, one could estimate the density of events in both time and network spaces.\nThe spatio-temporal kernel is calculated as the product of the network kernel density and the time kernel density.\n\nFor a sample point at location l and time t, the Temporal Network Kernel Density Estimate (TNKDE) is calculated as follows:"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#references",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#references",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "References",
+    "text": "References\n\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4\nGIS&T Body of Knowledge AM-07-Point Pattern Analysis\nGIS&T Body of Knowledge AM-08-Kernels and Density Estimation\nAnalyzing Patterns in Business Point Data, Directions Magazine March 17, 2005.\nOkabe, Atsuyuki, and Kokichi Sugihara. 2012. “Spatial Analysis Along Networks: Statistical and Computational Methods”. John Wiley & Sons.\nSugihara, Kokichi, Toshiaki Satoh, and Atsuyuki Okabe. 2010. “Simple and Unbiased Kernel Function for Network Analysis.” In 2010 10th International Symposium on Communications and Information Technologies, 827–32. IEEE.\nXie, Zhixiao, and Jun Yan. 2008. “Kernel Density Estimation of Traffic Accidents in a Network Space.” Computers, Environment and Urban Systems 32 (5): 396–406. Contents"
   }
 ]

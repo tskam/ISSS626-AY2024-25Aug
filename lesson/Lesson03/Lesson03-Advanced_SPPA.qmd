@@ -1,0 +1,187 @@
+---
+title: "Lesson 3: Advanced Spatial Point Patterns Analysis"
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: all
+date-format: "DD MMM YYYY"
+editor: visual
+---
+
+## Content
+
+::: columns
+::: {.column width="50%"}
+-   Introducing Spatial Point Patterns
+    -   The basic concepts of spatial point patterns
+    -   1st Order versus 2nd Order
+    -   Spatial Point Patterns in real world
+-   1st Order Spatial Point Patterns Analysis
+    -   Kernel Density Estimation (KDE)
+    -   Network Constrained Kernel Density Estimation (NKDE)
+    -   Temporal Network Kernel Density Estimation (TNKDE)
+:::
+
+::: {.column width="50%"}
+-   2nd Order Spatial Point Patterns Analysis
+    -   Nearest Neighbour Index
+    -   G-function
+    -   F-function
+    -   K-function
+    -   L-function
+:::
+:::
+
+::: notes
+Welcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.
+
+The lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis.
+:::
+
+## What is Spatio-temporal Point Patterns
+
+-   Points as Events
+
+-   Mapped pattern
+
+    -   Not a sample
+    -   Selection bias
+
+-   Events are mapped, but non-events are not
+
+## Network Constrained Kernel Density Estimation (NKDE)
+
+Many real world point event are not randomly distributed. Their distribution, on the other hand, are constrained by network such as roads, rivers, and fault lines just to name a few of them.
+
+![](img/image4-47.jpg)
+
+------------------------------------------------------------------------
+
+### Network Constrained Kernel Density Estimation (NKDE) method
+
+To calculate a Network Kernel Density Estimate (NKDE), it is possible to:
+
+-   use lixels instead of pixels. A lixel is a linear equivalent of a pixel on a network. The lines of the network are split into lixels according to a chosen resolution. The centres of the lixels are sampling points for which the density will be estimated.
+
+-   calculate network distances between objects instead of Euclidean distances.
+
+-   adjust the kernel function to deal with the anisotropic space
+
+------------------------------------------------------------------------
+
+### NKDE Method
+
+-   To perform a NKDE, the events must be snapped on the network. The snapped events are shown here in green.
+
+::: columns
+::: {.column width="50%"}
+![](img/image4-48a.jpg)
+:::
+
+::: {.column width="50%"}
+![](img/image4-48b.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### NKDE Method
+
+::: columns
+::: {.column width="50%"}
+The mass of each event can be seen as a third dimension and is evaluated by a selected kernel function (K) within a specified bandwidth. The kernel function must satisfy the following conditions:
+
+![](img/image4-49.jpg){width="480" height="185"}
+
+The total mass of an event is 1, and is spread according to the function *K* within the bandwidth.
+:::
+
+::: {.column width="50%"}
+In the figure below, we can see that the “influence” of each point is limited within the bandwidth and decreases when we move away from the event.
+
+![](img/image4-49b.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### NKDE Method
+
+::: columns
+::: {.column width="50%"}
+With this method, one can evaluate the density of the studied phenomenon at each location on the network. In the figure below, 3 sampling points (s1, s2 and s3) are added in blue.
+
+![](img/image4-50a.jpg)
+:::
+
+::: {.column width="50%"}
+Where S1, S2, and S3 are calculated by using the formulas below:
+
+![](img/image4-50b.jpg){width="640"}
+
+and the general formular will be defined as:
+
+![](img/image4-50c.jpg){fig-align="center" width="450"}
+
+with 𝒅~𝑠𝑖~ the density estimated at the sample point 𝑠𝒊, 𝒃𝑤 the bandwidth and 𝑒𝑗 an event.
+:::
+:::
+
+------------------------------------------------------------------------
+
+### NKDE Method
+
+::: columns
+::: {.column width="50%"}
+The proposed kernel functions in the spNetwork package are:
+
+![](img/image4-51a.jpg)
+:::
+
+::: {.column width="50%"}
+![](img/image4-51b.jpg)
+:::
+:::
+
+## Temporal Network Kernel Density Estimate
+
+::: columns
+::: {.column width="50%"}
+Events recorded on a network often have a temporal dimension. In that context, one could estimate the density of events in both time and network spaces.
+
+The spatio-temporal kernel is calculated as the product of the network kernel density and the time kernel density.
+:::
+
+::: {.column width="50%"}
+For a sample point at location l and time t, the Temporal Network Kernel Density Estimate (TNKDE) is calculated as follows:
+
+![](img/image4-52a.jpg)
+
+![](img/image4-52b.jpg)
+:::
+:::
+
+## References
+
+-   [Chapter 11 Point Pattern Analysis](https://mgimond.github.io/Spatial/point-pattern-analysis.html) of **Intro to GIS and Spatial Analysis**. Section 11.2, 11.3, 11.3.1 and 11.4
+-   GIS&T Body of Knowledge [AM-07-Point Pattern Analysis](https://gistbok.ucgis.org/bok-basic-page/welcome-gist-body-knowledge)
+-   GIS&T Body of Knowledge [AM-08-Kernels and Density Estimation](https://gistbok.ucgis.org/bok-topics/kernels-and-density-estimation)
+-   [Analyzing Patterns in Business Point Data](https://www.directionsmag.com/article/3289), Directions Magazine March 17, 2005.
+-   Okabe, Atsuyuki, and Kokichi Sugihara. 2012. "Spatial Analysis Along Networks: Statistical and Computational Methods". John Wiley & Sons.
+-   Sugihara, Kokichi, Toshiaki Satoh, and Atsuyuki Okabe. 2010. “Simple and Unbiased Kernel Function for Network Analysis.” In *2010 10th International Symposium on Communications and Information Technologies*, 827–32. IEEE.
+-   Xie, Zhixiao, and Jun Yan. 2008. “Kernel Density Estimation of Traffic Accidents in a Network Space.” *Computers, Environment and Urban Systems* 32 (5): 396–406. Contents
+
+```{r}
+#| echo: false
+#| eval: false
+renderthis::to_pdf(
+  from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson04/Lesson04-SPPA.html",
+  to = "D://IS415_AY2022-23T2/02-Lesson/Lesson04.pdf"
+)
+```
