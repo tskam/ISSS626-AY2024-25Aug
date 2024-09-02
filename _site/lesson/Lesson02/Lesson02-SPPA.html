@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems(Practice)">
-  <meta name="dcterms.date" content="2024-08-27">
+  <meta name="dcterms.date" content="2024-09-02">
   <title>ISSS626 Geospatial Analytics and Applications - Lesson 2: Spatial Point Patterns Analysis</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -340,7 +340,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
     </div>
 </div>
 
-  <p class="date">27 Aug 2024</p>
+  <p class="date">02 Sep 2024</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
@@ -515,6 +515,42 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </ul>
 
 <img data-src="img/image4-9.jpg" class="r-stretch"></section>
+<section id="homogeneous-spatial-point-patterns" class="slide level2">
+<h2>Homogeneous Spatial Point Patterns</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A homogeneous spatial point pattern assumes that the points are distributed uniformly across the study area. The intensity (expected number of points per unit area) is constant throughout the region.</p>
+<p><img data-src="img/image2-1a.png" width="500"></p>
+</div><div class="column" style="width:50%;">
+<p>Characteristics:</p>
+<ul>
+<li>The probability of observing a point is the same across the entire space.</li>
+<li>The process generating the points does not depend on location.</li>
+<li>The points are randomly and independently distributed across the space, leading to a uniform density.</li>
+</ul>
+<p>Model:</p>
+<ul>
+<li>Typically modeled by a Homogeneous Poisson Process, where the intensity λ (the number of points per unit area) is constant.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="heterogeneous-spatial-point-patterns" class="slide level2">
+<h2>Heterogeneous Spatial Point Patterns</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>A heterogeneous spatial point pattern assumes that the intensity of points varies across the study area. The intensity function is not constant and may depend on spatial covariates, leading to non-uniform distribution.</p>
+<p><img data-src="img/image2-1b.png" width="500"></p>
+</div><div class="column" style="width:50%;">
+<p>Characteristics:</p>
+<ul>
+<li>The probability of observing a point varies across the space, often depending on underlying factors like geography, environmental conditions, or other spatial variables.</li>
+<li>The density of points can be higher in some regions and lower in others, leading to clusters or dispersed patterns.</li>
+</ul>
+<p>Model: - Modeled by an Inhomogeneous Poisson Process (IPP), where the intensity function λ(x,y) varies with location. The intensity can be a function of spatial covariates or other influences.</p>
+</div>
+</div>
+</section>
 <section id="spatial-point-patterns-analysis-techniques" class="slide level2">
 <h2>Spatial Point Patterns Analysis Techniques</h2>
 <ul>

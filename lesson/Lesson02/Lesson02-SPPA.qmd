@@ -148,6 +148,50 @@ It is important note that SPPA is exploratory and confirmatory in nature. They a
 
 ![](img/image4-9.jpg)
 
+## Homogeneous Spatial Point Patterns
+
+::: columns
+::: {.column width="50%"}
+A homogeneous spatial point pattern assumes that the points are distributed uniformly across the study area. The intensity (expected number of points per unit area) is constant throughout the region.
+
+![](img/image2-1a.png){width="500"}
+:::
+
+::: {.column width="50%"}
+Characteristics:
+
+-   The probability of observing a point is the same across the entire space.
+-   The process generating the points does not depend on location.
+-   The points are randomly and independently distributed across the space, leading to a uniform density.
+
+Model:
+
+-   Typically modeled by a Homogeneous Poisson Process, where the intensity λ (the number of points per unit area) is constant.
+:::
+:::
+
+## Heterogeneous Spatial Point Patterns
+
+::: columns
+::: {.column width="50%"}
+A heterogeneous spatial point pattern assumes that the intensity of points varies across the study area. The intensity function is not constant and may depend on spatial covariates, leading to non-uniform distribution.
+
+![](img/image2-1b.png){width="500"}
+:::
+
+::: {.column width="50%"}
+Characteristics:
+
+-   The probability of observing a point varies across the space, often depending on underlying factors like geography, environmental conditions, or other spatial variables.
+-   The density of points can be higher in some regions and lower in others, leading to clusters or dispersed patterns.
+
+Model: 
+-   Modeled by an Inhomogeneous Poisson Process (IPP), where the intensity function λ(x,y) varies with location. The intensity can be a function of spatial covariates or other influences.
+
+:::
+:::
+
+
 ## Spatial Point Patterns Analysis Techniques
 
 -   First-order vs Second-order Analysis of spatial point patterns.
