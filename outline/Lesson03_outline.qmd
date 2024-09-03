@@ -25,9 +25,9 @@ In this lesson, you will learn two advanced spatial point patterns analysis meth
 
 ### Lesson Slides and Hands-on Notes
 
--   [Lesson 4](../lesson/Lesson04/Lesson04-ASPAA.html) slides
+-   [Lesson 3](../lesson/Lesson03/Lesson03-Advanced_SPPA.html) slides
 
--   [Hands-on Exercise 4: Network Constrained Spatial Point Patterns Analysis](https://r4gdsa.netlify.app/chap07).
+-   [Hands-on Exercise 3: Network Constrained Spatial Point Patterns Analysis](https://r4gdsa.netlify.app/chap07).
 
 ## References
 

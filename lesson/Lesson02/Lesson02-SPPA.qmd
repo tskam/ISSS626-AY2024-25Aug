@@ -185,12 +185,9 @@ Characteristics:
 -   The probability of observing a point varies across the space, often depending on underlying factors like geography, environmental conditions, or other spatial variables.
 -   The density of points can be higher in some regions and lower in others, leading to clusters or dispersed patterns.
 
-Model: 
--   Modeled by an Inhomogeneous Poisson Process (IPP), where the intensity function λ(x,y) varies with location. The intensity can be a function of spatial covariates or other influences.
-
+Model: - Modeled by an Inhomogeneous Poisson Process (IPP), where the intensity function λ(x,y) varies with location. The intensity can be a function of spatial covariates or other influences.
 :::
 :::
-
 
 ## Spatial Point Patterns Analysis Techniques
 

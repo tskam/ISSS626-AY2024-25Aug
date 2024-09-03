@@ -487,7 +487,7 @@
     "href": "outline/Lesson03_outline.html#content",
     "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "Content",
-    "text": "Content\n\nSpatiotemporal Kernel Density Estimation\nNetwork Constrained Kernel Density Estimation (NCKDE)\n\nBasic concepts of network constrained spatial point patterns\nNetwork Constrained KDE methods\nThe Three versions of Network Constrained KDE\n\nTemporal Network Kernel Density Estimation (TNKED)\n\nTemporal dimension\nSpatial dimension\nSpatiotemporal point patterns\nThe Temporal Network Kernel Density Estimation method\n\n\n\nLesson Slides and Hands-on Notes\n\nLesson 4 slides\nHands-on Exercise 4: Network Constrained Spatial Point Patterns Analysis."
+    "text": "Content\n\nSpatiotemporal Kernel Density Estimation\nNetwork Constrained Kernel Density Estimation (NCKDE)\n\nBasic concepts of network constrained spatial point patterns\nNetwork Constrained KDE methods\nThe Three versions of Network Constrained KDE\n\nTemporal Network Kernel Density Estimation (TNKED)\n\nTemporal dimension\nSpatial dimension\nSpatiotemporal point patterns\nThe Temporal Network Kernel Density Estimation method\n\n\n\nLesson Slides and Hands-on Notes\n\nLesson 3 slides\nHands-on Exercise 3: Network Constrained Spatial Point Patterns Analysis."
   },
   {
     "objectID": "outline/Lesson03_outline.html#lesson-slides",
@@ -1640,7 +1640,7 @@
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html",
     "href": "lesson/Lesson02/Lesson02-SPPA.html",
-    "title": "Lesson 3: Spatial Point Patterns Analysis",
+    "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "",
     "text": "Introducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
   },
@@ -1648,15 +1648,15 @@
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#content",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#content",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
-    "section": "Content",
-    "text": "Content\n\n\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
+    "section": "",
+    "text": "Introducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#what-is-spatial-point-patterns",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#what-is-spatial-point-patterns",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "What is Spatial Point Patterns",
-    "text": "What is Spatial Point Patterns\n\nPoints as Events\nMapped pattern\n\nNot a sample\nSelection bias\n\nEvents are mapped, but non-events are not"
+    "text": "What is Spatial Point Patterns\n\nPoints as Events\nMapped pattern\n\nNot a sample\nSelection bias\n\nEvents are mapped, but non-events are not\n\n\n\nSpatial Point Patterns in Real World\n\nDistribution of dieses such as dengue fever.\n\n\n\n\n\nSpatial Point Patterns in Real World\n\nDistribution of car collisions.\n\n\n\n\n\n\n\n\n\nSpatial Point Patterns in Real World\n\nDistribution of crime incidents.\n\n\n\n\n\n\n\n\n\nSpatial Point Patterns in Real World\n\nDistribution of public services such as education institutions.\n\n\n\n\n\nSpatial Point Patterns in Real World\n\nLocations of the different channel stores.\n\n\n\n\n\n\n\n\n\nSpatial Point Patterns in Real World\n\nDistribution of social media data such as tweets."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#real-world-question",
@@ -1670,7 +1670,7 @@
     "href": "lesson/Lesson02/Lesson02-SPPA.html#points-on-a-plane",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Points on a Plane",
-    "text": "Points on a Plane\n\nClassic point pattern analysis\n\npoints on an isotropic plane\nno effect of translation and rotation\nclassic examples: tree seedlings, rocks, etc\n\nDistance\n\nstraight line only"
+    "text": "Points on a Plane\n\nClassic point pattern analysis\n\npoints on an isotropic plane\nno effect of translation and rotation\nclassic examples: tree seedlings, rocks, etc\n\nDistance\n\nstraight line only\n\n\n\n\nReal world spatial point patterns\n\nIs this a random distribution?\n\n\n\n\n\nReal world spatial point patterns\n\nIs this a random distribution?"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#spatial-point-patterns-analysis",
@@ -1684,56 +1684,56 @@
     "href": "lesson/Lesson02/Lesson02-SPPA.html#spatial-point-patterns-analysis-techniques",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Spatial Point Patterns Analysis Techniques",
-    "text": "Spatial Point Patterns Analysis Techniques\n\nFirst-order vs Second-order Analysis of spatial point patterns.\n\n\nReference: 11.4 First and second order effects of Intro to GIS and Spatial Analysis\n\nThe first-order properties describe the way in which the expected value (mean or average) of the spatial point pattern varies across space (i.e., the intensity of the spatial point pattern). Such properties are usually measured with the so-called quadrat analysis, nearest neighbour index and kernel estimation. Second-order properties describe the covariance (or correlation) between values of the spatial point pattern at different regions in space and are usually measured with the G function, K function and L function. Applied to point event data, both properties could be used to explore the spatial variation in the risk of being victimized by a crime, spatial and space-time clustering of criminal activities, and the raised incidence of criminal activities around point sources, such as robberies around ATM machines, subway entrances and exits, etc."
+    "text": "Spatial Point Patterns Analysis Techniques\n\nFirst-order vs Second-order Analysis of spatial point patterns.\n\n\nReference: 11.4 First and second order effects of Intro to GIS and Spatial Analysis\n\nThe first-order properties describe the way in which the expected value (mean or average) of the spatial point pattern varies across space (i.e., the intensity of the spatial point pattern). Such properties are usually measured with the so-called quadrat analysis, nearest neighbour index and kernel estimation. Second-order properties describe the covariance (or correlation) between values of the spatial point pattern at different regions in space and are usually measured with the G function, K function and L function. Applied to point event data, both properties could be used to explore the spatial variation in the risk of being victimized by a crime, spatial and space-time clustering of criminal activities, and the raised incidence of criminal activities around point sources, such as robberies around ATM machines, subway entrances and exits, etc.\n\n\n\nFirst-order Spatial Point Patterns Analysis Techniques\n\nDensity-based\n\nKernel density estimation\nQuadrat analysis,\n\nDistance-based\n\nNearest Neighbour Index\n\n\n\n\n\nBasic concept of density-based measures"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#kernel-density-estimation-silverman-1986",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#kernel-density-estimation-silverman-1986",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Kernel density estimation (Silverman 1986)",
-    "text": "Kernel density estimation (Silverman 1986)\n\nA method to compute the intensity of a point distribution.\n\n\n\nThe general formula:\n\n\nGraphically"
+    "text": "Kernel density estimation (Silverman 1986)\n\nA method to compute the intensity of a point distribution.\n\n\n\nThe general formula:\n\n\nGraphically\n\n\n\n\n\nKDE Step 1: Computing point intensity\n\n\n\n\nKDE Step 2: Spatial interpolation using kernel function\n\n\n\n\nKDE Map of Childcare Services, Singapore\n\n\n\n\nAdaptive Bandwidth\n\n\nAdaptive schemes adjust itself according to the density of data: - Shorter bandwidths where data are dense and longer where sparse.\n\nFinding nearest neighbors are one of the often used approaches.\n\n\n\n\n\n\n\n\nFixed bandwidth\n\n\n\nMight produce large estimate variances where data are sparse, while mask subtle local variations where data are dense.\nIn extreme condition, fixed schemes might not be able to calibrate in local areas where data are too sparse to satisfy the calibration requirements (observations must be more than parameters).\n\n\n\n\n\n\n\n\nQuadrat Analysis – Step 1\n\n\n\nDivide the study area into subregion of equal size,\n\noften squares, but don’t have to be.\n\n\n\n\n\n\n\n\nQuadrat Analysis – Step 2\n\n\n\nCount the frequency of events in each region.\n\n\n\n\n\n\n\nQuadrat Analysis – Step 3\n\n\n\nCalculate the intensity of events in each region.\n\n\n\n\n\n\n\nQuadrat Analysis – Step 4\n\nCalculate the quadrat statistics and perform CSR test.\n\n\n\n\n\nQuadrat Analysis – Variance-Mean Ratio (VMR)\n\nFor an uniform distribution, the variance is zero, - therefore, we expect a variance-mean ratio close to 0.\nFor a random distribution, the variance and mean are the same,\n\ntherefore, we expect a variance-mean ratio close to 1.\n\nFor a cluster distribution, the variance is relatively large,\n\ntherefore, we expect a variance-mean ratio greater than 1.]\n\n\n\n\n\nComplete Spatial Randomness (CSR)\n\n\n\nCSR/IRP satisfy two conditions: - Any event has equal probability of being in any location, a 1st order effect.\n\nThe location of one event is independent of the location of another event, a 2nd order effect.\n\n\nReference: Chapter 12 Hypothesis testing of Intro to GIS and Spatial Analysis\n\n\n\n\n\n\n\nQuadrat Analysis: The interpretation\n\n\n\n\n\n\n\n\nWeaknesses of quadrat analysis\n\n\n\nIt is sensitive to the quadrat size.\n\nIf the quadrat size is too small, they may contain only a couple of points, and\nIf the quadrat size is too large, they may contain too many points.\n\nIt is a measure of dispersion rather than a measure of pattern.\nIt results in a single measure for the entire distribution, so variation within the region are not recognised."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#distance-based-nearest-neighbour-index",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#distance-based-nearest-neighbour-index",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Distance-based: Nearest Neighbour Index",
-    "text": "Distance-based: Nearest Neighbour Index\nWhat is Nearest Neighbour?\nDirect distance from a point to its nearest neighbour."
+    "text": "Distance-based: Nearest Neighbour Index\n\nWhat is Nearest Neighbour?\nDirect distance from a point to its nearest neighbour."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#nearest-neighbour-index",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#nearest-neighbour-index",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Nearest Neighbour Index",
-    "text": "Nearest Neighbour Index\nThe Nearest Neighbour Index is expressed as the ratio of the Observed Mean Distance to the Expected Mean Distance."
+    "text": "Nearest Neighbour Index\nThe Nearest Neighbour Index is expressed as the ratio of the Observed Mean Distance to the Expected Mean Distance.\n\n\n\nCalculating Nearest Neighbour Index\n\n\n\n\nInterpreting Nearest Neighbour Index\nThe expected distance is the average distance between neighbours in a hypothetical random distribution.\n\nIf the index is less than 1, the pattern exhibits clustering,\nIf the index is equal to 1, the patterns exhibits random, and\nIf the index is greater than 1, the trend is toward dispersion or competition.\n\n\n\n\n\n\n\n\n\nThe test statistics\n\n\n\nNull Hypothesis: Points are randomly distributed\nTest statistics:\n\n\n\nReject the null hypothesis if the z-score is large and p-value is smaller than the alpha value.\n\n\n\n\n\n\nInterpreting Nearest Neighbour Index\n\n\n\nThe p-value is smaller than 0.05 =&gt; Reject the null hypothesis that the point patterns are randomly distributed."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#g-function",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#g-function",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "G function",
-    "text": "G function\n\n\nThe formula"
+    "text": "G function\n\n\nThe formula\n\n\n\n\n\n\n\nInterpretation of G-function\n\n\nThe shape of G-function tells us the way the events are spaced in a point pattern.\n\nClustered: G increases rapidly at short distance.\nEvenness: G increases slowly up to distance where most events spaced, then increases rapidly.\n\n\n\n\n\n\n\n\nHow do we tell if G is significant?\n\n\n\nThe significant of any departure from CSR (either cluster or regularity) can be evaluated using simulated “confidence envelopes”\n\n\n\n\n\n\n\n\nMonte Carlo simulation test of CSR\n\nPerform m independent simulation of n events (i.e. 999) in the study region.\nFor each simulated point pattern, estimate G(r) and use the maximum (95th) and minimum (5th) of these functions for the simulated patterns to define an upper and lower simulation envelope.\nIf the estimated G(r) lies above the upper envelope or below the lower envelope, the estimated G(r) is statistically significant.\n\n\n\n\nThe significant test of G-function"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#f-function",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#f-function",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "F function",
-    "text": "F function\n\nSelect a sample of point locations anywhere in the study region at random\n\nDetermine minimum distance from each point to any event in the study area.\n\nThree steps:\n\nRandomly select m points (p1, p2, ….., pn),\nCalculate dmin(pi,s) as the minimum distance from location pi to any event in the point patterns, and\nCalculate F(d)."
+    "text": "F function\n\nSelect a sample of point locations anywhere in the study region at random\n\nDetermine minimum distance from each point to any event in the study area.\n\nThree steps:\n\nRandomly select m points (p1, p2, ….., pn),\nCalculate dmin(pi,s) as the minimum distance from location pi to any event in the point patterns, and\nCalculate F(d).\n\n\n\n\nThe F function formula\n\n\n\n\n\n\n\n\nInterpretation of F-function\n\nClustered = F(r) rises slowly at first, but more rapidly at longer distances.\nEvenness = F(r) rises rapidly at first, then slowly at longer distances.\n\n\n\n\nThe significant test of F-function\n\n\n\n\nComparison between G and F"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#ripleys-k-function-ripley-1981",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#ripleys-k-function-ripley-1981",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Ripley’s K function (Ripley, 1981)",
-    "text": "Ripley’s K function (Ripley, 1981)\n\nLimitation of nearest neighbor distance method is that it uses only nearest distance\nConsiders only the shortest scales of variation.\nK function uses more points.\n\nProvides an estimate of spatial dependence over a wider range of scales.\nBased on all the distances between events in the study area.\nAssumes isotropy over the region."
+    "text": "Ripley’s K function (Ripley, 1981)\n\nLimitation of nearest neighbor distance method is that it uses only nearest distance\nConsiders only the shortest scales of variation.\nK function uses more points.\n\nProvides an estimate of spatial dependence over a wider range of scales.\nBased on all the distances between events in the study area.\nAssumes isotropy over the region.\n\n\n\n\nCalculating the K function\n\n\n\nConstruct a circle of radius h around each point event(i).\nCount the number of other events (j) that fall inside this circle.\nRepeat these two steps for all points (i) and sum results.\nIncrement h by a small amount and repeat the calculation.\n\n\n\n\n\n\n\n\nK function\n\n\nThe formula:\n\n\n\n\n\n\nThe K function complete spatial randomness test\n\nK(h) can be plotted against different values of h.\nBut what should K look like for no spatial dependence?\nConsider what K(h) should look like for a random point process (CSR)\n\nThe probability of an event at any point in R is independent of what other events have occurred and equally likely anywhere in R\n\n\n\n\n\nInterpreting the K function complete spatial randomness test\n\n\nUnder the assumption of CSR, the expected number of events within distance h of an event is:\n\nCompare K(h) to 𝜋ℎ^2\n\nK(h) &lt; 𝜋ℎ^2 if point pattern is regular\nK(h) &gt; 𝜋ℎ^2 if point pattern is clustered\n\n\n\n\nAbove the envelop: significant cluster pattern - Below the envelop: significant regular\nInside the envelop: CSR"
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#the-l-function-besag-1977",
     "href": "lesson/Lesson02/Lesson02-SPPA.html#the-l-function-besag-1977",
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "The L function (Besag 1977)",
-    "text": "The L function (Besag 1977)\n\n\nIn practice, K function will be normalised to obtained a benchmark of zero.\nThe formula:"
+    "text": "The L function (Besag 1977)\n\n\nIn practice, K function will be normalised to obtained a benchmark of zero.\nThe formula:\n\n\n\n\n\nInterpreting the L function complete spatial randomness test\n\n\n\n\nWhen an observed L value is greater than its corresponding L(theo)(i.e. red break line) value for a particular distance and above the upper confidence envelop, spatial clustering for that distance is statistically significant (e.g. distance beyond C).\nWhen an observed L value is greater than its corresponding L(theo) value for a particular distance and lower than the upper confidence envelop, spatial clustering for that distance is statistically NOT significant (e.g. distance between B and C).\nWhen an observed L value is smaller than its corresponding L(theo) value for a particular distance and beyond the lower confidence envelop, spatial dispersion for that distance is statistically significant. - When an observed L value is smaller than its corresponding L(theo) value for a particular distance and within the lower confidence envelop, spatial dispersion for that distance is statistically NOT significant (e.g. distance between A and B).\n\n\n\n\n\nThe grey zone indicates the confident envelop (i.e. 95%).\n\n\n\n\n\n\n\n\nThe L function (Besag 1977)\n\n\nThe modified L function\n\n\nL(r)&gt;0 indicates that the observed distribution is geographically concentrated.\nL(r)&lt;0 implies dispersion.\nL(r)=0 indicates complete spatial randomness (CRS)."
   },
   {
     "objectID": "lesson/Lesson02/Lesson02-SPPA.html#references",
@@ -1754,7 +1754,7 @@
     "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#content",
     "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "Content",
-    "text": "Content\n\nSpatio-temporal Kernel Density Estimation\nNetwork Constrained Kernel Density Estimation (NCKDE)\nBasic concepts of network constrained spatial point patterns\nNetwork Constrained KDE methods\nThe Three versions of Network Constrained KDE\nTemporal Network Kernel Density Estimation (TNKED)\nTemporal dimension\nSpatial dimension\nSpatio-temporal point patterns\nThe Temporal Network Kernel Density Estimation method\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
+    "text": "Content\n\nNetwork Constrained Kernel Density Estimation (NCKDE)\n\nBasic concepts of network constrained spatial point patterns\nNetwork Constrained KDE methods\nThe Three versions of Network Constrained KDE\n\nTemporal Network Kernel Density Estimation (TNKED)\n\nTemporal dimension\nSpatial dimension\nSpatio-temporal point patterns\n\n\n\nWelcome to Lesson 3: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#what-is-spatio-temporal-point-patterns",
@@ -1768,7 +1768,7 @@
     "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#network-constrained-kernel-density-estimation-nkde",
     "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "Network Constrained Kernel Density Estimation (NKDE)",
-    "text": "Network Constrained Kernel Density Estimation (NKDE)\nMany real world point event are not randomly distributed. Their distribution, on the other hand, are constrained by network such as roads, rivers, and fault lines just to name a few of them."
+    "text": "Network Constrained Kernel Density Estimation (NKDE)\nNetwork Kernel Density Estimation, in short, NKDE is a geospatial analytics methods specially designed to computer intensity of spatial point event either located along or occurred along linear networks.\n\n\nMathematically, NKDE can be defined as: \nwhere K must be a probability density function and verifies the two following conditions:"
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#temporal-network-kernel-density-estimate",
@@ -1782,7 +1782,7 @@
     "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#references",
     "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
     "section": "References",
-    "text": "References\n\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4\nGIS&T Body of Knowledge AM-07-Point Pattern Analysis\nGIS&T Body of Knowledge AM-08-Kernels and Density Estimation\nAnalyzing Patterns in Business Point Data, Directions Magazine March 17, 2005.\nOkabe, Atsuyuki, and Kokichi Sugihara. 2012. “Spatial Analysis Along Networks: Statistical and Computational Methods”. John Wiley & Sons.\nSugihara, Kokichi, Toshiaki Satoh, and Atsuyuki Okabe. 2010. “Simple and Unbiased Kernel Function for Network Analysis.” In 2010 10th International Symposium on Communications and Information Technologies, 827–32. IEEE.\nXie, Zhixiao, and Jun Yan. 2008. “Kernel Density Estimation of Traffic Accidents in a Network Space.” Computers, Environment and Urban Systems 32 (5): 396–406. Contents"
+    "text": "References\n\nNetwork Kernel Density Estimate\nTemporal Network Kernel Density Estimate"
   },
   {
     "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPAA.html#issue-1-installing-maptools",
@@ -1937,5 +1937,180 @@
     "title": "Lesson 2: Spatial Point Patterns Analysis",
     "section": "Heterogeneous Spatial Point Patterns",
     "text": "Heterogeneous Spatial Point Patterns\n\n\nA heterogeneous spatial point pattern assumes that the intensity of points varies across the study area. The intensity function is not constant and may depend on spatial covariates, leading to non-uniform distribution.\n\n\nCharacteristics:\n\nThe probability of observing a point varies across the space, often depending on underlying factors like geography, environmental conditions, or other spatial variables.\nThe density of points can be higher in some regions and lower in others, leading to clusters or dispersed patterns.\n\nModel: - Modeled by an Inhomogeneous Poisson Process (IPP), where the intensity function λ(x,y) varies with location. The intensity can be a function of spatial covariates or other influences."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#issue-1-installing-maptools",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#issue-1-installing-maptools",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "",
+    "text": "maptools is retired and binary is removed from CRAN. However, we can download from Posit Public Package Manager snapshots by using the code chunk below.\n\n\ninstall.packages(\"maptools\", \n                 repos = \"https://packagemanager.posit.co/cran/2023-10-13\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#issue-1-installing-maptools-1",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#issue-1-installing-maptools-1",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Issue 1: Installing maptools",
+    "text": "Issue 1: Installing maptools\n\n\nAfter the installation is completed, it is important to edit the code chunk as shown below in order to avoid maptools being download and install repetitively every time the Quarto document been rendered."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#issue-2-creating-coastal-outline",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#issue-2-creating-coastal-outline",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Issue 2: Creating coastal outline",
+    "text": "Issue 2: Creating coastal outline\nIn sf package, there are two functions allow us to combine multiple simple features into one simple features. They are st_combine() and st_union().\n\nst_combine() returns a single, combined geometry, with no resolved boundaries; returned geometries may well be invalid.\nIf y is missing, st_union(x) returns a single geometry with resolved boundaries, else the geometries for all unioned pairs of x[i] and y[j].\n\n\n\nWorking with st_union()\n\n\nThe code chunk below, st_union()is used to derive the coastal outline sf tibble data.frame.\n\n\nsg_sf &lt;- mpsz_sf %&gt;%\n  st_union()\n\n\nsg_sf will look similar to the figure below."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#introducing-spatstat-package",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#introducing-spatstat-package",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Introducing spatstat package",
+    "text": "Introducing spatstat package\nspatstat R package is a comprehensive open-source toolbox for analysing Spatial Point Patterns. Focused mainly on two-dimensional point patterns, including multitype or marked points, in any spatial region."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#spatstat",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#spatstat",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "spatstat",
+    "text": "spatstat\n\nspatstat sub-packages\n\n\nThe spatstat package now contains only documentation and introductory material. It provides beginner’s introductions, vignettes, interactive demonstration scripts, and a few help files summarising the package.\nThe spatstat.data package now contains all the datasets for spatstat.\nThe spatstat.utils package contains basic utility functions for spatstat.\nThe spatstat.univar package contains functions for estimating and manipulating probability distributions of one-dimensional random variables.\nThe spatstat.sparse package contains functions for manipulating sparse arrays and performing linear algebra.\nThe spatstat.geom package contains definitions of spatial objects (such as point patterns, windows and pixel images) and code which performs geometrical operations.\nThe spatstat.random package contains functions for random generation of spatial patterns and random simulation of models.\nThe spatstat.explore package contains the code for exploratory data analysis and nonparametric analysis of spatial data.\nThe spatstat.model package contains the code for model-fitting, model diagnostics, and formal inference.\nThe spatstat.linnet package defines spatial data on a linear network, and performs geometrical operations and statistical analysis on such data."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#creating-ppp-objects-from-sf-data.frame",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#creating-ppp-objects-from-sf-data.frame",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Creating ppp objects from sf data.frame",
+    "text": "Creating ppp objects from sf data.frame\nInstead of using the two steps approaches discussed in Hands-on Exercise 3 to create the ppp objects, in this section you will learn how to work with sf data.frame.\n\n\nIn the code chunk below, as.ppp() of spatstat.geom package is used to derive an ppp object layer directly from a sf tibble data.frame.\n\n\nchildcare_ppp &lt;- as.ppp(childcare_sf)\nplot(childcare_ppp)\n\n\n\n\n\n\n\n\n\n\nNext, summary() can be used to reveal the properties of the newly created ppp objects.\n\n\nsummary(childcare_ppp)\n\nMarked planar point pattern:  1925 points\nAverage intensity 2.417323e-06 points per square unit\n\nCoordinates are given to 11 decimal places\n\nmarks are of type 'character'\nSummary:\n   Length     Class      Mode \n     1925 character character \n\nWindow: rectangle = [11810.03, 45404.24] x [25596.33, 49300.88] units\n                    (33590 x 23700 units)\nWindow area = 796335000 square units"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#creating-owin-object-from-sf-data.frame",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#creating-owin-object-from-sf-data.frame",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Creating owin object from sf data.frame",
+    "text": "Creating owin object from sf data.frame\n\n\nIn the code chunk as.owin() of spatstat.geom is used to create an owin object class from polygon sf tibble data.frame.\n\n\nsg_owin &lt;- as.owin(sg_sf)\nplot(sg_owin)\n\n\n\n\n\n\n\n\n\n\nNext, summary() function is used to display the summary information of the owin object class.\n\n\nsummary(sg_owin)\n\nWindow: polygonal boundary\n80 separate polygons (35 holes)\n                  vertices         area relative.area\npolygon 1            14650  6.97996e+08      8.93e-01\npolygon 2 (hole)         3 -2.21090e+00     -2.83e-09\npolygon 3              285  1.61128e+06      2.06e-03\npolygon 4 (hole)         3 -2.05920e-03     -2.63e-12\npolygon 5 (hole)         3 -8.83647e-03     -1.13e-11\npolygon 6              668  5.40368e+07      6.91e-02\npolygon 7               44  2.26577e+03      2.90e-06\npolygon 8               27  1.50315e+04      1.92e-05\npolygon 9              711  1.28815e+07      1.65e-02\npolygon 10 (hole)       36 -4.01660e+04     -5.14e-05\npolygon 11 (hole)      317 -5.11280e+04     -6.54e-05\npolygon 12 (hole)        3 -3.41405e-01     -4.37e-10\npolygon 13 (hole)        3 -2.89050e-05     -3.70e-14\npolygon 14              77  3.29939e+05      4.22e-04\npolygon 15              30  2.80002e+04      3.58e-05\npolygon 16 (hole)        3 -2.83151e-01     -3.62e-10\npolygon 17              71  8.18750e+03      1.05e-05\npolygon 18 (hole)        3 -1.68316e-04     -2.15e-13\npolygon 19 (hole)       36 -7.79904e+03     -9.97e-06\npolygon 20 (hole)        4 -2.05611e-02     -2.63e-11\npolygon 21 (hole)        3 -2.18000e-06     -2.79e-15\npolygon 22 (hole)        3 -3.65501e-03     -4.67e-12\npolygon 23 (hole)        3 -4.95057e-02     -6.33e-11\npolygon 24 (hole)        3 -3.99521e-02     -5.11e-11\npolygon 25 (hole)        3 -6.62377e-01     -8.47e-10\npolygon 26 (hole)        3 -2.09065e-03     -2.67e-12\npolygon 27              91  1.49663e+04      1.91e-05\npolygon 28 (hole)       26 -1.25665e+03     -1.61e-06\npolygon 29 (hole)      349 -1.21433e+03     -1.55e-06\npolygon 30 (hole)       20 -4.39069e+00     -5.62e-09\npolygon 31 (hole)       48 -1.38338e+02     -1.77e-07\npolygon 32 (hole)       28 -1.99862e+01     -2.56e-08\npolygon 33              40  1.38607e+04      1.77e-05\npolygon 34 (hole)       40 -6.00381e+03     -7.68e-06\npolygon 35 (hole)        7 -1.40545e-01     -1.80e-10\npolygon 36 (hole)       12 -8.36709e+01     -1.07e-07\npolygon 37              45  2.51218e+03      3.21e-06\npolygon 38             142  3.22293e+03      4.12e-06\npolygon 39             148  3.10395e+03      3.97e-06\npolygon 40              75  1.73526e+04      2.22e-05\npolygon 41              83  5.28920e+03      6.76e-06\npolygon 42             211  4.70521e+05      6.02e-04\npolygon 43             106  3.04104e+03      3.89e-06\npolygon 44             266  1.50631e+06      1.93e-03\npolygon 45              71  5.63061e+03      7.20e-06\npolygon 46              10  1.99717e+02      2.55e-07\npolygon 47             478  2.06120e+06      2.64e-03\npolygon 48             155  2.67502e+05      3.42e-04\npolygon 49            1027  1.27782e+06      1.63e-03\npolygon 50 (hole)        3 -1.16959e-03     -1.50e-12\npolygon 51              65  8.42861e+04      1.08e-04\npolygon 52              47  3.82087e+04      4.89e-05\npolygon 53               6  4.50259e+02      5.76e-07\npolygon 54             132  9.53357e+04      1.22e-04\npolygon 55 (hole)        3 -3.23310e-04     -4.13e-13\npolygon 56               4  2.69313e+02      3.44e-07\npolygon 57 (hole)        3 -1.46474e-03     -1.87e-12\npolygon 58            1045  4.44510e+06      5.68e-03\npolygon 59              22  6.74651e+03      8.63e-06\npolygon 60              64  3.43149e+04      4.39e-05\npolygon 61 (hole)        3 -1.98390e-03     -2.54e-12\npolygon 62 (hole)        4 -1.13774e-02     -1.46e-11\npolygon 63              14  5.86546e+03      7.50e-06\npolygon 64              95  5.96187e+04      7.62e-05\npolygon 65 (hole)        4 -1.86410e-02     -2.38e-11\npolygon 66 (hole)        3 -5.12482e-03     -6.55e-12\npolygon 67 (hole)        3 -1.96410e-03     -2.51e-12\npolygon 68 (hole)        3 -5.55856e-03     -7.11e-12\npolygon 69             234  2.08755e+06      2.67e-03\npolygon 70              10  4.90942e+02      6.28e-07\npolygon 71             234  4.72886e+05      6.05e-04\npolygon 72 (hole)       13 -3.91907e+02     -5.01e-07\npolygon 73              15  4.03300e+04      5.16e-05\npolygon 74             227  1.10308e+06      1.41e-03\npolygon 75              10  6.60195e+03      8.44e-06\npolygon 76              19  3.09221e+04      3.95e-05\npolygon 77             145  9.61782e+05      1.23e-03\npolygon 78              30  4.28933e+03      5.49e-06\npolygon 79              37  1.29481e+04      1.66e-05\npolygon 80               4  9.47108e+01      1.21e-07\nenclosing rectangle: [2667.54, 56396.44] x [15748.72, 50256.33] units\n                     (53730 x 34510 units)\nWindow area = 781945000 square units\nFraction of frame area: 0.422"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#combining-point-events-object-and-owin-object",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#combining-point-events-object-and-owin-object",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Combining point events object and owin object",
+    "text": "Combining point events object and owin object\n\nThe taskThe codeThe output\n\n\nUsing the step you learned from Hands-on Exercise 3, create an ppp object by combining childcare_ppp and sg_owin.\n\n\n\n\nchildcareSG_ppp = childcare_ppp[sg_owin]\n\n\n\n\nThe output object combined both the point and polygon feature in one ppp object class as shown below.\n\n\nplot(childcareSG_ppp)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#kernel-density-estimation-of-spatial-point-event",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#kernel-density-estimation-of-spatial-point-event",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Kernel Density Estimation of Spatial Point Event",
+    "text": "Kernel Density Estimation of Spatial Point Event\nThe code chunk below re-scale the unit of measurement from metre to kilometre before performing KDE.\n\n\nchildcareSG_ppp.km &lt;- rescale.ppp(childcareSG_ppp, \n                                  1000, \n                                  \"km\")\n\nkde_childcareSG_adaptive &lt;- adaptive.density(\n  childcareSG_ppp.km, \n  method=\"kernel\")\nplot(kde_childcareSG_adaptive)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#kernel-density-estimation",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#kernel-density-estimation",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Kernel Density Estimation",
+    "text": "Kernel Density Estimation\nCode chunk shown two different ways to convert KDE output into grid object\n\nmaptools methodspatstat.geom method\n\n\n\n\npar(bg = '#E4D5C9')\n\ngridded_kde_childcareSG_ad &lt;- maptools::as.SpatialGridDataFrame.im(\n  kde_childcareSG_adaptive)\nspplot(gridded_kde_childcareSG_ad)\n\n\n\n\n\n\ngridded_kde_childcareSG_ad &lt;- as(\n  kde_childcareSG_adaptive,\n  \"SpatialGridDataFrame\")\nspplot(gridded_kde_childcareSG_ad)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#kernel-density-estimation-1",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#kernel-density-estimation-1",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Kernel Density Estimation",
+    "text": "Kernel Density Estimation\n\nVisualising KDE using tmap\nThe code chunk below is used to plot the output raster by using tmap functions.\n\n\ntm_shape(kde_childcareSG_ad_raster) + \n  tm_raster(palette = \"viridis\") +\n  tm_layout(legend.position = c(\"right\", \"bottom\"), \n            frame = FALSE,\n            bg.color = \"#E4D5C9\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#extracting-study-area-using-sf-objects",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#extracting-study-area-using-sf-objects",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Extracting study area using sf objects",
+    "text": "Extracting study area using sf objects\n\nThe taskThe code\n\n\nExtract and create an ppp object showing child care services and within Punggol Planning Area\n\n\nOn the other hand, filter() of dplyr package should be used to extract the target planning areas as shown in the code chunk below.\n\n\npg_owin &lt;- mpsz_sf %&gt;%\n  filter(PLN_AREA_N == \"PUNGGOL\") %&gt;%\n  as.owin()\n\nchildcare_pg = childcare_ppp[pg_owin]\n\nplot(childcare_pg)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#monte-carlo-simulation",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#monte-carlo-simulation",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Monte Carlo Simulation",
+    "text": "Monte Carlo Simulation\n\n\n\n\n\n\n\n\nTip\n\n\n\nIn order to ensure reproducibility, it is important to include the code chunk below before using spatstat functions involve Monte Carlo simulation\n\n\n\n\nset.seed(1234)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#geospatial-analytics-for-social-good-thailand-road-accident-case-study",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#geospatial-analytics-for-social-good-thailand-road-accident-case-study",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Geospatial Analytics for Social Good: Thailand Road Accident Case Study",
+    "text": "Geospatial Analytics for Social Good: Thailand Road Accident Case Study\n\nBackground\n\nRoad traffic injuries, WHO.\nRoad traffic deaths and injuries in Thailand"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#the-study-area",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#the-study-area",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "The Study Area",
+    "text": "The Study Area\nThe study area is Bangkok Metropolitan Region.\n\n\n\n\n\n\n\nNote\n\n\n\nThe projected coordinate system of Thailand is WGS 84 / UTM zone 47N and the EPSG code is 32647."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#the-data",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#the-data",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "The Data",
+    "text": "The Data\nFor the purpose of this exercise, three basic data sets are needed, they are:\n\nThailand Road Accident [2019-2022] on Kaggle\nThailand Roads (OpenStreetMap Export) on HDX.\nThailand - Subnational Administrative Boundaries on HDX."
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#importing-traffic-accident-data",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#importing-traffic-accident-data",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Importing Traffic Accident Data",
+    "text": "Importing Traffic Accident Data\n\nThe taskThe code\n\n\nUsing the steps you learned in previous lessons, import the downloaded accident data into R environment and save the output as an sf tibble data.frame.\n\n\n\n\nrdacc_sf &lt;- read_csv(\"data/thai_road_accident_2019_2022.csv\") %&gt;%\n  filter(!is.na(longitude) & longitude != \"\", \n         !is.na(latitude) & latitude != \"\") %&gt;%\n  st_as_sf(coords = c(\n    \"longitude\", \"latitude\"),\n    crs=4326) %&gt;%\n  st_transform(crs = 32647)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#visualising-the-accident-data",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#visualising-the-accident-data",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Visualising The Accident Data",
+    "text": "Visualising The Accident Data\n\nThe taskThe code\n\n\nUsing the steps you learned in previous lessons, import the ACLED data into R environment as an sf tibble data.frame.\n\n\n\n\ntmap_mode(\"plot\")\nacled_sf %&gt;%\n  filter(year == 2023 | \n           event_type == \"Political violence\") %&gt;%\n  tm_shape()+\n  tm_dots()\ntmap_mode(\"plot\")"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#edge-correction-methods-of-spatstat",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html#edge-correction-methods-of-spatstat",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "Edge correction methods of spatstat",
+    "text": "Edge correction methods of spatstat\nIn spatstat, edge correction methods are used to handle biases that arise when estimating spatial statistics near the boundaries of a study region. These corrections are essential for ensuring accurate estimates in spatial point pattern analysis, especially for summary statistics like the K-function, L-function, pair correlation function, etc.\n\nCommon Edge Correction Methods in spatstat\n\n“none”: No edge correction is applied. This method assumes that there is no bias at the edges, which may lead to underestimation of statistics near the boundaries.\n“isotropic”: This method corrects for edge effects by assuming that the point pattern is isotropic (uniform in all directions). It compensates for missing neighbors outside the boundary by adjusting the distances accordingly.\n“translate” (Translation Correction): This method uses a translation correction, which involves translating the observation window so that every point lies entirely within it. The statistic is then averaged over all possible translations.\n“Ripley” (Ripley’s Correction): Similar to the isotropic correction but specifically tailored for Ripley’s K-function and related functions. It adjusts the expected number of neighbors for points near the edges based on the shape and size of the observation window.\n“border”: Border correction reduces bias by only considering points far enough from the boundary so that their neighborhood is fully contained within the window. This can be quite conservative but reduces the influence of edge effects."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#network-constrained-point-processes",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#network-constrained-point-processes",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "Network Constrained Point Processes",
+    "text": "Network Constrained Point Processes\nMany real world point event are not randomly distributed. Their distribution, on the other hand, are constrained by network such as roads, rivers, and fault lines just to name a few of them.\n\n\nRoad traffic accidents within Bangkok City. \n\nLocation of banks at Central, Hong Kong"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html",
+    "href": "In-class_Ex/In-class_Ex02/In-class_Ex02-SPPA.html",
+    "title": "In-class Exercise 2: Spatial Point Patterns Analysis: spatstat methods",
+    "section": "",
+    "text": "maptools is retired and binary is removed from CRAN. However, we can download from Posit Public Package Manager snapshots by using the code chunk below.\n\n\ninstall.packages(\"maptools\", \n                 repos = \"https://packagemanager.posit.co/cran/2023-10-13\")"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#network-constrained-kernel-density-estimation-nkde-1",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#network-constrained-kernel-density-estimation-nkde-1",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "Network Constrained Kernel Density Estimation (NKDE)",
+    "text": "Network Constrained Kernel Density Estimation (NKDE)\nPlanar KDE versus NKDE\n\n\nFigure on the right shows the basic differences between the Planar KDE and Network KDE for the same spatial point event data. To estimate th density values at a focal point X, the planar KDE treats the whole 2-D space as the context and finds four point events (black circle) within a search bandwidth (i.e. h), whereas the Network KDE only finds two point events within the same bandwidth in the network space based on network distance."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#the-three-version-of-nkde",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#the-three-version-of-nkde",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "The Three version of NKDE",
+    "text": "The Three version of NKDE\nSimple method\n\n\nThe first method was proposed by Xie and Yan (2008). Considering the planar KDE, they defined the NKDE with the following formula:\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nThis method remains useful for two reasons:\n\nFor quick data visualization. With big datasets, it might be useful to use this simple method to do a primary investigation.\nIn a purely geographical view, this method is intuitive. In the case of crime analysis for example, one could argue that the strength of an event should not be affected by intersections on the network. In that case, the kernel function is seen as a distance decaying function."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#the-three-version-of-nkde-1",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#the-three-version-of-nkde-1",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "The Three version of NKDE",
+    "text": "The Three version of NKDE\nDiscontinuous method\n\n\nThis method is introduced by Okabe and Sugihara (2012). The discontinuous NKDE is easily presented by a figure:\n Note that the density of the kernel function is equally divided at intersections.\n\n\n\n\n\n\n\nWarning\n\n\nAs one can see, the values of the NKDE are split at intersections to avoid the multiplication of the mass observed in the simple version. However, this creates a discontinuous NKDE, which is counter-intuitive. It leads to sharp differences between density values in the network, and could be problematic in networks with many intersections."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#the-three-version-of-nkde-2",
+    "href": "lesson/Lesson03/Lesson03-Advanced_SPPA.html#the-three-version-of-nkde-2",
+    "title": "Lesson 3: Advanced Spatial Point Patterns Analysis",
+    "section": "The Three version of NKDE",
+    "text": "The Three version of NKDE\nContinue method\n\n\nThe method merges the best of the two worlds: it adjusts the values of the NKDE at intersections to ensure that it integrates to 1 on its domain, and applies a backward correction to force the density values to be continuous.\nThis process is accomplished by a recursive function. This function is more time consuming, so it might be necessary to stop it when the recursion is too deep. Considering that the kernel density is divided at each intersection, stopping the function at deep level 16 should give results almost identical to the true values.\n\n\nNote that there are three different equations to calculate the kernel density depending on the situation (here, q1, q2, q3).\n\n\n\n\n\n\nNote\n\n\nAs one can see, the values of the NKDE are continuous, and the density values close to the events have been adjusted. This leads to smoother results than the discontinuous method."
   }
 ]
