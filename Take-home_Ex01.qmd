@@ -3,77 +3,60 @@ title: "Take-home Exercise 1: Geospatial Analytics for Public Good"
 editor: visual
 ---
 
-::: callout-important
-This is NOT Take-home Exercise 1 for this term.  It was Take-home Exercise 1 for ISSS624: Applied Geospatial Analytics. However, it serves as a good example of the nature, requirement and selected submissions of your seniors for your reference .
-:::
-
 ## Setting the Scene
 
-As city-wide urban infrastructures such as buses, taxis, mass rapid transit, public utilities and roads become digital, the datasets obtained can be used as a framework for tracking movement patterns through space and time. This is particularly true with the recent trend of massive deployment of pervasive computing technologies such as GPS and RFID on the vehicles. For example, routes and ridership data were collected with the use of smart cards and Global Positioning System (GPS) devices available on the public buses. These massive movement data collected are likely to contain structure and patterns that provide useful information about characteristics of the measured phenomena. The identification, analysis and comparison of such patterns will provide greater insights on human movement and behaviours within a city. These understandings will potentially contribute to a better urban management and useful information for urban transport services providers both from the private and public sector to formulate informed decision to gain competitive advantage.
+According to World Health Organisation (WHO), road traffic accidents cause the death of approximately 1.19 million people each year leave between 20 and 50 million people with non-fatal injuries. More than half of all road traffic deaths occur among vulnerable road users, such as pedestrians, cyclists and motorcyclists.
 
-In real-world practices, the use of these massive locational aware data, however, tend to be confined to simple tracking and mapping with GIS applications. This is mainly due to a general lack of functions in conventional GIS which is capable of analysing and model spatial and spatio-temporal data effectively.
+Road traffic injuries are the leading cause of death for children and young adults aged 5–29. Yet two thirds of road traffic fatalities occur among people of working age (18–59 years). Nine in 10 fatalities on the roads occur in low- and middle-income countries, even though these countries have around 60% of the world's vehicles.
+
+In addition to the human suffering caused by road traffic injuries, they also incur a heavy economic burden on victims and their families, both through treatment costs for the injured and through loss of productivity of those killed or disabled. More broadly, road traffic injuries have a serious impact on national economies, costing countries 3% of their annual gross domestic product.
+
+Thailand’s roads are the deadliest in Southeast Asia and among the worst in the world, according to the World Health Organisation. About 20,000 people die in road accidents each year, or about 56 deaths a day (WHO).  
+
+Between 2014 and 2021, Thailand experienced a notable increase in accident frequencies. Specifically, 19% of all accidents in Thailand occurred on the national highways, which constituted the primary public thoroughfares connecting various regions, provinces, districts, and significant locations within a comprehensive network. Within the broader context of accidents across the country, there existed a considerable 66% likelihood of encountering accident-prone zones, often termed 'black spots,' distributed as follows: 66% on straight road segments, 13% at curves, 6% at median points of cross-shaped intersections, 5% at T-shaped intersections and Y-shaped intersections, 3% at cross-shaped intersections, 2% on bridges, and 2% on steep slopes, respectively.
 
 ## Objectives
 
-Exploratory Spatial Data Analysis (ESDA) hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate Local Indicators of Spatial Association (GLISA) and Emerging Hot Spot Analysis (EHSA) to undercover the spatial and spatio-temporal mobility patterns of public bus passengers in Singapore.
+By and large, road traffic accidents can be attributed by two major factors, namely: behavioural and environmental factors.  Behavioural factors in driving are considered to be major causes of traffic accidents either in direct or indirect manner (Lewin, 1982). These factors can be further grouped into two as, driver behavior (also called driver/driving style) and driver performance, in other words, driver/driving skills (Elander, West, & French, 1993).  Environmental factors, on the other hand, includes but not limited to weather condition such as poor visibility during heavy rain or foggy and road conditions such as sharp bend road, slippery slope road, and [blind spot](https://en.wikipedia.org/wiki/Vehicle_blind_spot).     
 
-## The Task
+Previous studies have demonstrated the significant potential of Spatial Point Patterns Analysis (SPPA) in exploring and identifying factors influencing road traffic accidents. However, these studies often focus solely on either behavioral or environmental factors, with limited consideration of temporal factors such as season, day of the week, or time of day.
 
-The specific tasks of this take-home exercise are as follows:
+In view of this, you are tasked to discover factors affecting road traffic accidents in the [Bangkok Metropolitan Region BMR](https://en.wikipedia.org/wiki/Bangkok_Metropolitan_Region) by employing both spatial spatio-temporal point patterns analysis methods. 
 
-### Geovisualisation and Analysis
+The specific objectives of this take-home exercise are as follows:
 
--   With reference to the time intervals provided in the table below, compute the passenger trips generated by origin at the hexagon level,
-
-    | Peak hour period             | Bus tap on time |
-    |------------------------------|-----------------|
-    | Weekday morning peak         | 6am to 9am      |
-    | Weekday afternoon peak       | 5pm to 8pm      |
-    | Weekend/holiday morning peak | 11am to 2pm     |
-    | Weekend/holiday evening peak | 4pm to 7pm      |
-
--   Display the geographical distribution of the passenger trips by using appropriate geovisualisation methods,
-
--   Describe the spatial patterns revealed by the geovisualisation (not more than 200 words per visual).
-
-### Local Indicators of Spatial Association (LISA) Analysis
-
--   Compute LISA of the passengers trips generate by origin at hexagon level.
--   Display the LISA maps of the passengers trips generate by origin at hexagon level. The maps should only display the significant (i.e. p-value \< 0.05)\
--   With reference to the analysis results, draw statistical conclusions (not more than 200 words per visual).
-
-### Emerging Hot Spot Analysis(EHSA)
-
-With reference to the passenger trips by origin at the hexagon level for the four time intervals given above:
-
--   Perform Mann-Kendall Test by using the spatio-temporal local Gi\* values,
--   Prepared EHSA maps of the Gi\* values of the passenger trips by origin at the hexagon level. The maps should only display the significant (i.e. p-value \< 0.05).\
--   With reference to the EHSA maps and data visualisation prepared, describe the spatial patterns reveled. (not more than 250 words per cluster).
+-   To visualize the spatio-temporal dynamics of road traffic accidents in BMR using appropriate statistical graphics and geovisualization methods.
+-   To conduct detailed spatial analysis of road traffic accidents using appropriate Network Spatial Point Patterns Analysis methods.
+-   To conduct detailed spatio-temporal analysis of road traffic accidents using appropriate Temporal Network Spatial Point Patterns Analysis methods.
 
 ## The Data
 
-### Apstial data
+For the purpose of this exercise, three basic data sets must be used, they are:
 
-For the purpose of this take-home exercise, *Passenger Volume by Origin Destination Bus Stops* downloaded from [LTA DataMall](https://datamall.lta.gov.sg/content/datamall/en.html) will be used.
+-   [Thailand Road Accident \[2019-2022\]](https://www.kaggle.com/datasets/thaweewatboy/thailand-road-accident-2019-2022) on Kaggle
 
-### Geospatial data
+-   [Thailand Roads (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_tha_roads) on HDX.
 
-Two geospatial data will be used in this study, they are:
+-   [Thailand - Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-tha?) on HDX.
 
--   *Bus Stop Location* from LTA DataMall. It provides information about all the bus stops currently being serviced by buses, including the bus stop code (identifier) and location coordinates.
--   *hexagon*, a [hexagon](https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-statistics-toolbox/h-whyhexagons.htm) layer of 250m (this distance is the perpendicular distance between the centre of the hexagon and its edges.) should be used to replace the relative coarse and irregular Master Plan 2019 Planning Sub-zone GIS data set of URA.
+Students are free to include other data sets if they help in the study.
 
 ## Grading Criteria
 
 This exercise will be graded by using the following criteria:
 
--   **Geospatial Data Wrangling (20 marks):** This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readr, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).
+-   **Geospatial Data Wrangling (20 marks):** This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readr, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. 
 
--   **Geospatial Analysis (25 marks):** In this exercise, you are expected to use the appropriate thematic and analytics mapping techniques and R functions introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical maps by using appropriate rate mapping techniques.
+::: {.callout-warning}
 
--   **Geovisualisation and Geocommunication (25 marks):** In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.
+All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).
+:::
 
--   **Reproducibility (20 marks):** This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Markdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.
+-   **Geospatial Analysis (25 marks):** In this exercise, you are expected to utilize the geospatial analytics methods introduced in class, along with the R packages provided during the hands-on exercises, to perform your analysis. You will be assessed on your ability to apply these methods correctly and to provide accurate interpretations and discussions of the analysis results.
+
+-   **Geovisualisation and Geocommunication (25 marks):** In this section, your ability to effectively communicate complex geospatial analysis results through user-friendly visual representations will be assessed. Since this course is focused on geospatial analysis, it is crucial that you demonstrate proficiency in using appropriate geovisualization techniques to clearly convey the findings of your analysis.
+
+-   **Reproducibility (20 marks):** This is a key learning outcome of this course. You will be assessed on your ability to thoroughly document the analysis procedures using code chunks within Quarto. It is important to note that simply providing the code chunks is insufficient; you must also include explanations of the purpose behind each step and the R function(s) used.
 
 -   **Bonus (10 marks):** Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature.
 
@@ -85,11 +68,20 @@ This exercise will be graded by using the following criteria:
 
 ## Due Date
 
-3rd December 2023 (Sunday), 11.59pm (midnight).
+**22nd September 2024 (Sunday), 11.59pm (midnight)**.
+
+## References
+
+-   WHO (2023) [Road traffic injuries](https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries)
+
+-   [Road traffic deaths and injuries in Thailand](https://cdn.who.int/media/docs/default-source/thailand/roadsafety/overview-en-final-25-7-19.pdf?sfvrsn=f9d7a862_2)
+
+-   Lewin, I. (1982). Driver training: A perceptual-motor skill approach. Ergonomics, 25(10), 917–924.
+
+-   Elander, J., West, R., & French, D. (1993). Behavioral correlates of individual differences in road-traffic crash risk: An examination of methods and findings.
+Psychological Bulletin, 113(2), 279.
 
 ## Survival Tips
-
--   [Create spatial square/hexagon grids and count points inside in R with sf](https://urbandatapalette.com/post/2021-08-tessellation-sf/)
 
 ## Learning from seniors
 
@@ -98,4 +90,3 @@ This exercise will be graded by using the following criteria:
 -   [KYLIE TAN JING YI](https://isss624-kytjy.netlify.app/) ![](img/thumbup1.jpg) Section 5: Spatial Association Analysis of this submission provides a comprehensive discussion of the methods used and analysis results.
 -   [MUHAMAD AMEER NOOR](https://geospatialanalytics-ameer.netlify.app/) ![](img/thumbup1.jpg) Have done well in all five grading criteria including a short write-up of the geospatial analytics methods used.
 -   [NEO YI XIN](https://yixin-neo-isss624-aga.netlify.app/)![](img/thumbup1.jpg) This submission put function programming of R into good used. For example, subsection [Processing the aspatial OD data](https://yixin-neo-isss624-aga.netlify.app/take-home_ex1/take-home_ex1#processing-the-aspatial-od-data) for processing data with same structure repetitively, [Task 1: Geovisulisation and Analysis](https://yixin-neo-isss624-aga.netlify.app/take-home_ex1/take-home_ex1#task-1-geovisulisation-and-analysis) to ensure that a same classification scale are used. Further more Sub-section Computing Distance-Based Spatial Weights Matrix serves as a good example on how to discussion geospatial analytics methods used. There are at least three other students did show the spatial weights map but they are way too messy.
-
