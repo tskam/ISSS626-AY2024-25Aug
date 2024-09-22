@@ -1804,5 +1804,96 @@
     "title": "Synopsis",
     "section": "Reference",
     "text": "Reference\n\nGimond, Manuel. (2018) Introduction to GIS and Spatial Analysis. (e-book, last visit: 11/11/2022).\nFloch, J.M., Marcon, E. and Puech, F. (2018) Handbook of Spatial Analysis: Theory and Application with R.\nRoger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer. (via SMU Library)\n\nBrunsdon, C. & Comber, L (2019) An Introduction to R for Spatial Analysis and Mapping (2nd Edition), SAGE Publication, London."
+  },
+  {
+    "objectID": "Take-home_Ex02.html",
+    "href": "Take-home_Ex02.html",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "",
+    "text": "Important\n\n\n\nThis handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 2. Students must review and understand them before getting started with the take-home exercise."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#setting-the-scene",
+    "href": "Take-home_Ex02.html#setting-the-scene",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Setting the Scene",
+    "text": "Setting the Scene\nTourism is one of Thailand’s largest industries, accounting for some 20% of the gross domestic product (GDP). In 2019, Thailand earned 90 billion US$ from domestic and international tourism, but the COVID-19 pandemic caused revenues to crash to 24 billion US$ in 2020.\nFigure below shows the total revenue receipt from tourism sector from January 2019 until Feb 2023. The figure reveals that the revenue from tourism industry have been recovered gradually since September 2021.\n\nHowever, it is important to note that the tourism economy of Thailand are not evenly distributed. Figure below reveals that the tourism economy of Thailand are mainly focus on five provinces, namely Bangkok, Phuket, Chiang Mai, Sukhothai and Phetchaburi."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#objectives",
+    "href": "Take-home_Ex02.html#objectives",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Objectives",
+    "text": "Objectives\nAs a curious geospatial analytics green horn, you are interested to discover:\n\nif the key indicators of tourism economy of Thailand are independent from space and space and time.\n\nIf the tourism economy is indeed spatial and spatio-temporal dependent, then, you would like to detect where are the clusters and outliers, and the emerging hot spot/cold spot areas."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#the-task",
+    "href": "Take-home_Ex02.html#the-task",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "The Task",
+    "text": "The Task\nThe specific tasks of this take-home exercise are as follows:\n\nUsing appropriate function of sf and tidyverse, preparing the following geospatial data layer:\n\na study area layer in sf polygon features. It must be at province level (including Bangkok) of Thailand.\na tourism economy indicators layer within the study area in sf polygon features.\na derived tourism economy indicator layer in spacetime s3 class of sfdep. Keep the time series at month and year levels.\n\nUsing the extracted data, perform global spatial autocorrelation analysis by using sfdep methods.\nUsing the extracted data, perform local spatial autocorrelation analysis by using sfdep methods.\nUsing the extracted data, perform emerging hotspot analysis by using sfdep methods.\nDescribe the spatial patterns revealed by the analysis above."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#the-data",
+    "href": "Take-home_Ex02.html#the-data",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "The Data",
+    "text": "The Data\nFor the purpose of this take-home exercise, two data sets shall be used, they are:\n\nThailand Domestic Tourism Statistics at Kaggle. You are required to use version 2 of the data set.\nThailand - Subnational Administrative Boundaries at HDX. You are required to use the province boundary data set."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#grading-criteria",
+    "href": "Take-home_Ex02.html#grading-criteria",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Grading Criteria",
+    "text": "Grading Criteria\nThis exercise will be graded by using the following criteria:\n\nGeospatial Data Wrangling (20 marks): This is an important aspect of geospatial analytics. You will be assessed on your ability:\n\nto employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the import and extract the data.\nto clean and derive appropriate variables for meeting the analysis need.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nAll data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them.\n\n\n\nGeospatial Analysis (30 marks): In this exercise, you are expected to use the appropriate global and local measures of spatial autocorrelation, and emerging hot spot analysis methods in class to perform the analysis. You will be assessed on your ability:\n\nto describe the methods used correctly, and\nto provide accurate interpretation of the analysis results.\n\nGeovisualisation and geocommunication (20 marks): In this section, you will be assessed on your ability to communicate the results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.\nReproducibility (15 marks): This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Quarto. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.\nBonus (15 marks): Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#submission-instructions",
+    "href": "Take-home_Ex02.html#submission-instructions",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Submission Instructions",
+    "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in Quarto html document format. You are required to publish the write-up on Netlify.\nZip the take-home exercise folder and upload it onto eLearn. If the size of the zip file is beyond the capacity of eLearn, you can upload it on SMU OneDrive and provide the download link on eLearn.."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#due-date",
+    "href": "Take-home_Ex02.html#due-date",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Due Date",
+    "text": "Due Date\n13th October 2024 (Sunday), 11.59pm (midnight)."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#learning-from-senior",
+    "href": "Take-home_Ex02.html#learning-from-senior",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Learning from senior",
+    "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors.\n\nCHUA YAN TING: Have done well in all five grading criteria especially the geocommunication criterion.\nLIN SHUYAN Geospatial data wrangling is very comprehensively done especially identifying water points located outside Nigeria administrative boundary due to location precision issue.\nLOH SI YING Have done well in all five grading criteria especially the followings: (i) the geospatial wrangling are very comprehensively done including to exclude LGAs without water points from the analysis, (ii) managed to compute the p-values, (iii) Start each analysis by explaining the purpose of the analysis. Managed to relate the analysis results to the location context."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#q-a",
+    "href": "Take-home_Ex02.html#q-a",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Q & A",
+    "text": "Q & A\nPlease submit your questions or queries related to this take-home exercise on Piazza."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#peer-learning",
+    "href": "Take-home_Ex02.html#peer-learning",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Peer Learning",
+    "text": "Peer Learning"
+  },
+  {
+    "objectID": "Take-home_Ex02.html#reference",
+    "href": "Take-home_Ex02.html#reference",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Reference",
+    "text": "Reference\n\nIMPACT OF COVID-19 ON THAILAND’S TOURISM SECTOR\nCovid: Thailand tourism up but still below pre-pandemic level\nTourism in Thailand\n\n\nResearch articles\n\nUglješa Stankov et. al. (2017) “Spatial autocorrelation analysis of tourist arrivals using municipal data: A Serbian example”, Geographica Pannonica, Vol.21 (2), p.106-114. SMU e-journal.\nKhan, D. et. al. (2017) “Hot spots, cluster detection and spatial outlier analysis of teen birth rates in the U.S., 2003–2012”, Spatial and Spatio-temporal Epidemiology, Vol. 21, pp. 67–75.\nMuhammad Arif & Didit Purnomo (2017) “Measuring Spatial Cluster for Leading Industries in Surakarta with Exploratory Spatial Data Analysis (ESDA)”, Jurnal Ekonomi Pembangunan, Vol. 18 (1), pp. 64-81.\nJoshua T. Fergen * and Ryan D. Bergstrom (2021) “Social Vulnerability across the Great Lakes Basin: A County-Level Comparative and Spatial Analysis”, Sustainability, Vol. 13(13).\nV Putrenko, N Pashynska, and S Nazarenko (2018) “Data Mining of Network Events With Space-Time Cube Application”. In: R Westerholt, F-B Mocnik, and A Zipf (eds.), Proceedings of the 1st Workshop on Platial Analysis (PLATIAL’18), pp. 75–82. SMU e-journal.\nJamie Anne Boschan and Caterina G. Roman (2024) “Hot Spots of Gun Violence in the Era of Focused Deterrence: A Space-Time Analysis of Shootings in South Philadelphia”, Social Sciences, Vol. 13.\nMinkyung Kim and Sangdon Lee (2023) “Identification of Emerging Roadkill Hotspots on Korean Expressways Using Space–Time Cubes”, Int. J. Environ. Res. Public Health, 20(6)."
+  },
+  {
+    "objectID": "Take-home_Ex02.html#learning-from-is415",
+    "href": "Take-home_Ex02.html#learning-from-is415",
+    "title": "Take-home Exercise 2: Discovering impacts of COVID-19 on Thailand tourism economy at the province level using spatial and spatio-temporal statistics",
+    "section": "Learning from IS415",
+    "text": "Learning from IS415\n\nKHANT MIN NAING: Very well done in all the five grading criteria especially the ability to provide a comprehensive overview of the analysis methods used and discussion on the analysis results.\nMATTHEW HO YIWEN Able to provide a clear and comprehensive discussion on the geospatial data wrangling process and to communicate the analysis results by using appropriate geovisualisation and data visualisation methods."
   }
 ]
