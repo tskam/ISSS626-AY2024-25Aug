@@ -627,7 +627,7 @@
     "href": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#mapping-gdppc",
     "title": "In-class Exercise 4: Geographically Weighted Summary Statistics - gwModel methods",
     "section": "Mapping GDPPC",
-    "text": "Mapping GDPPC\n\nDIYThe code\n\n\nUsing the steps you learned from Hands-on Exercise 5, prepare a choropleth map showing the geographic distribution of GDPPC of Hunan Province.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbasemap &lt;- tm_shape(hunan_sf) +\n  tm_polygons() +\n  tm_text(\"NAME_3\", size=0.5)\n\ngdppc &lt;- qtm(hunan_sf, \"GDPPC\")\ntmap_arrange(basemap, gdppc, asp=1, ncol=2)"
+    "text": "Mapping GDPPC\n\nDIYThe code\n\n\nUsing the steps you learned from Hands-on Exercise 5, prepare a choropleth map showing the geographic distribution of GDPPC of Hunan Province.\n\n\n\n\n\n\n\n\n\n\n\n\n\nbasemap &lt;- tm_shape(hunan_sf) +\n  tm_polygons() +\n  tm_text(\"NAME_3\", size=0.5)\n\ngdppc &lt;- qtm(hunan_sf, \"GDPPC\")\ntmap_arrange(basemap, gdppc, asp=1, ncol=2)"
   },
   {
     "objectID": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#converting-to-spatialpolygondataframe",
