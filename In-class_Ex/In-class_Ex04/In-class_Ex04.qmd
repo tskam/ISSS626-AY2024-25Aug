@@ -24,7 +24,7 @@ editor: visual
 
 In this in-class exercise, sf, spdep, tmap, tidyverse, knitr and GWmodel will be used.
 
-::: panel-tabset
+:::: panel-tabset
 ### DIY
 
 Using the step you leanred from previous hands-in, install and load the necessary R packages in R environment.
@@ -36,13 +36,13 @@ Using the step you leanred from previous hands-in, install and load the necessar
 pacman::p_load(sf, ggstatsplot, tmap, tidyverse, knitr, GWmodel)
 ```
 :::
-:::
+::::
 
 ## Preparing the Data
 
 For this in-class exercise, Hunan shapefile and Hunan_2012 data file will be used.
 
-::: panel-tabset
+:::::: panel-tabset
 ### DIY
 
 Using the steps you learned from previous hands-on, complete the following tasks:
@@ -76,11 +76,11 @@ hunan_sf <- left_join(hunan_sf, hunan2012) %>%
   select(1:3, 7, 15, 16, 31, 32)
 ```
 :::
-:::
+::::::
 
 ## Mapping GDPPC
 
-::: panel-tabset
+::::: panel-tabset
 ### DIY
 
 Using the steps you learned from Hands-on Exercise 5, prepare a choropleth map showing the geographic distribution of GDPPC of Hunan Province.
@@ -110,11 +110,11 @@ basemap <- tm_shape(hunan_sf) +
   tm_polygons() +
   tm_text("NAME_3", size=0.5)
 
-gdppc <- qtm(hunan, "GDPPC")
+gdppc <- qtm(hunan_sf, "GDPPC")
 tmap_arrange(basemap, gdppc, asp=1, ncol=2)
 ```
 :::
-:::
+:::::
 
 ## Converting to SpatialPolygonDataFrame
 
@@ -133,7 +133,7 @@ hunan_sp <- hunan_sf %>%
 
 ### Determine adaptive bandwidth
 
-::: panel-tabset
+::::: panel-tabset
 ### Cross-validation
 
 ::: {style="font-size: 1.20em"}
@@ -161,7 +161,7 @@ bw_AIC <- bw.gwr(GDPPC ~ 1,
 bw_AIC
 ```
 :::
-:::
+:::::
 
 ## Geographically Weighted Summary Statistics with adaptive bandwidth
 
@@ -200,10 +200,10 @@ hunan_gstat <- cbind(hunan_sf, gwstat_df)
 
 ## Visualising geographically weighted summary statistics
 
-::: panel-tabset
+:::::: panel-tabset
 ### The Geographically Weighted Mean
 
-::: columns
+:::: columns
 ::: {.column width="50%"}
 ```{r}
 #| fig-height: 9
@@ -222,7 +222,7 @@ tm_shape(hunan_gstat) +
             frame = TRUE)
 ```
 :::
-:::
+::::
 
 ### The code
 
@@ -243,13 +243,13 @@ tm_shape(hunan_gstat) +
             frame = TRUE)
 ```
 :::
-:::
+::::::
 
 ## Geographically Weighted Summary Statistics with fixed
 
 ### Determine fixed bandwidth
 
-::: panel-tabset
+::::: panel-tabset
 ### Cross-validation
 
 ::: {style="font-size: 1.20em"}
@@ -277,7 +277,7 @@ bw_AIC <- bw.gwr(GDPPC ~ 1,
 bw_AIC
 ```
 :::
-:::
+:::::
 
 ## Geographically Weighted Summary Statistics with fixed
 
@@ -318,10 +318,10 @@ hunan_gstat <- cbind(hunan_sf, gwstat_df)
 
 ### Visualising geographically weighted summary statistics
 
-::: panel-tabset
+:::::: panel-tabset
 ### The Geographically Weighted Mean
 
-::: columns
+:::: columns
 ::: {.column width="50%"}
 ```{r}
 #| fig-height: 9
@@ -340,7 +340,7 @@ tm_shape(hunan_gstat) +
             frame = TRUE)
 ```
 :::
-:::
+::::
 
 ### The code
 
@@ -361,13 +361,13 @@ tm_shape(hunan_gstat) +
             frame = TRUE)
 ```
 :::
-:::
+::::::
 
 ## Geographically Weighted Correlation with Adaptive Bandwidth
 
 Business question: Is there any relationship between GDP per capita and Gross Industry Output?
 
-::: panel-tabset
+:::: panel-tabset
 ### Conventional statistical solution
 
 ```{r}
@@ -405,13 +405,13 @@ ggscatterstats(
   title = "Relationship between GDP PC and Gross Agriculture Output")
 ```
 :::
-:::
+::::
 
 ## Geographically Weighted Correlation with Adaptive Bandwidth
 
 Geospatial analytics solution
 
-::: panel-tabset
+::::::: panel-tabset
 ### Determine the bandwidth
 
 ::: {style="font-size: 1.50em"}
@@ -456,11 +456,11 @@ Next, `cbind()` is used to append the newly derived data.frame onto *hunan_sf* s
 hunan_Corr <- cbind(hunan_sf, gwstat_df)
 ```
 :::
-:::
+:::::::
 
 ## Visualising Local Correlation
 
-::: panel-tabset
+:::: panel-tabset
 ### Local Correlation Coefficient
 
 ```{r}
@@ -518,7 +518,7 @@ tm_shape(hunan_Corr) +
             frame = TRUE)
 ```
 :::
-:::
+::::
 
 ## References
 
@@ -526,10 +526,8 @@ Brunsdon, C. et. al. (2002) "Geographically weighted summary statistics - a fram
 
 Harris, P. & Brunsdon, C. (2010) "Exploring spatial variation and spatial relationships in freshwater acidification critical load data set for Great Britain using geographically weighted summary statistics", *Computers & Geosciences*, Vol. 36, pp. 54-70. Available as e-journal, SMU library.
 
-
 ```{r}
 #| eval: false
 #| echo: false
 renderthis::to_pdf(from ="In-class_Ex04.qmd")
 ```
-

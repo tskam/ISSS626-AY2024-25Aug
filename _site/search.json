@@ -627,7 +627,7 @@
     "href": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#mapping-gdppc",
     "title": "In-class Exercise 4: Geographically Weighted Summary Statistics - gwModel methods",
     "section": "Mapping GDPPC",
-    "text": "Mapping GDPPC\n\nDIYThe code\n\n\nUsing the steps you learned from Hands-on Exercise 5, prepare a choropleth map showing the geographic distribution of GDPPC of Hunan Province.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbasemap &lt;- tm_shape(hunan_sf) +\n  tm_polygons() +\n  tm_text(\"NAME_3\", size=0.5)\n\ngdppc &lt;- qtm(hunan, \"GDPPC\")\ntmap_arrange(basemap, gdppc, asp=1, ncol=2)"
+    "text": "Mapping GDPPC\n\nDIYThe code\n\n\nUsing the steps you learned from Hands-on Exercise 5, prepare a choropleth map showing the geographic distribution of GDPPC of Hunan Province.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nbasemap &lt;- tm_shape(hunan_sf) +\n  tm_polygons() +\n  tm_text(\"NAME_3\", size=0.5)\n\ngdppc &lt;- qtm(hunan_sf, \"GDPPC\")\ntmap_arrange(basemap, gdppc, asp=1, ncol=2)"
   },
   {
     "objectID": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#converting-to-spatialpolygondataframe",
@@ -662,7 +662,7 @@
     "href": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#visualising-geographically-weighted-summary-statistics",
     "title": "In-class Exercise 4: Geographically Weighted Summary Statistics - gwModel methods",
     "section": "Visualising geographically weighted summary statistics",
-    "text": "Visualising geographically weighted summary statistics\n\nThe Geographically Weighted MeanThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(hunan_gstat) +\n  tm_fill(\"GDPPC_LM\",\n          n = 5,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5) +\n  tm_layout(main.title = \"Distribution of geographically wieghted mean\",\n            main.title.position = \"center\",\n            main.title.size = 2.0,\n            legend.text.size = 1.2,\n            legend.height = 1.50, \n            legend.width = 1.50,\n            frame = TRUE)"
+    "text": "Visualising geographically weighted summary statistics\n\nThe Geographically Weighted MeanThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(hunan_gstat) +\n  tm_fill(\"GDPPC_LM\",\n          n = 5,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5) +\n  tm_layout(main.title = \"Distribution of geographically wieghted mean\",\n            main.title.position = \"center\",\n            main.title.size = 2.0,\n            legend.text.size = 1.2,\n            legend.height = 1.50, \n            legend.width = 1.50,\n            frame = TRUE)"
   },
   {
     "objectID": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#geographically-weighted-summary-statistics-with-fixed",
@@ -690,7 +690,7 @@
     "href": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#geographically-weighted-summary-statistics-with-fixed-2",
     "title": "In-class Exercise 4: Geographically Weighted Summary Statistics - gwModel methods",
     "section": "Geographically Weighted Summary Statistics with fixed",
-    "text": "Geographically Weighted Summary Statistics with fixed\nVisualising geographically weighted summary statistics\n\nThe Geographically Weighted MeanThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(hunan_gstat) +\n  tm_fill(\"GDPPC_LM\",\n          n = 5,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5) +\n  tm_layout(main.title = \"Distribution of geographically wieghted mean\",\n            main.title.position = \"center\",\n            main.title.size = 2.0,\n            legend.text.size = 1.2,\n            legend.height = 1.50, \n            legend.width = 1.50,\n            frame = TRUE)"
+    "text": "Geographically Weighted Summary Statistics with fixed\nVisualising geographically weighted summary statistics\n\nThe Geographically Weighted MeanThe code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntm_shape(hunan_gstat) +\n  tm_fill(\"GDPPC_LM\",\n          n = 5,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5) +\n  tm_layout(main.title = \"Distribution of geographically wieghted mean\",\n            main.title.position = \"center\",\n            main.title.size = 2.0,\n            legend.text.size = 1.2,\n            legend.height = 1.50, \n            legend.width = 1.50,\n            frame = TRUE)"
   },
   {
     "objectID": "In-class_Ex/In-class_Ex04/In-class_Ex04.html#geographically-weighted-correlation-with-adaptive-bandwidth",
@@ -2175,5 +2175,12 @@
     "title": "In-class Exercise 5: Emerging Hot Spot Analysis: sfdep methods",
     "section": "Performing Emerging Hotspot Analysis",
     "text": "Performing Emerging Hotspot Analysis\nLastly, we will perform EHSA analysis by using emerging_hotspot_analysis() of sfdep package. It takes a spacetime object x (i.e. GDPPC_st), and the quoted name of the variable of interest (i.e. GDPPC) for .var argument. The k argument is used to specify the number of time lags which is set to 1 by default. Lastly, nsim map numbers of simulation to be performed.\n\n\nehsa &lt;- emerging_hotspot_analysis(\n  x = GDPPC_st, \n  .var = \"GDPPC\", \n  k = 1, \n  nsim = 99\n)\n\n\n\nVisualising the distribution of EHSA classes\nIn the code chunk below, ggplot2 functions ised used to reveal the distribution of EHSA classes as a bar chart.\n\n\nggplot(data = ehsa,\n       aes(x = classification)) +\n  geom_bar()\n\n\n\n\n\n\n\n\n\nFigure above shows that sporadic cold spots class has the high numbers of county.\n\n\nVisualising EHSA\nIn this section, you will learn how to visualise the geographic distribution EHSA classes. However, before we can do so, we need to join both hunan and ehsa together by using the code chunk below.\n\n\nhunan_ehsa &lt;- hunan %&gt;%\n  left_join(ehsa,\n            by = join_by(County == location))\n\n\nNext, tmap functions will be used to plot a categorical choropleth map by using the code chunk below.\n\n\nehsa_sig &lt;- hunan_ehsa  %&gt;%\n  filter(p_value &lt; 0.05)\ntmap_mode(\"plot\")\ntm_shape(hunan_ehsa) +\n  tm_polygons() +\n  tm_borders(alpha = 0.5) +\ntm_shape(ehsa_sig) +\n  tm_fill(\"classification\") + \n  tm_borders(alpha = 0.4)"
+  },
+  {
+    "objectID": "lesson/Lesson06/Lesson06.html#content",
+    "href": "lesson/Lesson06/Lesson06.html#content",
+    "title": "Lesson 6: Geographic Segmentation with Spatial Clustering",
+    "section": "Content",
+    "text": "Content\n\nIntroduction to Geographic Segmentation\nSpatialising classic clustering methods\nSpatially Constrained Clustering - Hierarchical methods\n\nskater\nREDCAP\nclustGeo\n\nSpatially Constrained Clustering - Partitioning methods\n\nAutomatic zoning procedure (AZP)\nmax-p heuristic"
   }
 ]
