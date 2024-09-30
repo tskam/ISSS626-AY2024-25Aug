@@ -23,7 +23,7 @@ execute:
 
 ## Lesson slides
 
--   [Lesson 7: Geographic Segmentation with Spatially Constrained Cluster Analysis](..\lesson\Lesson07\Lesson07-SCCA.html) slides.
+-   [Lesson 6: Geographic Segmentation with Spatially Constrained Cluster Analysis](..\lesson\Lesson06\Lesson06.html) slides.
 
 ## Hands-on Exercise
 
