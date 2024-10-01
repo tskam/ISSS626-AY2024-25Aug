@@ -767,7 +767,7 @@
     "href": "In-class_Ex/In-class_Ex06/In-class_Ex06-EHSA.html#overview",
     "title": "In-class Exercise 6: Emerging Hot Spot Analysis",
     "section": "Overview",
-    "text": "Overview\n\n\n\nEmerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revealing and describing how hot spot and cold spot areas evolve over time. The analysis consist of four main steps:\n\nBuilding a space-time cube,\nCalculating Getis-Ord local Gi* statistic for each bin by using an FDR correction,\nEvaluating these hot and cold spot trends by using Mann-Kendall trend test,\nCategorising each study area location by referring to the resultant trend z-score and p-value for each location with data, and with the hot spot z-score and p-value for each bin."
+    "text": "Overview\n\n\n\nEmerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revealing and describing how hot spot and cold spot areas evolve over time. The analysis consist of four main steps:\n\nBuilding a space-time cube,\nCalculating Getis-Ord local Gi* statistic for each bin by using an FDR correction,\nEvaluating these hot and cold spot trends by using Mann-Kendall trend test,\nCategorising each study area location by referring to the resultant trend z-score and p-value for each location with data, and with the hot spot z-score and p-value for each bin.\n\n\n\n\n\n\n\nImportant\n\n\nIt is highly recommended to read Emerging Hot Spot Analysis before you continue the exercise."
   },
   {
     "objectID": "In-class_Ex/In-class_Ex06/In-class_Ex06-EHSA.html#getting-started",
@@ -809,7 +809,7 @@
     "href": "In-class_Ex/In-class_Ex06/In-class_Ex06-EHSA.html#mann-kendall-test",
     "title": "In-class Exercise 6: Emerging Hot Spot Analysis",
     "section": "Mann-Kendall Test",
-    "text": "Mann-Kendall Test\nA monotonic series or function is one that only increases (or decreases) and never changes direction. So long as the function either stays flat or continues to increase, it is monotonic.\nH0: No monotonic trend\nH1: Monotonic trend is present\nInterpretation\n\nReject the null-hypothesis null if the p-value is smaller than the alpha value (i.e. 1-confident level)\nTau ranges between -1 and 1 where:\n\n-1 is a perfectly decreasing series, and\n1 is a perfectly increasing series."
+    "text": "Mann-Kendall Test\nA monotonic series or function is one that only increases (or decreases) and never changes direction. So long as the function either stays flat or continues to increase, it is monotonic.\nH0: No monotonic trend\nH1: Monotonic trend is present\nInterpretation\n\nReject the null-hypothesis null if the p-value is smaller than the alpha value (i.e. 1-confident level)\nTau ranges between -1 and 1 where:\n\n-1 is a perfectly decreasing series, and\n1 is a perfectly increasing series.\n\n\n\n\n\n\n\n\nImportant\n\n\nYou are encouraged to read Mann-Kendall Test For Monotonic Trend to learn more about the concepts and method of Mann-Kendall test.."
   },
   {
     "objectID": "In-class_Ex/In-class_Ex06/In-class_Ex06-EHSA.html#performing-emerging-hotspot-analysis",

@@ -30,6 +30,11 @@ Emerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revea
 -   Calculating Getis-Ord local Gi\* statistic for each bin by using an FDR correction,
 -   Evaluating these hot and cold spot trends by using Mann-Kendall trend test,
 -   Categorising each study area location by referring to the resultant trend z-score and p-value for each location with data, and with the hot spot z-score and p-value for each bin.
+
+::: callout-important
+It is highly recommended to read [Emerging Hot Spot Analysis](https://sfdep.josiahparry.com/articles/understanding-emerging-hotspots) before you continue the exercise.
+:::
+
 :::
 ::::
 
@@ -197,6 +202,11 @@ H1: Monotonic trend is present
 -   Tau ranges between -1 and 1 where:
     -   -1 is a perfectly decreasing series, and
     -   1 is a perfectly increasing series.
+
+::: callout-important
+You are encouraged to read [Mann-Kendall Test For Monotonic Trend](https://vsp.pnnl.gov/help/vsample/design_trend_mann_kendall.htm) to learn more about the concepts and method of Mann-Kendall test..
+:::
+
 
 ------------------------------------------------------------------------
 
