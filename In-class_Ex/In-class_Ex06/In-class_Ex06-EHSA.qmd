@@ -51,7 +51,8 @@ Five R packages are need for this in-class exercise, they are: sf, sfdep, tmap, 
 ::: {style="font-size: 1.5em"}
 ```{r}
 pacman::p_load(sf, sfdep, tmap, 
-               plotly, tidyverse)
+               plotly, tidyverse, 
+               Kendall)
 ```
 :::
 ::::
@@ -186,20 +187,20 @@ gi_stars <- GDPPC_nb %>%
 
 A **monotonic series** or function is one that only increases (or decreases) and never changes direction. So long as the function either stays flat or continues to increase, it is monotonic.
 
-   H0: No monotonic trend
+H0: No monotonic trend
 
-   H1: Monotonic trend is present
+H1: Monotonic trend is present
 
 **Interpretation**
 
 -   Reject the null-hypothesis null if the p-value is smaller than the alpha value (i.e. 1-confident level)
 -   Tau ranges between -1 and 1 where:
-    -   -1 is a perfectly decreasing series, and 
-    -   1 is a perfectly increasing series.  
+    -   -1 is a perfectly decreasing series, and
+    -   1 is a perfectly increasing series.
 
----
+------------------------------------------------------------------------
 
-### Mann-Kendall Test on Gi\
+### Mann-Kendall Test on Gi 
 
 :::::::: columns
 ::::: {.column width="50%"}

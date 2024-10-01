@@ -774,7 +774,7 @@
     "href": "In-class_Ex/In-class_Ex06/In-class_Ex06-EHSA.html#getting-started",
     "title": "In-class Exercise 6: Emerging Hot Spot Analysis",
     "section": "Getting started",
-    "text": "Getting started\nInstalling and Loading the R Packages\n\n\nAs usual, p_load() of pacman package will be used to check if the necessary packages have been installed in R, if yes, load the packages on R environment.\nFive R packages are need for this in-class exercise, they are: sf, sfdep, tmap, plotly, and tidyverse.\n\n\npacman::p_load(sf, sfdep, tmap, \n               plotly, tidyverse)"
+    "text": "Getting started\nInstalling and Loading the R Packages\n\n\nAs usual, p_load() of pacman package will be used to check if the necessary packages have been installed in R, if yes, load the packages on R environment.\nFive R packages are need for this in-class exercise, they are: sf, sfdep, tmap, plotly, and tidyverse.\n\n\npacman::p_load(sf, sfdep, tmap, \n               plotly, tidyverse, \n               Kendall)"
   },
   {
     "objectID": "In-class_Ex/In-class_Ex06/In-class_Ex06-EHSA.html#the-data",
