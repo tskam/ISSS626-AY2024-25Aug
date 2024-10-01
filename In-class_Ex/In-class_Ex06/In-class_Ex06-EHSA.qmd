@@ -1,5 +1,5 @@
 ---
-title: "In-class Exercise 5: Emerging Hot Spot Analysis"
+title: "In-class Exercise 6: Emerging Hot Spot Analysis"
 author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
 institute: "School of Computing and Information Systems,<br/>Singapore Management University"
 date: "last-modified"
@@ -21,8 +21,8 @@ editor: visual
 
 ## Overview
 
-::: columns
-::: {.column width="50%"}
+:::::: columns
+:::: {.column width="50%"}
 ::: {style="font-size: 0.8em"}
 Emerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revealing and describing how hot spot and cold spot areas evolve over time. The analysis consist of four main steps:
 
@@ -31,19 +31,19 @@ Emerging Hot Spot Analysis (EHSA) is a spatio-temporal analysis method for revea
 -   Evaluating these hot and cold spot trends by using Mann-Kendall trend test,
 -   Categorising each study area location by referring to the resultant trend z-score and p-value for each location with data, and with the hot spot z-score and p-value for each bin.
 :::
-:::
+::::
 
 ::: {.column width="50%"}
 ![](img/image3.png)
 :::
-:::
+::::::
 
 ## Getting started
 
 ### Installing and Loading the R Packages
 
-::: columns
-::: {.column width="50%"}
+::::: columns
+:::: {.column width="50%"}
 As usual, `p_load()` of **pacman** package will be used to check if the necessary packages have been installed in R, if yes, load the packages on R environment.
 
 Five R packages are need for this in-class exercise, they are: sf, sfdep, tmap, plotly, and tidyverse.
@@ -54,12 +54,12 @@ pacman::p_load(sf, sfdep, tmap,
                plotly, tidyverse)
 ```
 :::
-:::
-:::
+::::
+:::::
 
 ## The Data
 
-::: columns
+:::: columns
 ::: {.column width="50%"}
 For the purpose of this in-class exercise, the Hunan data sets will be used. There are two data sets in this use case, they are:
 
@@ -68,9 +68,9 @@ For the purpose of this in-class exercise, the Hunan data sets will be used. The
 
 Before getting started, reveal the content of *Hunan_GDPPC.csv* by using Notepad and MS Excel.
 :::
-:::
+::::
 
----
+------------------------------------------------------------------------
 
 ### Importing geospatial data
 
@@ -83,12 +83,12 @@ hunan <- st_read(dsn = "data/geospatial",
 ```
 :::
 
----
+------------------------------------------------------------------------
 
 ### Importing attribute table
 
-::: columns
-::: {.column width="65%"}
+::::: columns
+:::: {.column width="65%"}
 In the code chunk below, `read_csv()` of **readr** is used to import *Hunan_GDPPC.csv* into R.
 
 ::: {style="font-size: 1.5em"}
@@ -96,8 +96,8 @@ In the code chunk below, `read_csv()` of **readr** is used to import *Hunan_GDPP
 GDPPC <- read_csv("data/aspatial/Hunan_GDPPC.csv")
 ```
 :::
-:::
-:::
+::::
+:::::
 
 ## Creating a Time Series Cube
 
@@ -129,8 +129,8 @@ Next, we will compute the local Gi\* statistics.
 
 ### Deriving the spatial weights
 
-::: columns
-::: {.column width="60%"}
+::::::: columns
+:::: {.column width="60%"}
 The code chunk below will be used to identify neighbors and to derive an inverse distance weights.
 
 ::: {style="font-size: 1.5em"}
@@ -148,9 +148,9 @@ GDPPC_nb <- GDPPC_st %>%
   set_wts("wt")
 ```
 :::
-:::
+::::
 
-::: {.column width="40%"}
+:::: {.column width="40%"}
 ::: callout-tip
 # Things to learn from the code chunk above
 
@@ -159,15 +159,15 @@ GDPPC_nb <- GDPPC_st %>%
 -   Then we will activate the data context again and copy over the nb and wt columns to each time-slice using `set_nbs()` and `set_wts()`
     -   row order is very important so do not rearrange the observations after using `set_nbs()` or `set_wts()`.
 :::
-:::
-:::
+::::
+:::::::
 
 Note that this dataset now has neighbors and weights for each time-slice.
 
 ## Computing Gi\*
 
-::: columns
-::: {.column width="60%"}
+::::: columns
+:::: {.column width="60%"}
 We can use these new columns to manually calculate the local Gi\* for each location. We can do this by grouping by *Year* and using `local_gstar_perm()` of sfdep package. After which, we `use unnest()` to unnest *gi_star* column of the newly created *gi_starts* data.frame.
 
 ::: {style="font-size: 1.5em"}
@@ -179,14 +179,30 @@ gi_stars <- GDPPC_nb %>%
   tidyr::unnest(gi_star)
 ```
 :::
-:::
-:::
-
+::::
+:::::
 
 ## Mann-Kendall Test
 
-::: columns
-::: {.column width="50%"}
+A **monotonic series** or function is one that only increases (or decreases) and never changes direction. So long as the function either stays flat or continues to increase, it is monotonic.
+
+   H0: No monotonic trend
+
+   H1: Monotonic trend is present
+
+**Interpretation**
+
+-   Reject the null-hypothesis null if the p-value is smaller than the alpha value (i.e. 1-confident level)
+-   Tau ranges between -1 and 1 where:
+    -   -1 is a perfectly decreasing series, and 
+    -   1 is a perfectly increasing series.  
+
+---
+
+### Mann-Kendall Test on Gi\
+
+:::::::: columns
+::::: {.column width="50%"}
 With these Gi\* measures we can then evaluate each location for a trend using the Mann-Kendall test. The code chunk below uses Changsha county.
 
 ::: {style="font-size: 1.5em"}
@@ -210,9 +226,9 @@ ggplot(data = cbg,
   theme_light()
 ```
 :::
-:::
+:::::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: {style="font-size: 1.5em"}
 ```{r}
 #| echo: false
@@ -223,17 +239,20 @@ ggplot(data = cbg,
   theme_light()
 ```
 :::
-:::
-:::
+::::
+::::::::
 
----
+------------------------------------------------------------------------
 
 ### Interactive Mann-Kendall Plot
 
+:::::: columns
+:::: {.column width="50%"}
 We can also create an interactive plot by using `ggplotly()` of **plotly** package.
 
-::: {style="font-size: 1.2em"}
+::: {style="font-size: 1.5em"}
 ```{r}
+#| eval: false
 p <- ggplot(data = cbg, 
        aes(x = Year, 
            y = gi_star)) +
@@ -243,9 +262,23 @@ p <- ggplot(data = cbg,
 ggplotly(p)
 ```
 :::
+::::
 
+::: {.column width="50%"}
+```{r}
+#| echo: false
+p <- ggplot(data = cbg, 
+       aes(x = Year, 
+           y = gi_star)) +
+  geom_line() +
+  theme_light()
 
----
+ggplotly(p)
+```
+:::
+::::::
+
+------------------------------------------------------------------------
 
 ### Printing Mann-Kendall test report
 
@@ -259,9 +292,9 @@ cbg %>%
 ```
 :::
 
-In the above result, **sl** is the p-value. This result tells us that there is a slight upward but insignificant trend.
+In the above result, **sl** is the p-value. With reference to the results, we will reject the hypothesis null and infer that a slight upward trend.
 
----
+------------------------------------------------------------------------
 
 ### Mann-Kendall test data.frame
 
@@ -279,7 +312,7 @@ head(ehsa)
 ```
 :::
 
----
+------------------------------------------------------------------------
 
 ### Mann-Kendall test data.frame
 
@@ -296,12 +329,12 @@ head(emerging)
 
 ## Performing Emerging Hotspot Analysis
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 Lastly, we will perform EHSA analysis by using [`emerging_hotspot_analysis()`](https://sfdep.josiahparry.com/reference/emerging_hotspot_analysis.html) of sfdep package. It takes a spacetime object x (i.e. GDPPC_st), and the quoted name of the variable of interest (i.e. GDPPC) for .var argument. The k argument is used to specify the number of time lags which is set to 1 by default. Lastly, nsim map numbers of simulation to be performed.
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: {style="font-size: 1.5em"}
 ```{r}
 ehsa <- emerging_hotspot_analysis(
@@ -312,10 +345,10 @@ ehsa <- emerging_hotspot_analysis(
 )
 ```
 :::
-:::
-:::
+::::
+::::::
 
----
+------------------------------------------------------------------------
 
 ### Visualising the distribution of EHSA classes
 
@@ -332,12 +365,12 @@ ggplot(data = ehsa,
 
 Figure above shows that sporadic cold spots class has the high numbers of county.
 
----
+------------------------------------------------------------------------
 
 ### Visualising EHSA
 
-::: columns
-::: {.column width="50%"}
+::::::::: columns
+::::::: {.column width="50%"}
 ::: {style="font-size: 0.8em"}
 In this section, you will learn how to visualise the geographic distribution EHSA classes. However, before we can do so, we need to join both *hunan* and *ehsa* together by using the code chunk below.
 :::
@@ -369,7 +402,7 @@ tm_shape(ehsa_sig) +
   tm_borders(alpha = 0.4)
 ```
 :::
-:::
+:::::::
 
 ::: {.column width="50%"}
 ```{r}
@@ -386,5 +419,28 @@ tm_shape(ehsa_sig) +
   tm_borders(alpha = 0.4)
 ```
 :::
-:::
+:::::::::
 
+------------------------------------------------------------------------
+
+### Interpretation of EHSA classes
+
+![](img/image4a.png)
+
+------------------------------------------------------------------------
+
+### Interpretation of EHSA classes
+
+![](img/image4b.png)
+
+------------------------------------------------------------------------
+
+### Interpretation of EHSA classes
+
+![](img/image4c.png)
+
+------------------------------------------------------------------------
+
+### Interpretation of EHSA classes
+
+![](img/image4d.png)
