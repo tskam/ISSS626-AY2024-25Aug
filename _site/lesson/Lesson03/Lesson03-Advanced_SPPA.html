@@ -8,11 +8,11 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems(Practice)">
   <meta name="dcterms.date" content="2024-03-09">
-  <title>ISSS626 Geospatial Analytics and Applications - Lesson 3: Advanced Spatial Point Patterns Analysis</title>
+  <title>ISSS626 Geospatial Analytics and Applications – Lesson 3: Advanced Spatial Point Patterns Analysis</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -381,8 +381,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <p>Road traffic accidents within Bangkok City. <img data-src="img/image3-1.jpg"></p>
 </div><div class="column" style="width:50%;">
 <p>Location of banks at Central, Hong Kong <img data-src="img/image3-2.jpg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="network-constrained-kernel-density-estimation-nkde" class="slide level2">
 <h2>Network Constrained Kernel Density Estimation (NKDE)</h2>
@@ -392,8 +391,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <p>Mathematically, NKDE can be defined as: <img data-src="img/image3-3a.jpg"></p>
 <p>where K must be a probability density function and verifies the two following conditions:</p>
 <p><img data-src="img/image3-3b.jpg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="network-constrained-kernel-density-estimation-nkde-1" class="slide level2">
 <h2>Network Constrained Kernel Density Estimation (NKDE)</h2>
@@ -403,8 +401,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <p>Figure on the right shows the basic differences between the Planar KDE and Network KDE for the same spatial point event data. To estimate th density values at a focal point X, the planar KDE treats the whole 2-D space as the context and finds four point events (black circle) within a search bandwidth (i.e.&nbsp;h), whereas the Network KDE only finds two point events within the same bandwidth in the network space based on network distance.</p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="img/image3-3c.jpg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section class="slide level2">
 
@@ -427,8 +424,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <p><img data-src="img/image3-4a.jpg"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="img/image3-4b.jpg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section class="slide level2">
 
@@ -441,8 +437,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div><div class="column" style="width:50%;">
 <p>In the figure below, we can see that the “influence” of each point is limited within the bandwidth and decreases when we move away from the event.</p>
 <p><img data-src="img/image3-5b.jpg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section class="slide level2">
 
@@ -461,8 +456,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </figure>
 </div>
 <p>with 𝒅<sub>𝑠𝑖</sub> the density estimated at the sample point 𝑠𝒊, 𝒃𝑤 the bandwidth and 𝑒𝑗 an event.</p>
-</div>
-</div>
+</div></div>
 </section>
 <section class="slide level2">
 
@@ -473,8 +467,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <p><img data-src="img/image3-7a.jpg"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="img/image3-7b.jpg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="the-three-version-of-nkde" class="slide level2">
 <h2>The Three version of NKDE</h2>
@@ -506,8 +499,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="the-three-version-of-nkde-1" class="slide level2">
 <h2>The Three version of NKDE</h2>
@@ -530,8 +522,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="the-three-version-of-nkde-2" class="slide level2">
 <h2>The Three version of NKDE</h2>
@@ -556,8 +547,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="temporal-network-kernel-density-estimate" class="slide level2">
 <h2>Temporal Network Kernel Density Estimate</h2>
@@ -569,8 +559,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <p>For a sample point at location l and time t, the Temporal Network Kernel Density Estimate (TNKDE) is calculated as follows:</p>
 <p><img data-src="img/image4-52a.jpg"></p>
 <p><img data-src="img/image4-52b.jpg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
@@ -827,18 +816,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -870,7 +848,29 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -878,7 +878,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
