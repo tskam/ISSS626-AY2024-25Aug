@@ -32,9 +32,9 @@ In this lesson, you will learn the basic concepts and methods of Spatial Interac
 
 -   Lesson 10 slides in [html](../lesson/Lesson10/Lesson10-SIM.html) format.
 
--   [Hands-on Exercise 11a: Processing and Visualising Flow Data](https://r4gdsa.netlify.app/chap15).
+-   [Hands-on Exercise 10a: Processing and Visualising Flow Data](https://r4gdsa.netlify.app/chap15).
 
--   [Hands-on Exercise 11b: Calibrating Spatial Interaction Models with R](https://r4gdsa.netlify.app/chap16).
+-   [Hands-on Exercise 10b: Calibrating Spatial Interaction Models with R](https://r4gdsa.netlify.app/chap16).
 
 ## Self-reading Before Meet-up
 
