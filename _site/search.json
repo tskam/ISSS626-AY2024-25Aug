@@ -184,44 +184,44 @@
   {
     "objectID": "outline/Lesson09_outline.html",
     "href": "outline/Lesson09_outline.html",
-    "title": "Lesson 9: Spatial Interaction Models",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
     "section": "",
-    "text": "In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models."
+    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
   },
   {
     "objectID": "outline/Lesson09_outline.html#content",
     "href": "outline/Lesson09_outline.html#content",
-    "title": "Lesson 9: Spatial Interaction Models",
-    "section": "Content",
-    "text": "Content\n\nBasic Concepts of Spatial Interaction Models\n\nA Family of Gravity Models\n\nUnconstrained\nOrigin constrained\nDestination constrained\nDoubly constrained\n\nStatistical Approach\nInterpreting and Visualising Modelling Results\n\nSpatial Econometric Interaction Models\n\nThe general formula\n\nWhat is Econometrics?\nWhat is Spatial Econometrics?\n\nSpatial Econometric Interaction Model Specifications"
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "",
+    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
   },
   {
     "objectID": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
     "href": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 9: Spatial Interaction Models",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html format.\nHands-on Exercise 11a: Processing and Visualising Flow Data.\nHands-on Exercise 11b: Calibrating Spatial Interaction Models with R."
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 9 slides.\nHands-on Exercise 9 handout."
   },
   {
     "objectID": "outline/Lesson09_outline.html#self-reading-before-meet-up",
     "href": "outline/Lesson09_outline.html#self-reading-before-meet-up",
-    "title": "Lesson 9: Spatial Interaction Models",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
     "section": "Self-reading Before Meet-up",
-    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nKingsley E. Haynes and A. Stewart Fotheringham (2020) Gravity and Spatial Interaction Models, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.\nFarmer, C. and Oshan, T. (2017). “Spatial interaction”. The Geographic Information Science & Technology Body of Knowledge (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)\nFlowerdew R, Aitkin M (1982) “A method of fitting the gravity model based on the Poisson distribution”. Journal of Regional Science, 22: 191–202.\n” Chapter 6. Spatial econometrics - common models”, Handbook of Spatial Analysis.\nJames P. LeSage and R. Kelley Pace (2008) “Spatial Econometric Modeling of Origin-Destination Flows”. Journal of Regional Science, Vol. 48, No. 5, pp. 941-967."
+    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nLong, J. (2017). Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.).\nHansen, W. G. (1959): “How Accessibility Shapes Land Use”. Journal of the American Institute of Planners, 25, 2, p. 73-76.\nLuo, W.; Wang, F. (2003) “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884. doi:10.1068/b29120.\nLuo, W.; Qi, Y. (2009). “An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians”. Health & Place. 15 (4): 1100–1107."
   },
   {
     "objectID": "outline/Lesson09_outline.html#reference",
     "href": "outline/Lesson09_outline.html#reference",
-    "title": "Lesson 9: Spatial Interaction Models",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
     "section": "Reference",
-    "text": "Reference\n\nPavel KLAPKA, et. al. (2013) “The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”, Moravian Geographical Reports, Vol 21, pp. 12-26.\n\nYang Yue et. al. (2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, Computers, Environment and Urban Systems, 36 (2012) 140–153.\nMorito Tsutsumi and Kazuki Tamesue (2012) “Intraregional flow problem in spatial econometric model for origin-destination flows”, Environment and Planning B: Planning and Design, Vol. 39, pp. 1006-1015. Access via SMU e-journal."
+    "text": "Reference\n\nSection on “Transportation and Accessibility” in The Geography of Transport Systems.\nRich, D.C. (1980) Potential Models in Human Geography.\nOrpana, T./Lampinen, J. (2003) “Building spatial choice models from aggregate data”. Journal of Regional Science,43, 2, p. 319-347.\nTwo-step floating catchment area method.\nCheng, Gang et. al. (2016) “Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China” Habitat International, Vol.53, p.485-494.\nPolzin, Pierre ; Borges, José ; Coelho, António (2014) “An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care” Environment and planning. B, Planning & design, Vol.41 (4), p.717-735."
   },
   {
     "objectID": "outline/Lesson09_outline.html#all-about-r",
     "href": "outline/Lesson09_outline.html#all-about-r",
-    "title": "Lesson 9: Spatial Interaction Models",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
     "section": "All About R:",
-    "text": "All About R:\n\nPaul Roback and Julie Legler (2020) Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R, CRC Press. On line version (January 26, 2021). Chapter 4\nNegative Binomial Regression and Poisson Regression from UCLA Institute for Digital Research & Education.\nspflow\nHome-to-work commuting flows within the municipalities around Paris"
+    "text": "All About R:\n\naccessibility\nSpatialAcc package.\nPotential package."
   },
   {
     "objectID": "outline/Lesson07_outline.html",
@@ -1943,49 +1943,49 @@
     "href": "outline/Lesson08_outline.html#lesson-slides-and-hands-on-notes",
     "title": "Lesson 8: Geographically Weighted Predictive Modelling",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson 9 slides.\nHandout of Hands-on Exercise 9.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nStefanos Georganos et. al. (2019) “Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling”, Geocarto International, DOI: 10.1080/10106049.2019.1595177.\nGeorganos, S. and Kalogirou, S. (2022) “A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests”. ISPRS, International Journal of Geo-Information, 2022, 11, 471. https://www.mdpi.com/2220-9964/11/9/471\n\n\n\nReferences\n\nGeorge Grekousis et. al. (2022) “Ranking the importance of demographic, socioeconomic, and underlying health factors on US COVID-19 deaths: A geographical random forest approach”, Health and Place, vol. 74, pp. 1-12.\nYaowen Luo, Jianguo Yan & Stephen McClure. (2020) “Distribution of the environmental and socioeconomic risk factors on COVID-19 death rate across continental USA: a spatial nonlinear analysis”, Environmental Science and Pollution Research, 28:6587–6599.\nEun-Hee Koh, Eunhee Lee, & Kang-Kun Lee (2020) “Application of geographically weighted regression models to predict spatial characteristics of nitrate contamination: Implications for an effective groundwater management strategy”, Journal of Environmental Management. Vol. 268\n\n\n\nAll About R\n\nSpatialML"
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 8 slides.\nHandout of Hands-on Exercise 8.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nStefanos Georganos et. al. (2019) “Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling”, Geocarto International, DOI: 10.1080/10106049.2019.1595177.\nGeorganos, S. and Kalogirou, S. (2022) “A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests”. ISPRS, International Journal of Geo-Information, 2022, 11, 471. https://www.mdpi.com/2220-9964/11/9/471\n\n\n\nReferences\n\nGeorge Grekousis et. al. (2022) “Ranking the importance of demographic, socioeconomic, and underlying health factors on US COVID-19 deaths: A geographical random forest approach”, Health and Place, vol. 74, pp. 1-12.\nYaowen Luo, Jianguo Yan & Stephen McClure. (2020) “Distribution of the environmental and socioeconomic risk factors on COVID-19 death rate across continental USA: a spatial nonlinear analysis”, Environmental Science and Pollution Research, 28:6587–6599.\nEun-Hee Koh, Eunhee Lee, & Kang-Kun Lee (2020) “Application of geographically weighted regression models to predict spatial characteristics of nitrate contamination: Implications for an effective groundwater management strategy”, Journal of Environmental Management. Vol. 268\n\n\n\nAll About R\n\nSpatialML"
   },
   {
     "objectID": "outline/Lesson10_outline.html",
     "href": "outline/Lesson10_outline.html",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 10: Spatial Interaction Models",
     "section": "",
-    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
+    "text": "In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models."
   },
   {
     "objectID": "outline/Lesson10_outline.html#content",
     "href": "outline/Lesson10_outline.html#content",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
-    "section": "",
-    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Content",
+    "text": "Content\n\nBasic Concepts of Spatial Interaction Models\n\nA Family of Gravity Models\n\nUnconstrained\nOrigin constrained\nDestination constrained\nDoubly constrained\n\nStatistical Approach\nInterpreting and Visualising Modelling Results\n\nSpatial Econometric Interaction Models\n\nThe general formula\n\nWhat is Econometrics?\nWhat is Spatial Econometrics?\n\nSpatial Econometric Interaction Model Specifications"
   },
   {
     "objectID": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
     "href": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 10: Spatial Interaction Models",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson 10 slides.\nHands-on Exercise 10 handout."
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson 10 slides in html format.\nHands-on Exercise 11a: Processing and Visualising Flow Data.\nHands-on Exercise 11b: Calibrating Spatial Interaction Models with R."
   },
   {
     "objectID": "outline/Lesson10_outline.html#self-reading-before-meet-up",
     "href": "outline/Lesson10_outline.html#self-reading-before-meet-up",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 10: Spatial Interaction Models",
     "section": "Self-reading Before Meet-up",
-    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nLong, J. (2017). Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.).\nHansen, W. G. (1959): “How Accessibility Shapes Land Use”. Journal of the American Institute of Planners, 25, 2, p. 73-76.\nLuo, W.; Wang, F. (2003) “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884. doi:10.1068/b29120.\nLuo, W.; Qi, Y. (2009). “An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians”. Health & Place. 15 (4): 1100–1107."
+    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nKingsley E. Haynes and A. Stewart Fotheringham (2020) Gravity and Spatial Interaction Models, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.\nFarmer, C. and Oshan, T. (2017). “Spatial interaction”. The Geographic Information Science & Technology Body of Knowledge (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)\nFlowerdew R, Aitkin M (1982) “A method of fitting the gravity model based on the Poisson distribution”. Journal of Regional Science, 22: 191–202.\n” Chapter 6. Spatial econometrics - common models”, Handbook of Spatial Analysis.\nJames P. LeSage and R. Kelley Pace (2008) “Spatial Econometric Modeling of Origin-Destination Flows”. Journal of Regional Science, Vol. 48, No. 5, pp. 941-967."
   },
   {
     "objectID": "outline/Lesson10_outline.html#reference",
     "href": "outline/Lesson10_outline.html#reference",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 10: Spatial Interaction Models",
     "section": "Reference",
-    "text": "Reference\n\nSection on “Transportation and Accessibility” in The Geography of Transport Systems.\nRich, D.C. (1980) Potential Models in Human Geography.\nOrpana, T./Lampinen, J. (2003) “Building spatial choice models from aggregate data”. Journal of Regional Science,43, 2, p. 319-347.\nTwo-step floating catchment area method.\nCheng, Gang et. al. (2016) “Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China” Habitat International, Vol.53, p.485-494.\nPolzin, Pierre ; Borges, José ; Coelho, António (2014) “An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care” Environment and planning. B, Planning & design, Vol.41 (4), p.717-735."
+    "text": "Reference\n\nPavel KLAPKA, et. al. (2013) “The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”, Moravian Geographical Reports, Vol 21, pp. 12-26.\n\nYang Yue et. al. (2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, Computers, Environment and Urban Systems, 36 (2012) 140–153.\nMorito Tsutsumi and Kazuki Tamesue (2012) “Intraregional flow problem in spatial econometric model for origin-destination flows”, Environment and Planning B: Planning and Design, Vol. 39, pp. 1006-1015. Access via SMU e-journal."
   },
   {
     "objectID": "outline/Lesson10_outline.html#all-about-r",
     "href": "outline/Lesson10_outline.html#all-about-r",
-    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "title": "Lesson 10: Spatial Interaction Models",
     "section": "All About R:",
-    "text": "All About R:\n\naccessibility\nSpatialAcc package.\nPotential package."
+    "text": "All About R:\n\nPaul Roback and Julie Legler (2020) Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R, CRC Press. On line version (January 26, 2021). Chapter 4\nNegative Binomial Regression and Poisson Regression from UCLA Institute for Digital Research & Education.\nspflow\nHome-to-work commuting flows within the municipalities around Paris"
   },
   {
     "objectID": "Quarto.html",
@@ -2147,5 +2147,257 @@
     "title": "Lesson 7: Geographically Weighted Regression",
     "section": "References",
     "text": "References\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) [“Some Notes on Parametric Significance Tests for Geographically Weighted Regression”](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. Journal of Regional Science, 39(3), 497-524.\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson09-GWRF.html#content",
+    "href": "lesson/Lesson08/Lesson09-GWRF.html#content",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Content",
+    "text": "Content\n\nWhat is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson09-GWRF.html#what-is-predictive-modelling",
+    "href": "lesson/Lesson08/Lesson09-GWRF.html#what-is-predictive-modelling",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "What is Predictive Modelling?",
+    "text": "What is Predictive Modelling?\n\n\n\nPredictive modelling uses statistical learning or machine learning techniques to predict outcomes.\n\nBy and large, the event one wants to predict is in the future. However, a set of known outcome and predictors (also known as variables) will be used to calibrate the predictive models."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson09-GWRF.html#what-is-geospatial-predictive-modelling",
+    "href": "lesson/Lesson08/Lesson09-GWRF.html#what-is-geospatial-predictive-modelling",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "What is Geospatial Predictive Modelling",
+    "text": "What is Geospatial Predictive Modelling\n\nGeospatial predictive modelling is conceptually rooted in the principle that the occurrences of events being modeled are limited in distribution.\n\nWhen geographically referenced data are used, occurrences of events are neither uniform nor random in distribution over space. There are geospatial factors (infrastructure, sociocultural, topographic, etc.) that constrain and influence where the locations of events occur.\nGeospatial predictive modeling attempts to describe those constraints and influences by spatially correlating occurrences of historical geospatial locations with environmental factors that represent those constraints and influences."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson09-GWRF.html#predictive-modelling-process",
+    "href": "lesson/Lesson08/Lesson09-GWRF.html#predictive-modelling-process",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Predictive Modelling Process",
+    "text": "Predictive Modelling Process"
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson09-GWRF.html#introducing-recursive-partitioning",
+    "href": "lesson/Lesson08/Lesson09-GWRF.html#introducing-recursive-partitioning",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Introducing recursive partitioning",
+    "text": "Introducing recursive partitioning\n\nA predictive methodology involving a dependent variable y and one and more predictors.\nThe dependent variable can be either a continuous or categorical scales.\nRules partition data into mutually exclusive groups.\nNo need to worry about transformations such as logs.\nNo prior distribution requirement."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson09-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "href": "lesson/Lesson08/Lesson09-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Advanced Recursive Partitioning: Random Forest",
+    "text": "Advanced Recursive Partitioning: Random Forest\nRandom forest, like its name implies, consists of a large number of individual decision trees that operate as an ensemble.\n\nEach individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction as shown the figure."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson09-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "href": "lesson/Lesson08/Lesson09-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Introducing Geographically Weighted Random Forest (gwRF)",
+    "text": "Introducing Geographically Weighted Random Forest (gwRF)\n\nGeographically Weighted Random Forest (GRF) is a spatial analysis method using a local version of the famous Machine Learning algorithm.\n\nThis technique adopts the idea of the Geographically Weighted Regression.\nThe main difference between a tradition (linear) GWR and GRF is that we can model non-stationarity coupled with a flexible non-linear model which is very hard to overfit due to its bootstrapping nature, thus relaxing the assumptions of traditional Gaussian statistics."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-GWRF.html#content",
+    "href": "lesson/Lesson08/Lesson08-GWRF.html#content",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Content",
+    "text": "Content\n\nWhat is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-GWRF.html#what-is-predictive-modelling",
+    "href": "lesson/Lesson08/Lesson08-GWRF.html#what-is-predictive-modelling",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "What is Predictive Modelling?",
+    "text": "What is Predictive Modelling?\n\n\n\nPredictive modelling uses statistical learning or machine learning techniques to predict outcomes.\n\nBy and large, the event one wants to predict is in the future. However, a set of known outcome and predictors (also known as variables) will be used to calibrate the predictive models."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-GWRF.html#what-is-geospatial-predictive-modelling",
+    "href": "lesson/Lesson08/Lesson08-GWRF.html#what-is-geospatial-predictive-modelling",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "What is Geospatial Predictive Modelling",
+    "text": "What is Geospatial Predictive Modelling\n\nGeospatial predictive modelling is conceptually rooted in the principle that the occurrences of events being modeled are limited in distribution.\n\nWhen geographically referenced data are used, occurrences of events are neither uniform nor random in distribution over space. There are geospatial factors (infrastructure, sociocultural, topographic, etc.) that constrain and influence where the locations of events occur.\nGeospatial predictive modeling attempts to describe those constraints and influences by spatially correlating occurrences of historical geospatial locations with environmental factors that represent those constraints and influences."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-GWRF.html#predictive-modelling-process",
+    "href": "lesson/Lesson08/Lesson08-GWRF.html#predictive-modelling-process",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Predictive Modelling Process",
+    "text": "Predictive Modelling Process"
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-GWRF.html#introducing-recursive-partitioning",
+    "href": "lesson/Lesson08/Lesson08-GWRF.html#introducing-recursive-partitioning",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Introducing recursive partitioning",
+    "text": "Introducing recursive partitioning\n\nA predictive methodology involving a dependent variable y and one and more predictors.\nThe dependent variable can be either a continuous or categorical scales.\nRules partition data into mutually exclusive groups.\nNo need to worry about transformations such as logs.\nNo prior distribution requirement."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "href": "lesson/Lesson08/Lesson08-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Advanced Recursive Partitioning: Random Forest",
+    "text": "Advanced Recursive Partitioning: Random Forest\nRandom forest, like its name implies, consists of a large number of individual decision trees that operate as an ensemble.\n\nEach individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction as shown the figure."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "href": "lesson/Lesson08/Lesson08-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "title": "Lesson 8: Geographically Weighted Predictive Modelling",
+    "section": "Introducing Geographically Weighted Random Forest (gwRF)",
+    "text": "Introducing Geographically Weighted Random Forest (gwRF)\n\nGeographically Weighted Random Forest (GRF) is a spatial analysis method using a local version of the famous Machine Learning algorithm.\n\nThis technique adopts the idea of the Geographically Weighted Regression.\nThe main difference between a tradition (linear) GWR and GRF is that we can model non-stationarity coupled with a flexible non-linear model which is very hard to overfit due to its bootstrapping nature, thus relaxing the assumptions of traditional Gaussian statistics."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoAcc.html#content",
+    "href": "lesson/Lesson09/Lesson09-GeoAcc.html#content",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "Content",
+    "text": "Content\n\nBasic Concepts of Geography of Accessibility\nAccessibility Models\n\nStewart Potential model\nReilly model\nHuff model"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoAcc.html#what-is-geography-of-accessibility",
+    "href": "lesson/Lesson09/Lesson09-GeoAcc.html#what-is-geography-of-accessibility",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "What is Geography of Accessibility?",
+    "text": "What is Geography of Accessibility?\n\n\n\nAccessibility is the measure of the capacity of a location to be reached from, or to be reached by, different locations. Therefore, the capacity and the arrangement of transport infrastructure are key elements in the determination of accessibility."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoAcc.html#measuring-distances",
+    "href": "lesson/Lesson09/Lesson09-GeoAcc.html#measuring-distances",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "Measuring Distances",
+    "text": "Measuring Distances\n\nDifferent spatial and distance conceptualizations that are commonly employed when measuring and modelling accessibility."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoAcc.html#the-geographical-unit",
+    "href": "lesson/Lesson09/Lesson09-GeoAcc.html#the-geographical-unit",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "The Geographical Unit",
+    "text": "The Geographical Unit\n\nThis issue of irregularly shaped polygons created arbitrarily (such as county boundaries or block groups that have been created from a political process)."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoAcc.html#the-potential-model",
+    "href": "lesson/Lesson09/Lesson09-GeoAcc.html#the-potential-model",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "The Potential Model",
+    "text": "The Potential Model\nThe classic model"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoAcc.html#two-step-floating-catchment-area-method-2sfca",
+    "href": "lesson/Lesson09/Lesson09-GeoAcc.html#two-step-floating-catchment-area-method-2sfca",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "Two-step floating catchment area method (2SFCA)",
+    "text": "Two-step floating catchment area method (2SFCA)\n\n\n\nA special case of a potential model for measuring spatial accessibility to primary social services and public facilities.\nIt was inspired by the spatial decomposition idea first proposed by Radke and Mu (2000).\n\n\nReference: Luo, W.; Wang, F. (2003b). “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884.\n\n\nAn earlier version of 2SFCA"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoAcc.html#spatial-accessibility-measure-sam",
+    "href": "lesson/Lesson09/Lesson09-GeoAcc.html#spatial-accessibility-measure-sam",
+    "title": "Lesson 9: Modelling Geographic of Accessibility",
+    "section": "Spatial Accessibility Measure (SAM)",
+    "text": "Spatial Accessibility Measure (SAM)\nThe formula:\n\nwhere\n\nAai is the accessibility in ED i,\nnj is the capacity of the target facility j.\npi is the demand of this ED, and\ndij is the network distance between the EDi and each facility j.\n\n\nReference: Stamatis Kalogirou & Ronan Foley (2006) “Health, place and Hanly: Modelling accessibility to hospitals in Ireland”, Irish Geography, Volume 39(1), 2006, 52-68."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#content",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#content",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Content",
+    "text": "Content\n\nCharacteristics of Spatial Interaction Data\nSpatial Interaction Models\n\nUnconstrained\nOrigin constrined\nDestination constrained\nDoubly constrained\n\nWhat is Spatial Econometrics?\nWhat is Spatial Econometric Interaction Models?\nIntroducing spflow package\nSpatial Econometric Modelling of O-D Flows: spflow application"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#what-spatial-interaction-models-are",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#what-spatial-interaction-models-are",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "What Spatial Interaction Models are?",
+    "text": "What Spatial Interaction Models are?\n\n\nSpatial interaction or “gravity models” estimate the flow of people, material, or information between locations in geographical space.\n\n\n\n\n\n\n\n\nNote\n\n\nSpatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#constructing-an-od-matrix",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#constructing-an-od-matrix",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Constructing an O/D Matrix",
+    "text": "Constructing an O/D Matrix\n\nThe construction of an origin / destination matrix requires directional flow information between a series of locations.\nFigure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#three-basic-types-of-interaction-models",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#three-basic-types-of-interaction-models",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Three Basic Types of Interaction Models",
+    "text": "Three Basic Types of Interaction Models\n\nThe general formulation of the spatial interaction model is stated as Tij, which is the interaction between location i (origin) and location j (destination). Vi are the attributes of the location of origin i, Wj are the attributes of the location of destination j, and Sij are the attributes of separation between the location of origin i and the location of destination j.\nFrom this general formulation, three basic types of interaction models can be derived:"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#gravity-models",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#gravity-models",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Gravity Models",
+    "text": "Gravity Models\n\n\n\nThe general formula (also known as unconstrained):\n\n\nTij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.\n𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.\n\n\n\n𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.\n𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.\n𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#spatial-econometric-interaction-models",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#spatial-econometric-interaction-models",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Spatial Econometric Interaction Models",
+    "text": "Spatial Econometric Interaction Models\nLimitation of Spatial Interaction Models\n\nThe gravity model assumes independence among observations, and this assumption seems heroic for many fundamentally spatial problems."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#spatial-econometric-model-for-origin-destination-flows",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#spatial-econometric-model-for-origin-destination-flows",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Spatial Econometric Model for Origin-Destination Flows",
+    "text": "Spatial Econometric Model for Origin-Destination Flows"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#spatial-econometric-interaction-model",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#spatial-econometric-interaction-model",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Spatial Econometric Interaction Model",
+    "text": "Spatial Econometric Interaction Model\nThe general formula of Spatial Econometric Interaction Model is defined as follow:\n\nwhere by 𝐖𝓭, 𝐖𝒐 and 𝐖𝓌 are spatial weights of destination, origin and origin-destination."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#what-is-econometrics",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#what-is-econometrics",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "What is Econometrics",
+    "text": "What is Econometrics\n\nEconometrics is an application of statistical methods to economic data in order to give empirical content to economic relationships. More precisely, it is “the quantitative analysis of actual economic phenomena based on the concurrent development of theory and observation, related by appropriate methods of inference.\nA basic tool for econometrics is the multiple linear regression model.\nEconometric theory uses statistical theory and mathematical statistics to evaluate and develop econometric methods.\nEconometricians try to find estimators that have desirable statistical properties including unbiasedness, efficiency, and consistency.\nApplied econometrics uses theoretical econometrics and real-world data for assessing economic theories, developing econometric models, analysing economic history, and forecasting."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#what-is-spatial-econometrics",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#what-is-spatial-econometrics",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "What is Spatial Econometrics?",
+    "text": "What is Spatial Econometrics?\n\nA branch of economics that deals with the study of economic phenomena that exhibit spatial dependence.\nThis branch of economics has its roots in classical economics, which focused on the study of how economic activity was related to the location of factors of production.\nClassical economists developed theories of how businesses locate themselves in relation to their markets and to each other. These theories formed the basis for the development of modern spatial economics."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#what-is-spatial-econometrics-1",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#what-is-spatial-econometrics-1",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "What is Spatial Econometrics?",
+    "text": "What is Spatial Econometrics?\n\nIn a broader sense it is inclusive of the models and theoretical instruments of spatial statistics and spatial data analysis to analyze various economic effects such as externalities, interactions, spatial concentration and many others.\nDiscrete spatial data can take the form of points, lines and polygons. Point data refer to the position of the single economic agent observed at an individual level. Lines in space take the form of interactions between two spatial locations such as flows of goods, individuals and information. Finally data observed within polygons can take the form of predefined irregular portions of space, usually administrative partitions such as countries, regions or counties within one country."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#what-are-the-examples-of-applications-using-spatial-econometrics",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#what-are-the-examples-of-applications-using-spatial-econometrics",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "What Are The Examples of Applications Using Spatial Econometrics ?",
+    "text": "What Are The Examples of Applications Using Spatial Econometrics ?\nThere are many applications for spatial econometrics . Here are a few examples :\n\nEvaluating the impact of a new road or railway on property values.\nEstimating the effect of environmental regulations on firm location decisions.\nAnalyzing the determinants of crime rates across neighborhoods\nStudying the relationship between house prices and income levels in different regions.\nInvestigating the spread of infectious diseases through a population.\nModeling the relationship between land values and location-specific services.\nAnalyzing the relationship between proximity to facilities and job opportunities ."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#spatial-model-specification-for-origin-destination-flows",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#spatial-model-specification-for-origin-destination-flows",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Spatial Model Specification for Origin-Destination Flows",
+    "text": "Spatial Model Specification for Origin-Destination Flows"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#spatial-model-specification-for-origin-destination-flows-1",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#spatial-model-specification-for-origin-destination-flows-1",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Spatial Model Specification for Origin-Destination Flows",
+    "text": "Spatial Model Specification for Origin-Destination Flows"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-SIM.html#spatial-model-specification-for-origin-destination-flows-2",
+    "href": "lesson/Lesson10/Lesson10-SIM.html#spatial-model-specification-for-origin-destination-flows-2",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Spatial Model Specification for Origin-Destination Flows",
+    "text": "Spatial Model Specification for Origin-Destination Flows"
   }
 ]
