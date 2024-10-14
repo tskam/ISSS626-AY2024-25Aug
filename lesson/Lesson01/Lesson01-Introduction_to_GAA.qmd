@@ -36,19 +36,19 @@ Geospatial analytics is more than a GIS.
 
 -   Geospatial analytics is more than data visualisation
 
-::: columns
-::: {.column width="50%"}
+:::::: columns
+:::: {.column width="50%"}
 ![](img/image1-6a.jpg)
 
 ::: {style="font-size: 0.65em; text-align: center"}
 Source: [Singapore's first disease map delivers real-time information on infectious diseases](https://www.straitstimes.com/singapore/health/singapores-first-disease-map-delivers-real-time-information-on-infectious-diseases)
 :::
-:::
+::::
 
 ::: {.column width="50%"}
 ![](img/image1-6b.jpg)
 :::
-:::
+::::::
 
 ## Demystifying Geospatial Analytics
 
