@@ -2476,5 +2476,180 @@
     "title": "Calibrating Hedonic Pricing Model for Private Highrise Property with GWR Method",
     "section": "Testing for Spatial Autocorrelation",
     "text": "Testing for Spatial Autocorrelation\nThe hedonic model we try to build are using geographically referenced attributes, hence it is also important for us to visual the residual of the hedonic pricing model.\nFirst, we will export the residual of the hedonic pricing model and save it as a data frame.\n\nmlr_output &lt;- as.data.frame(condo_fw_mlr$model$residuals) %&gt;%\n  rename(`FW_MLR_RES` = `condo_fw_mlr$model$residuals`)\n\nNext, we will join the newly created data frame with condo_resale_sf object.\n\ncondo_resale_sf &lt;- cbind(condo_resale_sf, \n                        mlr_output$FW_MLR_RES) %&gt;%\n  rename(`MLR_RES` = `mlr_output.FW_MLR_RES`)\n\nNext, we will use tmap package to display the distribution of the residuals on an interactive map.\nThe code churn below will turn on the interactive mode of tmap.\n\ntmap_mode(\"view\")\ntm_shape(mpsz)+\n  tmap_options(check.and.fix = TRUE) +\n  tm_polygons(alpha = 0.4) +\ntm_shape(condo_resale_sf) +  \n  tm_dots(col = \"MLR_RES\",\n          alpha = 0.6,\n          style=\"quantile\")\n\n\n\n\ntmap_mode(\"plot\")\n\nThe figure above reveal that there is sign of spatial autocorrelation.\n\nSpatial stationary test\nTo proof that our observation is indeed true, the Moran’s I test will be performed\nHo: The residuals are randomly distributed (also known as spatial stationary) H1: The residuals are spatially non-stationary\nFirst, we will compute the distance-based weight matrix by using dnearneigh() function of spdep.\n\ncondo_resale_sf &lt;- condo_resale_sf %&gt;%\n  mutate(nb = st_knn(geometry, k=6,\n                     longlat = FALSE),\n         wt = st_weights(nb,\n                         style = \"W\"),\n         .before = 1)\n\nNext, global_moran_perm() of sfdep is used to perform global Moran permutation test.\n\nglobal_moran_perm(condo_resale_sf$MLR_RES, \n                  condo_resale_sf$nb, \n                  condo_resale_sf$wt, \n                  alternative = \"two.sided\", \n                  nsim = 99)\n\n\n    Monte-Carlo simulation of Moran I\n\ndata:  x \nweights: listw  \nnumber of simulations + 1: 100 \n\nstatistic = 0.32254, observed rank = 100, p-value &lt; 2.2e-16\nalternative hypothesis: two.sided\n\n\nThe Global Moran’s I test for residual spatial autocorrelation shows that it’s p-value is less than 0.00000000000000022 which is less than the alpha value of 0.05. Hence, we will reject the null hypothesis that the residuals are randomly distributed.\nSince the Observed Global Moran I = 0.25586 which is greater than 0, we can infer than the residuals resemble cluster distribution."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html",
+    "href": "Take-home_Ex03b.html",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "",
+    "text": "Important\n\n\n\nThis handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 2. Students must review and understand them before getting started with the take-home exercise."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#setting-the-scene-hdb-resale-prices",
+    "href": "Take-home_Ex03b.html#setting-the-scene-hdb-resale-prices",
+    "title": "Take-home Exercise 3b: Applied Geospatial Analytics for Decision Support",
+    "section": "Setting the Scene: HDB Resale Prices",
+    "text": "Setting the Scene: HDB Resale Prices\nHousing is an essential component of household wealth worldwide. Buying a housing has always been a major investment for most people. The price of housing is affected by many factors. Some of them are global in nature such as the general economy of a country or inflation rate. Others can be more specific to the properties themselves. These factors can be further divided to structural and locational factors. Structural factors are variables related to the property themselves such as the size, fitting, and tenure of the property. Locational factors are variables related to the neighbourhood of the properties such as proximity to childcare centre, public transport service and shopping centre.\nConventional, housing resale prices predictive models were built by using Ordinary Least Square (OLS) method. However, this method failed to take into consideration that spatial autocorrelation and spatial heterogeneity exist in geographic data sets such as housing transactions. With the existence of spatial autocorrelation, the OLS estimation of predictive housing resale pricing models could lead to biased, inconsistent, or inefficient results (Anselin 1998). In view of this limitation, Geographical Weighted Models were introduced to better calibrate predictive models for housing resale prices."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#the-task",
+    "href": "Take-home_Ex03b.html#the-task",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "The Task",
+    "text": "The Task\nIn this take-home exercise, you are required to calibrate a predictive model to predict HDB resale prices between July-September 2024 by using HDB resale transaction records in 2023."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#the-data",
+    "href": "Take-home_Ex03b.html#the-data",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "The Data",
+    "text": "The Data\nFor the purpose of this take-home exercise, HDB Resale Flat Prices provided by Data.gov.sg should be used as the core data set. The study should focus on either three-room, four-room or five-room flat.\nBelow is a list of recommended predictors to consider. However, students are free to include other appropriate independent variables.\n\nStructural factors\n\nArea of the unit\nFloor level\nRemaining lease\nAge of the unit\nMain Upgrading Program (MUP) completed (optional)\n\nLocational factors\n\nProxomity to CBD\nProximity to eldercare\nProximity to foodcourt/hawker centres\nProximity to MRT\nProximity to park\nProximity to good primary school\nProximity to shopping mall\nProximity to supermarket\nNumbers of kindergartens within 350m\nNumbers of childcare centres within 350m\nNumbers of bus stop within 350m\nNumbers of primary school within 1km"
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#grading-criteria",
+    "href": "Take-home_Ex03b.html#grading-criteria",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Grading Criteria",
+    "text": "Grading Criteria\nThis exercise will be graded by using the following criteria:\n\nGeospatial Data Wrangling (20 marks): This is an important aspect of geospatial analytics. You will be assessed on your ability:\n\nto employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the import and extract the data.\nto clean and derive appropriate variables for meeting the analysis need.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nAll data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them.\n\n\n\nGeospatial Analysis (30 marks): In this exercise, you are expected to use conventional multiple linear regression, random forest and geographically weighted random forest methods learned in class to calibrate the predictive models including model comparison. You will be assessed on your ability:\n\nto describe the methods used correctly, and\nto provide accurate interpretation of the analysis results.\n\nGeovisualisation and geocommunication (20 marks): In this section, you will be assessed on your ability to communicate the results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.\nReproducibility (15 marks): This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Quarto. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.\nBonus (15 marks): Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#submission-instructions",
+    "href": "Take-home_Ex03b.html#submission-instructions",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Submission Instructions",
+    "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in Quarto html document format. You are required to publish the write-up on Netlify.\nZip the take-home exercise folder and upload it onto eLearn. If the size of the zip file is beyond the capacity of eLearn, you can upload it on SMU OneDrive and provide the download link on eLearn.."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#due-date",
+    "href": "Take-home_Ex03b.html#due-date",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Due Date",
+    "text": "Due Date\n10th November 2024 (Sunday), 11.59pm (midnight)."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#learning-from-senior",
+    "href": "Take-home_Ex03b.html#learning-from-senior",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Learning from senior",
+    "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#learning-from-is415",
+    "href": "Take-home_Ex03b.html#learning-from-is415",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning GeoML Methods",
+    "section": "Learning from IS415",
+    "text": "Learning from IS415"
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#q-a",
+    "href": "Take-home_Ex03b.html#q-a",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Q & A",
+    "text": "Q & A\nPlease submit your questions or queries related to this take-home exercise on Piazza."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#peer-learning",
+    "href": "Take-home_Ex03b.html#peer-learning",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Peer Learning",
+    "text": "Peer Learning"
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#reference",
+    "href": "Take-home_Ex03b.html#reference",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Reference",
+    "text": "Reference\n\nSpatialML\nSpatialRF\n\n\nResearch articles\nWang, Shuli et. al. (2024) “Geographically weighted machine learning for modeling spatial heterogeneity in traffic crash frequency and determinants in US”, Accident analysis and prevention, Vol.199, p.107528-107528, Article 107528. SMU Library e-journal.\nLotfata, Aynaz & Georganos, Stefanos (2023) “Spatial machine learning for predicting physical inactivity prevalence from socioecological determinants in Chicago, Illinois, USA”, Journal of geographical systems, pp.1-21\nWu, Dongyu ; Zhang, Yingheng ; Xiang, Qiaojun (2024) “Geographically weighted random forests for macro-level crash frequency prediction”, Accident analysis and prevention, Vol.194, p.107370-107370, Article 107370."
+  },
+  {
+    "objectID": "Take-home_Ex03b.html#setting-the-scene",
+    "href": "Take-home_Ex03b.html#setting-the-scene",
+    "title": "Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods",
+    "section": "Setting the Scene",
+    "text": "Setting the Scene\nHousing is an essential component of household wealth worldwide. Buying a housing has always been a major investment for most people. The price of housing is affected by many factors. Some of them are global in nature such as the general economy of a country or inflation rate. Others can be more specific to the properties themselves. These factors can be further divided to structural and locational factors. Structural factors are variables related to the property themselves such as the size, fitting, and tenure of the property. Locational factors are variables related to the neighbourhood of the properties such as proximity to childcare centre, public transport service and shopping centre.\nConventional, housing resale prices predictive models were built by using Ordinary Least Square (OLS) method. However, this method failed to take into consideration that spatial autocorrelation and spatial heterogeneity exist in geographic data sets such as housing transactions. With the existence of spatial autocorrelation, the OLS estimation of predictive housing resale pricing models could lead to biased, inconsistent, or inefficient results (Anselin 1998). In view of this limitation, Geographical Weighted Models were introduced to better calibrate predictive models for housing resale prices."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html",
+    "href": "Take-home_Ex03a.html",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "",
+    "text": "Important\n\n\n\nThis handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 3. Students must review and understand them before getting started with the take-home exercise."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#setting-the-scene",
+    "href": "Take-home_Ex03a.html#setting-the-scene",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Setting the Scene",
+    "text": "Setting the Scene\nAccording to Wikipedia, financial inclusion is the availability and equality of opportunities to access financial services. It refers to processes by which individuals and businesses can access appropriate, affordable, and timely financial products and services - which include banking, loan, equity, and insurance products. It provides paths to enhance inclusiveness in economic growth by enabling the unbanked population to access the means for savings, investment, and insurance towards improving household income and reducing income inequality."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#the-task",
+    "href": "Take-home_Ex03a.html#the-task",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "The Task",
+    "text": "The Task\nIn this take-home exercise, you are required to build an explanatory model to determine factors affecting financial inclusion by using geographical weighted regression methods."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#the-data",
+    "href": "Take-home_Ex03a.html#the-data",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "The Data",
+    "text": "The Data\nFor the purpose of this take-home exercise, either FinScope Uganda 2023 or FinScope Tanzania 2023 should be used. The study should be conducted at the district level. The district level boundary GIS data can be downloaded from geoBoundaries portal."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#grading-criteria",
+    "href": "Take-home_Ex03a.html#grading-criteria",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Grading Criteria",
+    "text": "Grading Criteria\nThis exercise will be graded by using the following criteria:\n\nGeospatial Data Wrangling (20 marks): This is an important aspect of geospatial analytics. You will be assessed on your ability:\n\nto employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the import and extract the data.\nto clean and derive appropriate variables for meeting the analysis need.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nAll data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them.\n\n\n\nGeospatial Analysis (30 marks): In this exercise, you are expected to use the appropriate non-spatial regression method and geographically weighted regression methods learned in Lesson 7 to perform the analysis. You will be assessed on your ability:\n\nto describe the methods used correctly including model diagnostics, and\nto provide accurate interpretation of the analysis results.\n\nGeovisualisation and geocommunication (20 marks): In this section, you will be assessed on your ability to communicate the results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.\nReproducibility (15 marks): This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Quarto. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.\nBonus (15 marks): Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#submission-instructions",
+    "href": "Take-home_Ex03a.html#submission-instructions",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Submission Instructions",
+    "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in Quarto html document format. You are required to publish the write-up on Netlify.\nZip the take-home exercise folder and upload it onto eLearn. If the size of the zip file is beyond the capacity of eLearn, you can upload it on SMU OneDrive and provide the download link on eLearn.."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#due-date",
+    "href": "Take-home_Ex03a.html#due-date",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Due Date",
+    "text": "Due Date\n10th November 2024 (Sunday), 11.59pm (midnight)."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#learning-from-senior",
+    "href": "Take-home_Ex03a.html#learning-from-senior",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Learning from senior",
+    "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#learning-from-is415",
+    "href": "Take-home_Ex03a.html#learning-from-is415",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Learning from IS415",
+    "text": "Learning from IS415"
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#q-a",
+    "href": "Take-home_Ex03a.html#q-a",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Q & A",
+    "text": "Q & A\nPlease submit your questions or queries related to this take-home exercise on Piazza."
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#peer-learning",
+    "href": "Take-home_Ex03a.html#peer-learning",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Peer Learning",
+    "text": "Peer Learning"
+  },
+  {
+    "objectID": "Take-home_Ex03a.html#reference",
+    "href": "Take-home_Ex03a.html#reference",
+    "title": "Take-home Exercise 3a: Modelling Geography of Financial Inclusion with Geographically Weighted Methods",
+    "section": "Reference",
+    "text": "Reference\n\nFinScope Tanzania 2023\nFinScope Uganda 2023\n\n\nResearch articles\n\nKaliba, Aloyce R ; Bishagazi, Kaihula P ; Gongwe, Anne G (2023) “Financial Inclusion in Tanzania Determinants, Barriers, and Impact”, The Journal of developing areas, Vol.57 (2), pp.65-87. SMU library e-journal.\nJana S. Hamdan, Katharina Lehmann-Uschner & Lukas Menkhoff (2022) Mobile Money, Financial Inclusion, and Unmet Opportunities: Evidence from Uganda, The Journal of Development Studies, 58:4, 671-691. SMU library e-journal.\nNguyen, Nhan Thien, et. al. (2021) “The convergence of financial inclusion across provinces in Vietnam: A novel approach” PloS one, Vol.16 (8). SMU library e-journal."
   }
 ]

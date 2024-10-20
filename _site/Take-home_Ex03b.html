@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-10-01">
 
-<title>ISSS626 AY2024-25 October Term – ISSS626 Geospatial Analytics and Applications</title>
+<title>Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods – ISSS626 Geospatial Analytics and Applications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -145,12 +146,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Take-home Exercise 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Take-home_Ex03a.html">
- <span class="dropdown-text">Take-home Exercise 3a</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Take-home_Ex03b.html">
- <span class="dropdown-text">Take-home Exercise 3b</span></a>
+    <a class="dropdown-item" href="./Take-home_Ex03.html">
+ <span class="dropdown-text">Take-home Exercise 3</span></a>
   </li>  
     </ul>
   </li>
@@ -176,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -195,16 +192,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-the-isss626-geospatial-analytics-and-applications" id="toc-welcome-to-the-isss626-geospatial-analytics-and-applications" class="nav-link active" data-scroll-target="#welcome-to-the-isss626-geospatial-analytics-and-applications">Welcome to the ISSS626 Geospatial Analytics and Applications</a>
+  <li><a href="#setting-the-scene" id="toc-setting-the-scene" class="nav-link active" data-scroll-target="#setting-the-scene">Setting the Scene</a></li>
+  <li><a href="#the-task" id="toc-the-task" class="nav-link" data-scroll-target="#the-task">The Task</a></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
+  <li><a href="#grading-criteria" id="toc-grading-criteria" class="nav-link" data-scroll-target="#grading-criteria">Grading Criteria</a></li>
+  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions">Submission Instructions</a></li>
+  <li><a href="#due-date" id="toc-due-date" class="nav-link" data-scroll-target="#due-date">Due Date</a></li>
+  <li><a href="#learning-from-senior" id="toc-learning-from-senior" class="nav-link" data-scroll-target="#learning-from-senior">Learning from senior</a></li>
+  <li><a href="#q-a" id="toc-q-a" class="nav-link" data-scroll-target="#q-a">Q &amp; A</a></li>
+  <li><a href="#peer-learning" id="toc-peer-learning" class="nav-link" data-scroll-target="#peer-learning">Peer Learning</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a>
   <ul class="collapse">
-  <li><a href="#words-of-encouragement" id="toc-words-of-encouragement" class="nav-link" data-scroll-target="#words-of-encouragement">Words of Encouragement</a></li>
-  <li><a href="#other-important-information" id="toc-other-important-information" class="nav-link" data-scroll-target="#other-important-information">Other Important Information</a>
-  <ul class="collapse">
-  <li><a href="#academic-integrity" id="toc-academic-integrity" class="nav-link" data-scroll-target="#academic-integrity">Academic Integrity:</a></li>
-  <li><a href="#handling-of-course-materials" id="toc-handling-of-course-materials" class="nav-link" data-scroll-target="#handling-of-course-materials">Handling of Course Materials:</a></li>
-  <li><a href="#accessibility-and-accommodations" id="toc-accessibility-and-accommodations" class="nav-link" data-scroll-target="#accessibility-and-accommodations">Accessibility and Accommodations:</a></li>
-  <li><a href="#preparedness-for-teaching-and-learning-eptl" id="toc-preparedness-for-teaching-and-learning-eptl" class="nav-link" data-scroll-target="#preparedness-for-teaching-and-learning-eptl">Preparedness for Teaching and Learning (EPTL):</a></li>
-  </ul></li>
+  <li><a href="#research-articles" id="toc-research-articles" class="nav-link" data-scroll-target="#research-articles">Research articles</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -214,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ISSS626 AY2024-25 October Term</h1>
+<h1 class="title">Take-home Exercise 3b: Predicting HDB Resale Prices with Geographically Weighted Machine Learning Methods</h1>
 </div>
 
 
@@ -222,7 +221,19 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 1, 2024</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">October 20, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -231,57 +242,127 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome-to-the-isss626-geospatial-analytics-and-applications" class="level1">
-<h1>Welcome to the ISSS626 Geospatial Analytics and Applications</h1>
-<p>In this web site, you will find all course materials here.</p>
-<p>Instructor: <a href="https://www.smu.edu.sg/faculty/profile/9618/KAM-Tin-Seong">Dr.&nbsp;Kam Tin Seong</a>, Associate Professor of Information Systems (Practice)</p>
-<p>Date &amp; Time: Monday 19:00 - 22:15</p>
-<p>Venue: SOE/SCIS2 Seminar Room 2-10</p>
-<p>Piazza <a href="https://piazza.com/class/lz27gf1qw412m5">link</a>.</p>
-<p>Consultation booking <a href="https://docs.google.com/spreadsheets/d/1Zz3_hqKc4qA5YFMTy2DJzlEd5EJRaDzHqUhWMTm-zxI/edit?usp=sharing">link</a>.</p>
-<p>Virtual Meeting Room: <a href="https://smu-sg.zoom.us/j/91431787118?pwd=UVoyN3ZrYkRtcVo0WDVER0ZWRFlOQT09">Zoom</a></p>
-<section id="words-of-encouragement" class="level2">
-<h2 class="anchored" data-anchor-id="words-of-encouragement">Words of Encouragement</h2>
-<p>For the next 10 weeks, your learning journey will be very bumpy, especially come to R programming.</p>
-<p><img src="img/image4.png" class="img-fluid"></p>
-<p>Learning R can be difficult at first—it’s like learning a new language, just like Spanish, French, or Chinese. Hadley Wickham—the chief data scientist at RStudio and the author of some amazing R packages you’ll be using like ggplot2 — made this wise observation:</p>
-<blockquote class="blockquote">
-<p>It’s easy when you start out programming to get really frustrated and think, “Oh it’s me, I’m really stupid,” or, “I’m not made out to program.” But, that is absolutely not the case. Everyone gets frustrated. I still get frustrated occasionally when writing R code. It’s just a natural part of programming. So, it happens to everyone and gets less and less over time. Don’t blame yourself. Just take a break, do something fun, and then come back and try again later.</p>
-</blockquote>
-<p>Even experienced programmers find themselves bashing their heads against seemingly intractable errors.</p>
-<p><img src="img/image3.jpg" class="img-fluid" style="width:75.0%"></p>
-<p>If you’re finding yourself taking way too long hitting your head against a wall and not understanding, take a break, talk to classmates, and don’t hesitate to approach me.</p>
-<p>The students who have a bad time in this course are the ones who don’t work with one another to learn. We are a learning community, and we should help each other to learn.</p>
-<p>If you understand something and someone is struggling with it, try and help them. If you are struggling, take a breath, and try to pinpoint what you are struggling with.</p>
-<p>Our goal is to be better programmers each day, not to be the perfect programmer. There’s no such thing as a perfect programmer. I’ve been learning new things almost every day.</p>
-<p>I promise you can succeed in this class as long as you are willing to learn, practice, be open minded and don’t give up easily.</p>
-<p><img src="img/image6.jpg" class="img-fluid" style="width:45.0%"></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 2. Students must review and understand them before getting started with the take-home exercise.</p>
+</div>
+</div>
+<section id="setting-the-scene" class="level2">
+<h2 class="anchored" data-anchor-id="setting-the-scene">Setting the Scene</h2>
+<p>Housing is an essential component of household wealth worldwide. Buying a housing has always been a major investment for most people. The price of housing is affected by many factors. Some of them are global in nature such as the general economy of a country or inflation rate. Others can be more specific to the properties themselves. These factors can be further divided to structural and locational factors. Structural factors are variables related to the property themselves such as the size, fitting, and tenure of the property. Locational factors are variables related to the neighbourhood of the properties such as proximity to childcare centre, public transport service and shopping centre.</p>
+<p>Conventional, housing resale prices predictive models were built by using Ordinary Least Square (OLS) method. However, this method failed to take into consideration that spatial autocorrelation and spatial heterogeneity exist in geographic data sets such as housing transactions. With the existence of spatial autocorrelation, the OLS estimation of predictive housing resale pricing models could lead to biased, inconsistent, or inefficient results (Anselin 1998). In view of this limitation, <strong>Geographical Weighted Models</strong> were introduced to better calibrate predictive models for housing resale prices.</p>
 </section>
-<section id="other-important-information" class="level2">
-<h2 class="anchored" data-anchor-id="other-important-information">Other Important Information</h2>
-<section id="academic-integrity" class="level3">
-<h3 class="anchored" data-anchor-id="academic-integrity">Academic Integrity:</h3>
-<p>All acts of academic dishonesty (including, but not limited to, plagiarism, cheating, fabrication, facilitation of acts of academic dishonesty by others, unauthorized possession of exam questions, or tampering with the academic work of other students) are serious offences. All work (whether oral or written) submitted for purposes of assessment must be the student’s own work. Penalties for violation of the policy range from zero marks for the component assessment to expulsion, depending on the nature of the offense. When in doubt, students should consult the instructors of the course. Details on the SMU Code of Academic Integrity may be accessed at <a href="http://www.smuscd.org/resources.html" class="uri">http://www.smuscd.org/resources.html</a></p>
+<section id="the-task" class="level2">
+<h2 class="anchored" data-anchor-id="the-task">The Task</h2>
+<p>In this take-home exercise, you are required to calibrate a predictive model to predict HDB resale prices between July-September 2024 by using HDB resale transaction records in 2023.</p>
 </section>
-<section id="handling-of-course-materials" class="level3">
-<h3 class="anchored" data-anchor-id="handling-of-course-materials">Handling of Course Materials:</h3>
-<p>Course materials obtained during your course of study at SMU are meant for personal use only, namely, for the purposes of studying and research. You are strictly not permitted to make copies of or print additional copies or distribute such copies of the course materials or any parts thereof, for commercial gain or exchange. For example, offering such materials on the Internet through CourseHero, Carousell and the like, is strictly prohibited.</p>
-<p>The selling of these materials and/or any copies thereof are strictly prohibited under Singapore copyright laws. Printed materials and electronic materials are both protected by copyright laws. All students are subject to Singapore copyright laws and must strictly adhere to SMU’s procedures and requirements relating to copyright.</p>
-<p>Please also note that for some materials, the publishers may specifically state that each copy is for the personal use of one individual only and no further reprographic reproduction is allowed, including for personal use. These restrictions are spelt out clearly on these specific sets of resources and students are required to adhere to these rules.</p>
-<p><strong>Students who infringe any of the aforesaid rules, laws and requirements shall be liable to disciplinary action by SMU. In addition, such students may also leave themselves open to suits by copyright owners who are entitled to take legal action against persons who infringe their copyright.</strong></p>
-<p>We strongly urge all students to respect the copyright laws and abide by SMU’s procedures and requirements relating to copyright.</p>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<p>For the purpose of this take-home exercise, <strong>HDB Resale Flat Prices</strong> provided by <a href=""><strong>Data.gov.sg</strong></a> should be used as the core data set. The study should focus on either three-room, four-room or five-room flat.</p>
+<p>Below is a list of recommended predictors to consider. However, students are free to include other appropriate independent variables.</p>
+<ul>
+<li>Structural factors
+<ul>
+<li>Area of the unit</li>
+<li>Floor level</li>
+<li>Remaining lease</li>
+<li>Age of the unit</li>
+<li>Main Upgrading Program (MUP) completed (optional)</li>
+</ul></li>
+<li>Locational factors
+<ul>
+<li>Proxomity to CBD</li>
+<li>Proximity to eldercare</li>
+<li>Proximity to foodcourt/hawker centres</li>
+<li>Proximity to MRT</li>
+<li>Proximity to park</li>
+<li>Proximity to good primary school</li>
+<li>Proximity to shopping mall</li>
+<li>Proximity to supermarket</li>
+<li>Numbers of kindergartens within 350m</li>
+<li>Numbers of childcare centres within 350m</li>
+<li>Numbers of bus stop within 350m</li>
+<li>Numbers of primary school within 1km</li>
+</ul></li>
+</ul>
 </section>
-<section id="accessibility-and-accommodations" class="level3">
-<h3 class="anchored" data-anchor-id="accessibility-and-accommodations">Accessibility and Accommodations:</h3>
-<p>SMU strives to make learning experiences accessible for all. If you anticipate or experience physical or academic barriers due to disability, please let the instructor know immediately. You are also welcome to contact the university’s disability support team if you have questions or concerns about academic accommodations:<a href="mailto:included@smu.edu.sg">included@smu.edu.sg</a></p>
-<p>Please be aware that the accessible tables in our seminar room should remain available for students who require them. Emergency</p>
+<section id="grading-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="grading-criteria">Grading Criteria</h2>
+<p>This exercise will be graded by using the following criteria:</p>
+<ul>
+<li><p><strong>Geospatial Data Wrangling (20 marks):</strong> This is an important aspect of geospatial analytics. You will be assessed on your ability:</p>
+<ul>
+<li>to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the import and extract the data.</li>
+<li>to clean and derive appropriate variables for meeting the analysis need.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them.</p>
+</div>
+</div>
+<ul>
+<li><p><strong>Geospatial Analysis (30 marks):</strong> In this exercise, you are expected to use conventional multiple linear regression, random forest and geographically weighted random forest methods learned in class to calibrate the predictive models including model comparison. You will be assessed on your ability:</p>
+<ul>
+<li>to describe the methods used correctly, and</li>
+<li>to provide accurate interpretation of the analysis results.</li>
+</ul></li>
+<li><p><strong>Geovisualisation and geocommunication (20 marks):</strong> In this section, you will be assessed on your ability to communicate the results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.</p></li>
+<li><p><strong>Reproducibility (15 marks):</strong> This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of Quarto. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.</p></li>
+<li><p><strong>Bonus (15 marks):</strong> Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data.</p></li>
+</ul>
 </section>
-<section id="preparedness-for-teaching-and-learning-eptl" class="level3">
-<h3 class="anchored" data-anchor-id="preparedness-for-teaching-and-learning-eptl">Preparedness for Teaching and Learning (EPTL):</h3>
-<p>As part of emergency preparedness, Instructors may conduct lessons online via the WebEx platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the WebEx platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated.</p>
+<section id="submission-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="submission-instructions">Submission Instructions</h2>
+<ul>
+<li>The write-up of the take-home exercise must be in <strong>Quarto html document</strong> format. You are required to publish the write-up on <a href="https://www.netlify.com/"><strong>Netlify</strong></a>.</li>
+<li>Zip the take-home exercise folder and upload it onto eLearn. If the size of the zip file is beyond the capacity of eLearn, you can upload it on SMU OneDrive and provide the download link on eLearn..</li>
+</ul>
+</section>
+<section id="due-date" class="level2">
+<h2 class="anchored" data-anchor-id="due-date">Due Date</h2>
+<p>10th November 2024 (Sunday), 11.59pm (midnight).</p>
+</section>
+<section id="learning-from-senior" class="level2">
+<h2 class="anchored" data-anchor-id="learning-from-senior">Learning from senior</h2>
+<p>You are advised to review these sample submissions prepared by your seniors.</p>
+</section>
+<section id="q-a" class="level2">
+<h2 class="anchored" data-anchor-id="q-a">Q &amp; A</h2>
+<p>Please submit your questions or queries related to this take-home exercise on Piazza.</p>
+</section>
+<section id="peer-learning" class="level2">
+<h2 class="anchored" data-anchor-id="peer-learning">Peer Learning</h2>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/SpatialML/index.html">SpatialML</a></li>
+<li><a href="https://blasbenito.github.io/spatialRF/index.html">SpatialRF</a></li>
+</ul>
+<section id="research-articles" class="level3">
+<h3 class="anchored" data-anchor-id="research-articles">Research articles</h3>
+<p>Wang, Shuli et. al.&nbsp;(2024) <strong>“Geographically weighted machine learning for modeling spatial heterogeneity in traffic crash frequency and determinants in US”</strong>, <em>Accident analysis and prevention</em>, Vol.199, p.107528-107528, Article 107528. SMU Library e-journal.</p>
+<p>Lotfata, Aynaz &amp; Georganos, Stefanos (2023) <strong>“Spatial machine learning for predicting physical inactivity prevalence from socioecological determinants in Chicago, Illinois, USA”</strong>, <em>Journal of geographical systems</em>, pp.1-21</p>
+<p>Wu, Dongyu ; Zhang, Yingheng ; Xiang, Qiaojun (2024) <strong>“Geographically weighted random forests for macro-level crash frequency prediction”</strong>, <em>Accident analysis and prevention</em>, Vol.194, p.107370-107370, Article 107370.</p>
 
 
-</section>
 </section>
 </section>
 
