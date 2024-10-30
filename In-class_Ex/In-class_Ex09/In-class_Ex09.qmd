@@ -28,9 +28,113 @@ pacman::p_load(SpatialAcc, sf, tidyverse,
 ```
 :::
 
-## Importing Data
+## Count Number of Points within a Distance
 
 ::: panel-tabset
+
+### The task
+
+-   To count number of point features (i.e. CHAS clinics) within 1km of another point features (i.e. eldercare centre).
+
+::: callout-note
+To complete this section of the in-class exercise, you need to download both the *CHAS Clinics* and *Eldercare Services* data sets from data.gov.sg portal.  The in-class exercise assumes explicitly the downloaded data sets are saved in *rawdata* sub-folder of *In-class_Ex09* folder.  Remember to unzip the file if necessary.
+:::
+
+### DIY
+
+-   Download *ELDERCARE* shapefile and *CHAS* kml file from data.gov.sg
+-   Using the steps your learned in Hands-on Exercise 1, import *ELDERCARE* shapefile and *CHAS* kml file into R
+
+### The code
+
+*ELDERCARE* is in shapefile format, the code chunk below will be used:
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| output: false
+eldercare <- st_read(dsn = "data/rawdata",
+                     layer = "ELDERCARE") %>%
+  st_transform(crs = 3414)
+```
+:::
+
+The code chunk below is used to import kml file.
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| output: false
+CHAS <- st_read("data/rawdata/CHASClinics.kml") %>%
+  st_transform(crs = 3414)
+```
+:::
+
+### Buffering
+
+Next, `st_buffer()` of sf package is used to create a buffer of 1km around each eldercare features
+
+::: {style="font-size: 1.50em"}
+```{r}
+buffer_1km <- st_buffer(eldercare, 
+                        dist = 1000)
+```
+:::
+
+### Visualising
+
+::::::: columns
+:::: {.column width="40%"}
+The code chunk below is used to plot the newly created buffers and the CHAS clinics.
+
+::: {style="font-size: 1.50em"}
+```{r}
+#| eval: false
+tmap_mode("view")
+tm_shape(buffer_1km) +
+  tm_polygons() +
+tm_shape(CHAS) +
+  tm_dots()
+```
+:::
+::::
+
+:::: {.column width="60%"}
+::: {style="font-size: 1.50em"}
+```{r}
+#| echo: false
+tmap_mode("view")
+tm_shape(buffer_1km) +
+  tm_polygons() +
+tm_shape(CHAS) +
+  tm_dots()
+```
+:::
+::::
+:::::::
+
+### Counting points
+
+Lastly, the code chunk below is used to count the number of CHAS clinics with 1km of each eldercare centre.
+
+::: {style="font-size: 1.50em"}
+```{r}
+buffer_1km$pts_count <- lengths(
+  st_intersects(buffer_1km, CHAS))
+```
+:::
+::::::::::::
+
+
+
+
+
+
+
+
+
+
+## Importing Data
+
+::::: panel-tabset
 ### Geospatail data
 
 ::: {style="font-size: 1.5em"}
@@ -51,20 +155,20 @@ eldercare <- st_read(dsn = "data/geospatial",
 :::
 
 ### OD Matrix
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 ODMatrix <- read_csv("data/aspatial/OD_Matrix.csv", 
                      skip = 0)
 ```
 :::
-:::
-
+:::::
 
 ## Data cleaning and Updating Attributes
 
-::: panel-tabset
-
+:::::: panel-tabset
 ### Supply
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 eldercare <- eldercare %>%
@@ -74,6 +178,7 @@ eldercare <- eldercare %>%
 :::
 
 ### Demand
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 hexagons <- hexagons %>%
@@ -83,6 +188,7 @@ hexagons <- hexagons %>%
 :::
 
 ### OD Matrix
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 distmat <- ODMatrix %>%
@@ -95,12 +201,13 @@ distmat <- ODMatrix %>%
 distmat_km <- as.matrix(distmat/1000)
 ```
 :::
-:::
+::::::
 
 ## Computing Handsen's Accessibility
 
-::: panel-tabset
+:::::: panel-tabset
 ### The base code
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 acc_Hansen <- data.frame(ac(hexagons$demand,
@@ -125,6 +232,7 @@ hexagon_Hansen <- bind_cols(hexagons, acc_Hansen)
 :::
 
 ### Combine code chunk
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 acc_Hansen <- data.frame(ac(hexagons$demand,
@@ -139,15 +247,15 @@ acc_Hansen <- as_tibble(acc_Hansen)
 hexagon_Hansen <- bind_cols(hexagons, acc_Hansen)
 ```
 :::
-:::
+::::::
 
---- 
+------------------------------------------------------------------------
 
 ### Visualising Accessibility
 
-::: panel-tabset
-
+:::: panel-tabset
 #### The code
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 #| eval: false
@@ -209,16 +317,15 @@ tm_shape(eldercare) +
   tm_scale_bar(width = 0.15) +
   tm_grid(lwd = 0.1, alpha = 0.5)
 ```
+::::
 
-:::
-
----
+------------------------------------------------------------------------
 
 ### Statistical graphic
 
-::: panel-tabset
-
+::::: panel-tabset
 ### The code
+
 ::: {style="font-size: 1.5em"}
 ```{r}
 hexagon_Hansen <- st_join(hexagon_Hansen, mpsz, 
@@ -249,4 +356,4 @@ ggbetweenstats(
   y = accHansen,
   type = "p")
 ```
-:::
+:::::

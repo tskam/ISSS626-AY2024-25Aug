@@ -2749,5 +2749,12 @@
     "title": "ISSS626 Geospatial Analytics and Applications",
     "section": "",
     "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;  ELDERCARE  ENG dataset\n\nELDERCARE\n\n                 0 0     false"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex09/In-class_Ex09.html#count-number-of-points-within-a-distance",
+    "href": "In-class_Ex/In-class_Ex09/In-class_Ex09.html#count-number-of-points-within-a-distance",
+    "title": "In-class Exercise 9: Geography of Accessibility",
+    "section": "Count Number of Points within a Distance",
+    "text": "Count Number of Points within a Distance\n\nThe taskDIYThe codeBufferingVisualisingCounting points\n\n\n\nTo count number of point features (i.e. CHAS clinics) within 1km of another point features (i.e. eldercare centre).\n\n\n\n\n\n\n\nNote\n\n\nTo complete this section of the in-class exercise, you need to download both the CHAS Clinics and Eldercare Services data sets from data.gov.sg portal. The in-class exercise assumes explicitly the downloaded data sets are saved in rawdata sub-folder of In-class_Ex09 folder. Remember to unzip the file if necessary.\n\n\n\n\n\n\nDownload ELDERCARE shapefile and CHAS kml file from data.gov.sg\nUsing the steps your learned in Hands-on Exercise 1, import ELDERCARE shapefile and CHAS kml file into R\n\n\n\nELDERCARE is in shapefile format, the code chunk below will be used:\n\n\neldercare &lt;- st_read(dsn = \"data/rawdata\",\n                     layer = \"ELDERCARE\") %&gt;%\n  st_transform(crs = 3414)\n\n\nThe code chunk below is used to import kml file.\n\n\nCHAS &lt;- st_read(\"data/rawdata/CHASClinics.kml\") %&gt;%\n  st_transform(crs = 3414)\n\n\n\n\nNext, st_buffer() of sf package is used to create a buffer of 1km around each eldercare features\n\n\nbuffer_1km &lt;- st_buffer(eldercare, \n                        dist = 1000)\n\n\n\n\n\n\nThe code chunk below is used to plot the newly created buffers and the CHAS clinics.\n\n\ntmap_mode(\"view\")\ntm_shape(buffer_1km) +\n  tm_polygons() +\ntm_shape(CHAS) +\n  tm_dots()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLastly, the code chunk below is used to count the number of CHAS clinics with 1km of each eldercare centre.\n\n\nbuffer_1km$pts_count &lt;- lengths(\n  st_intersects(buffer_1km, CHAS))"
   }
 ]
