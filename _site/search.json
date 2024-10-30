@@ -2735,5 +2735,19 @@
     "title": "In-class Exercise 9: Geography of Accessibility",
     "section": "Computing Handsen’s Accessibility",
     "text": "Computing Handsen’s Accessibility\n\nThe base codeTidy the outputCombine code chunk\n\n\n\n\nacc_Hansen &lt;- data.frame(ac(hexagons$demand,\n                            eldercare$capacity,\n                            distmat_km, \n                            #d0 = 50,\n                            power = 2, \n                            family = \"Hansen\"))\n\n\n\n\n\n\ncolnames(acc_Hansen) &lt;- \"accHansen\"\n\nacc_Hansen &lt;- as_tibble(acc_Hansen)\n\nhexagon_Hansen &lt;- bind_cols(hexagons, acc_Hansen)\n\n\n\n\n\n\nacc_Hansen &lt;- data.frame(ac(hexagons$demand,\n                            eldercare$capacity,\n                            distmat_km, \n                            #d0 = 50,\n                            power = 0.5, \n                            family = \"Hansen\"))\n\ncolnames(acc_Hansen) &lt;- \"accHansen\"\nacc_Hansen &lt;- as_tibble(acc_Hansen)\nhexagon_Hansen &lt;- bind_cols(hexagons, acc_Hansen)"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex09/data/geospatial/hexagons.html",
+    "href": "In-class_Ex/In-class_Ex09/data/geospatial/hexagons.html",
+    "title": "ISSS626 Geospatial Analytics and Applications",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;     dataset\n\n\n                 0 0     false"
+  },
+  {
+    "objectID": "In-class_Ex/In-class_Ex09/data/geospatial/ELDERCARE.html",
+    "href": "In-class_Ex/In-class_Ex09/data/geospatial/ELDERCARE.html",
+    "title": "ISSS626 Geospatial Analytics and Applications",
+    "section": "",
+    "text": "&lt;!DOCTYPE qgis PUBLIC ‘http://mrcc.com/qgis.dtd’ ‘SYSTEM’&gt;  ELDERCARE  ENG dataset\n\nELDERCARE\n\n                 0 0     false"
   }
 ]
