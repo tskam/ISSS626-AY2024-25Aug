@@ -30,14 +30,13 @@ pacman::p_load(SpatialAcc, sf, tidyverse,
 
 ## Count Number of Points within a Distance
 
-::: panel-tabset
-
+::::::::::::: panel-tabset
 ### The task
 
 -   To count number of point features (i.e. CHAS clinics) within 1km of another point features (i.e. eldercare centre).
 
 ::: callout-note
-To complete this section of the in-class exercise, you need to download both the *CHAS Clinics* and *Eldercare Services* data sets from data.gov.sg portal.  The in-class exercise assumes explicitly the downloaded data sets are saved in *rawdata* sub-folder of *In-class_Ex09* folder.  Remember to unzip the file if necessary.
+To complete this section of the in-class exercise, you need to download both the *CHAS Clinics* and *Eldercare Services* data sets from data.gov.sg portal. The in-class exercise assumes explicitly the downloaded data sets are saved in *rawdata* sub-folder of *In-class_Ex09* folder. Remember to unzip the file if necessary.
 :::
 
 ### DIY
@@ -121,16 +120,7 @@ buffer_1km$pts_count <- lengths(
   st_intersects(buffer_1km, CHAS))
 ```
 :::
-::::::::::::
-
-
-
-
-
-
-
-
-
+:::::::::::::
 
 ## Importing Data
 
